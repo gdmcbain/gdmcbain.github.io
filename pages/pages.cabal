@@ -1,12 +1,12 @@
 name:                pages
 version:             0.1.0.0
--- synopsis:
+synopsis:            content for https://gdmcbain.github.io
 -- description:
 homepage:            https://github.com/gdmcbain/pages#readme
 license:             BSD3
 license-file:        LICENSE
 author:              G. D. McBain
-maintainer:          gmcbain@memjet.com
+maintainer:          gdmcbain@protonmail.com
 copyright:           2018 G. D. McBain
 category:            Web
 build-type:          Simple
