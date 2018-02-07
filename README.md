@@ -1,2 +1,1 @@
-# gdmcbain.github.io
-Welcome to the home page of Geordie McBain
+https://gdmcbain.github.io
