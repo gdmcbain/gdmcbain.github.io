@@ -1,0 +1,186 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.47)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>The vertical pressure gradient</TITLE>
+<META NAME="description" CONTENT="The vertical pressure gradient">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="thesis.css">
+
+<LINK REL="previous" HREF="node67.html">
+<LINK REL="up" HREF="node66.html">
+<LINK REL="next" HREF="node69.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1241"
+  HREF="node69.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1237"
+  HREF="node66.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1233"
+  HREF="node67.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1239"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1242"
+  HREF="node69.html">A numerical example</A>
+<B> Up:</B> <A NAME="tex2html1238"
+  HREF="node66.html">The fully developed solution</A>
+<B> Previous:</B> <A NAME="tex2html1234"
+  HREF="node67.html">Mass and energy fluxes</A>
+ &nbsp <B>  <A NAME="tex2html1240"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001042000000000000000"></A>
+<A NAME="sec:NCL_Vpg"></A>
+<BR>
+The vertical pressure gradient
+</H2>
+
+<P>
+A more general solution that still satisfies equations
+(<A HREF="node65.html#eqn:narrow_continuity">4.13</A>)-(<A HREF="node65.html#eqn:narrow_energy">4.17</A>)
+and boundary conditions (<A HREF="node65.html#bc:narrow_Tm">4.18</A>)-(<A HREF="node65.html#bc:narrow_v">4.21</A>)
+is one where <IMG
+ WIDTH="13" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img5.png"
+ ALT="$c$"> varies
+with <IMG
+ WIDTH="20" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img607.png"
+ ALT="$Y$">, but this must be rejected on physical grounds as it leads to
+a net vertical mass flux that varies with height.  This violates the
+conservation of mass, as by equation (<A HREF="node67.html#soln:narrow_Sh">4.39</A>)
+the cold and hot wall Sherwood numbers are equal, so that
+there is no net addition of mass to the cavity 
+through the hot and cold walls at any horizontal section for which this fully
+developed solution applies.
+
+<P>
+The value of the constant <IMG
+ WIDTH="13" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img5.png"
+ ALT="$c$"> remains indeterminate.  It is clearly
+related to the net vertical mass flux, which is proportional to the
+integral of <IMG
+ WIDTH="14" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$v$"> across the cavity.  This integral depends
+on <IMG
+ WIDTH="13" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img5.png"
+ ALT="$c$">.
+
+<P>
+In the small mass transfer rate factor limit, the integral from <IMG
+ WIDTH="56" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img608.png"
+ ALT="$X=0$">
+to 1 of <IMG
+ WIDTH="14" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.png"
+ ALT="$v$"> (<A HREF="node66.html#soln:narrow_v_Phi0">4.36</A>) is <IMG
+ WIDTH="56" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img609.png"
+ ALT="$-c/12$">.  For the cavity,
+the net vertical mass flux in this limiting case must be zero
+(assuming3 there is no mass flux at the floor or ceiling, or front or
+back walls) so that <IMG
+ WIDTH="47" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img579.png"
+ ALT="$c=0$">.  For an open channel, <IMG
+ WIDTH="13" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img5.png"
+ ALT="$c$"> is determined by
+the pressure boundary conditions at the inlet and outlet.
+
+<P>
+No such simple treatment is possible for a cavity with <!-- MATH
+ $\varPhi \neq 0$
+ -->
+<IMG
+ WIDTH="52" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img413.png"
+ ALT="$\varPhi \neq 0$">.
+An inspection of figures&nbsp;<A HREF="node66.html#fig:narrow_v_Phi">4.2</A>
+or <A HREF="node66.html#fig:narrow_v_N">4.3</A>, for which <IMG
+ WIDTH="47" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img579.png"
+ ALT="$c=0$">
+in all the plotted profiles, reveals that the condition of the
+pressure gradient balancing the mean density perturbation (i.e. <IMG
+ WIDTH="47" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img579.png"
+ ALT="$c=0$">, from equation <A HREF="node66.html#soln:narrow_p">4.28</A>); does not imply a
+net zero vertical mass flux. 
+Further, if <!-- MATH
+ $\mbox{\textit{Gr}}(1+N) \neq 0$
+ -->
+<IMG
+ WIDTH="127" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img610.png"
+ ALT="$\mbox{\textit{Gr}}(1+N) \neq 0$">, a recirculating flow would be expected,
+which would certainly cause the net mass added to the cavity
+through the hot and cold walls to be different in the top and bottom end
+regions.  This difference cannot be determined without the solutions valid
+for these regions.  These are obtained numerically in chapter&nbsp;<A HREF="node74.html#ch:FC">5</A>.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1241"
+  HREF="node69.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1237"
+  HREF="node66.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1233"
+  HREF="node67.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1239"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1242"
+  HREF="node69.html">A numerical example</A>
+<B> Up:</B> <A NAME="tex2html1238"
+  HREF="node66.html">The fully developed solution</A>
+<B> Previous:</B> <A NAME="tex2html1234"
+  HREF="node67.html">Mass and energy fluxes</A>
+ &nbsp <B>  <A NAME="tex2html1240"
+  HREF="node2.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Geordie McBain
+2001-01-27
+</ADDRESS>
+</BODY>
+</HTML>

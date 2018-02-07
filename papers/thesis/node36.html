@@ -1,0 +1,182 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.47)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>The no-slip condition</TITLE>
+<META NAME="description" CONTENT="The no-slip condition">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="thesis.css">
+
+<LINK REL="next" HREF="node37.html">
+<LINK REL="previous" HREF="node35.html">
+<LINK REL="up" HREF="node35.html">
+<LINK REL="next" HREF="node37.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html833"
+  HREF="node37.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html829"
+  HREF="node35.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html823"
+  HREF="node35.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html831"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html834"
+  HREF="node37.html">Meyer and Kostin (1975)</A>
+<B> Up:</B> <A NAME="tex2html830"
+  HREF="node35.html">The Stefan diffusion tube</A>
+<B> Previous:</B> <A NAME="tex2html824"
+  HREF="node35.html">The Stefan diffusion tube</A>
+ &nbsp <B>  <A NAME="tex2html832"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00921000000000000000">
+The no-slip condition</A>
+</H2>
+
+<P>
+Unfortunately, the one-dimensional assumption violates the no-slip condition
+at the cylinder walls if
+<!-- MATH
+ $\varPhi \neq 0$
+ -->
+<IMG
+ WIDTH="52" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img413.png"
+ ALT="$\varPhi \neq 0$"> (Lee, C. Y. &amp; Wilke 1954). 
+
+<P>
+C. Y. Lee and Wilke (1954) suggested that the flow would be
+unidirectional with a parabolic profile, as for fully developed pressure-driven
+flow (&#167;<A HREF="node116.html#sec:BS_Cs">7.5.1</A>).  This assumption was adopted by
+Heinzelmann, Wasan &amp; Wilke (1965) and S. S. Rao and Bennett (1966)
+in their attempts to establish whether <IMG
+ WIDTH="21" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="$m$"> and <I>Sh</I> varied radially.
+
+<P>
+While the velocity profile is probably parabolic for much of the length of the
+tube if <IMG
+ WIDTH="66" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img417.png"
+ ALT="$\varPhi &lt;&lt;1$"> (Markham &amp; Rosenberger 1980;
+&#167;<A HREF="node38.html#sec:LR_markR80">3.2.3</A>),
+this procedure is somewhat problematic.  If the velocity field is
+regarded as given, the species equation (<A HREF="node24.html#eqn:species">2.53</A>) can be
+solved independently, but the problem is overconstrained.  The vapour
+mass fraction is known or assumed at both ends of the tube, but the
+normal component of the vapour mass fraction gradient there can be
+calculated from the transpiration boundary condition
+(<A HREF="node25.html#bc:transpiration">2.59</A>).  The species equation is second order in
+each spatial direction, including the axial direction of the tube, but
+four boundary conditions have been imposed on the vapour mass
+fraction.  If no boundary conditions at the mouth were assumed, the
+problem would not be overconstrained but it would be ill-posed.  The
+species equation is elliptic and therefore its solution would not
+depend continuously on the given value of the function and its normal
+gradient at the liquid interface (Courant &amp; Hilbert 1962, pp.&nbsp;216,
+227; Garabedian 1964, p.&nbsp;484).  An arbitrarily small variation in
+the given data would change the solution greatly.  Such data only lead
+to correctly set problems for hyperbolic equations (Hadamard 1952,
+pp.&nbsp;37-9).  While ill-posed problems are not
+necessarily devoid of physical meaning (Courant &amp; Hilbert 1962,
+pp.&nbsp;230-1; see the papers in the collection edited by H&#228;mmerlin
+&amp; Hoffmann 1983 for counterexamples),  this is the
+case for the present problem.  The physical interpretation is simple:
+it would be impossible to simultaneously fix both the velocity and the
+vapour mass fraction at the interface; even if a gas-vapour mixture
+from a source of known composition were injected through a surface,
+the composition at the interface would be affected by diffusion.  In
+conclusion, though the transpiration condition relates the normal
+component of velocity and the normal component of the gradient of the
+mass fraction field, it must be regarded as a boundary condition on
+the velocity if the vapour mass fraction is independently known, e.g. by the requirement of thermodynamic equilibrium with the neighbouring
+condensed phase.  The interfacial velocity must be determined as part
+of the solution.
+
+<P>
+Whitaker (1967) attempted to dispel the entire problem by
+asserting that `the traditional no-slip condition is not valid for that
+motion occurring because of concentration gradients'.  S. S. Rao and Bennett
+(1967)
+countered this by citing independent experimental evidence that 
+slip only occurs in diffusion-induced flows
+at lower pressures and in smaller tubes
+than those relevant to the Stefan diffusion tube (or the present project).
+Wasan (1967) responded to Whitaker by stating
+that the assumption of no-slip did indeed violate the conservation of species
+but that the flow rate in the tube was almost identical for the two extreme
+cases of plug and parabolic flow profiles.  Wasan's first contention is
+incorrect: the no-slip condition is only inconsistent with the conservation
+of species and a finite mass transfer rate if
+the gas is assumed to be stationary;
+a simple assumption, but one with no physical basis.
+
+<P>
+The effect of the no-slip condition in the Stefan diffusion tube was later
+studied in more detail by Meyer and Kostin (1975),
+Markham and Rosenberger (1980), and Greenwell, Markham and Rosenberger (1981),
+as reviewed in &#167;&#167;<A HREF="node37.html#sec:LR_meyeK75">3.2.2</A> - <A HREF="node39.html#sec:LR_greeMR81">3.2.4</A>.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html833"
+  HREF="node37.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html829"
+  HREF="node35.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html823"
+  HREF="node35.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html831"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html834"
+  HREF="node37.html">Meyer and Kostin (1975)</A>
+<B> Up:</B> <A NAME="tex2html830"
+  HREF="node35.html">The Stefan diffusion tube</A>
+<B> Previous:</B> <A NAME="tex2html824"
+  HREF="node35.html">The Stefan diffusion tube</A>
+ &nbsp <B>  <A NAME="tex2html832"
+  HREF="node2.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Geordie McBain
+2001-01-27
+</ADDRESS>
+</BODY>
+</HTML>

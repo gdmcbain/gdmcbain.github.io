@@ -1,0 +1,798 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.47)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Extrema of advected scalars</TITLE>
+<META NAME="description" CONTENT="Extrema of advected scalars">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="thesis.css">
+
+<LINK REL="next" HREF="node31.html">
+<LINK REL="previous" HREF="node29.html">
+<LINK REL="up" HREF="node29.html">
+<LINK REL="next" HREF="node31.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html729"
+  HREF="node31.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html725"
+  HREF="node29.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html719"
+  HREF="node29.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html727"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html730"
+  HREF="node31.html">The nonexistence of hydrostatic</A>
+<B> Up:</B> <A NAME="tex2html726"
+  HREF="node29.html">Some properties of the</A>
+<B> Previous:</B> <A NAME="tex2html720"
+  HREF="node29.html">Some properties of the</A>
+ &nbsp <B>  <A NAME="tex2html728"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00861000000000000000"></A>
+<A NAME="sec:BE_Eas"></A>
+<BR>
+Extrema of advected scalars
+</H2>
+
+<P>
+That no temperature field, being a
+solution of the steady-state energy equation (<A HREF="node24.html#eqn:energy">2.55</A>), 
+can possess a strong
+relative maximum or minimum at an interior point of its domain of existence
+follows from the essential elliptic nature of the equation and the absence
+of sources or sinks.
+
+<P>
+<P>
+<DIV><B>Theorem  1</B> (Nonexistence of extrema of advected scalars)  &nbsp; 
+ 
+If a scalar field, <IMG
+ WIDTH="14" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img67.png"
+ ALT="$s$">, is a regular solution of the steady-state
+advection-diffusion
+equation 
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\mbox{\boldmath$\nabla$}\cdot [-\mathsf{A}\cdot\mbox{\boldmath$\nabla$}s+\sum_{i=1}^N h_{(i)}(s)\mathbf{v}_{(i)}]=0
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="eqn:SSAD"></A><IMG
+ WIDTH="270" HEIGHT="60" BORDER="0"
+ SRC="img311.png"
+ ALT="\begin{displaymath}
+\mbox{\boldmath$\nabla$}\cdot [-\mathsf{A}\cdot\mbox{\boldmath$\nabla$}s+\sum_{i=1}^N h_{(i)}(s)\mathbf{v}_{(i)}]=0
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.76)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+in some domain for some scalar functions <IMG
+ WIDTH="31" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img312.png"
+ ALT="$h_{(i)}$">,
+solendoidal vector fields, <!-- MATH
+ $\mathbf{v}_{(i)}$
+ -->
+<IMG
+ WIDTH="32" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img313.png"
+ ALT="$\mathbf{v}_{(i)}$">, and symmetric, positive
+definite tensor field, <IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img14.png"
+ ALT="$\mathsf{A}$">; all continuously differentiable; 
+then there are no interior strong relative extrema of <IMG
+ WIDTH="14" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img67.png"
+ ALT="$s$">.
+<A NAME="thm:Neas"></A></DIV><P></P>
+
+<P>
+<I>Proof:</I> 
+The idea for this proof, suggested by Prof. Bob Street 
+(1999, pers. comm., 4 Feb.), is to recast the equation in quasilinear 
+elliptic form, for which the result is known.  
+
+<P>
+Carrying out the divergence,
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\textsf{A}\raisebox{0.4ex}{\textbf{:}}\mbox{\boldmath$\nabla$}(\mbox{\boldmath$\nabla$}s)+(\mbox{\boldmath$\nabla$}\cdot \mathsf{A})\cdot\mbox{\boldmath$\nabla$}s -
+	\sum_{i=1}^N \mathbf{v}_{(i)}\cdot h'_{(i)}(s)\mbox{\boldmath$\nabla$}s =0
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="403" HEIGHT="60" BORDER="0"
+ SRC="img314.png"
+ ALT="\begin{displaymath}
+\textsf{A}\raisebox{0.4ex}{\textbf{:}}\mbox{\boldmath$\nabla...
+... \mathbf{v}_{(i)}\cdot h'_{(i)}(s)\mbox{\boldmath$\nabla$}s =0
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.77)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+or
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\mathsf{A}\raisebox{0.4ex}{\textbf{:}}\mbox{\boldmath$\nabla$}(\mbox{\boldmath$\nabla$}s)+\mathbf{v}\cdot\mbox{\boldmath$\nabla$}s=0
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="188" HEIGHT="45" BORDER="0"
+ SRC="img315.png"
+ ALT="\begin{displaymath}
+\mathsf{A}\raisebox{0.4ex}{\textbf{:}}\mbox{\boldmath$\nabla...
+...boldmath$\nabla$}s)+\mathbf{v}\cdot\mbox{\boldmath$\nabla$}s=0
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.78)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+where
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\mathbf{v}\equiv\mbox{\boldmath$\nabla$}\cdot \mathsf{A}-\sum_{i=1}^N h'_{(i)}(s)\mathbf{v}_{(i)}.
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="213" HEIGHT="60" BORDER="0"
+ SRC="img316.png"
+ ALT="\begin{displaymath}
+\mathbf{v}\equiv\mbox{\boldmath$\nabla$}\cdot \mathsf{A}-\sum_{i=1}^N h'_{(i)}(s)\mathbf{v}_{(i)}.
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.79)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+In Cartesian tensor notation with the summation
+convention in force, this is 
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+A_{jk}s_{,jk} + v_{j}s_{,j}=0,
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="153" HEIGHT="45" BORDER="0"
+ SRC="img317.png"
+ ALT="\begin{displaymath}
+A_{jk}s_{,jk} + v_{j}s_{,j}=0,
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.80)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+which is of the form for which Hopf's Maximum Principle is shown to hold in
+treatises on partial differential equations
+(Courant &amp; Hilbert 1962, pp.&nbsp;320-8;
+Garabedian 1964, pp.&nbsp;227-38).<IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img124.png"
+ ALT="$\Box$">
+<P><P>
+<BR>
+
+<P>
+<I>Alternative Proof:</I> 
+I offer here an original and quite different proof which
+I hope, by avoiding
+the artifice of a comparison function and using vectorial concepts rather
+than a general calculus of several variables, 
+is more conducive to physical intuition.  The use of vectors also ensures
+that the result is not tied to any particular coordinate system.
+The reader uncomfortable with a
+tensorial diffusivity may replace <!-- MATH
+ $\textsf{A}\cdot\mbox{\boldmath$\nabla$}s$
+ -->
+<IMG
+ WIDTH="58" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img318.png"
+ ALT="$\textsf{A}\cdot\mbox{\boldmath$\nabla$}s$"> by <!-- MATH
+ $A\mbox{\boldmath$\nabla$}s$
+ -->
+<IMG
+ WIDTH="46" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img319.png"
+ ALT="$A\mbox{\boldmath$\nabla$}s$">
+wherever it appears; this is the special case of isotropy.
+
+<P>
+The proof is by contradiction: assume that there does exist an
+interior relative extremum.  For definiteness, and without loss of
+generality, take this to be a minimum.
+
+<P>
+Construct a family of rays originating at the minimum and terminating when
+they encounter either:
+<DL COMPACT>
+<DT>(i)</DT>
+<DD>a boundary point of the domain; or
+</DD>
+<DT>(ii)</DT>
+<DD>a stationary point, with respect to the ray, of <IMG
+ WIDTH="14" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img67.png"
+ ALT="$s$">; i.e. <!-- MATH
+ $\mbox{\boldmath$\hat{r}$}\cdot\mbox{\boldmath$\nabla$}s=0$
+ -->
+<IMG
+ WIDTH="91" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img320.png"
+ ALT="$\mbox{\boldmath$\hat{r}$}\cdot\mbox{\boldmath$\nabla$}s=0$">, where <IMG
+ WIDTH="14" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img321.png"
+ ALT="$\hat{r}$"> is the unit radial vector from the
+minimum.
+</DD>
+</DL>
+
+<P>
+Except at the origin, and possibly the rays' termini, <IMG
+ WIDTH="14" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img67.png"
+ ALT="$s$"> is strictly
+increasing along the rays:
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\mbox{\boldmath$\hat{r}$}\cdot\mbox{\boldmath$\nabla$}s> 0,
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="eqn:rdotgrads_positive"></A><IMG
+ WIDTH="91" HEIGHT="44" BORDER="0"
+ SRC="img322.png"
+ ALT="\begin{displaymath}
+\mbox{\boldmath$\hat{r}$}\cdot\mbox{\boldmath$\nabla$}s&gt; 0,
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.81)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+by the definitions of a minimum and the rays (ii).
+Choose a value <IMG
+ WIDTH="21" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img323.png"
+ ALT="$s_1$"> of <IMG
+ WIDTH="14" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img67.png"
+ ALT="$s$"> between that at the minimum and the least of those
+at the rays' termini.  
+Let <IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img66.png"
+ ALT="$S$"> be the set of points with <IMG
+ WIDTH="55" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img324.png"
+ ALT="$s=s_1$"> passed through by the rays.
+
+<P>
+Each ray intersects <IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img66.png"
+ ALT="$S$"> exactly once, and, since <IMG
+ WIDTH="14" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img67.png"
+ ALT="$s$"> possesses at least two
+continuous spatial derivatives (Gresho 1988), 
+<IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img66.png"
+ ALT="$S$"> is closed and smooth enough to have a well-defined unit outward normal,
+<IMG
+ WIDTH="16" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img45.png"
+ ALT="$\hat{n}$">.
+No ray is tangent to <IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img66.png"
+ ALT="$S$">, since then the ray should have terminated, by (ii);
+thus,
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\mbox{\boldmath$\hat{r}$}\cdot\mbox{\boldmath$\hat{n}$}> 0.
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="eqn:rdotn_positive"></A><IMG
+ WIDTH="77" HEIGHT="40" BORDER="0"
+ SRC="img325.png"
+ ALT="\begin{displaymath}
+\mbox{\boldmath$\hat{r}$}\cdot\mbox{\boldmath$\hat{n}$}&gt; 0.
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.82)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+
+<P>
+Now, by definition of the vector triple product,
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\mbox{\boldmath$\hat{r}$}\times(\mbox{\boldmath$\hat{n}$}\times\mbox{\boldmath$\nabla$}s) = (\mbox{\boldmath$\hat{r}$}\cdot\mbox{\boldmath$\nabla$}s)\mbox{\boldmath$\hat{n}$}
+			- (\mbox{\boldmath$\hat{r}$}\cdot\mbox{\boldmath$\hat{n}$})\mbox{\boldmath$\nabla$}s,
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="325" HEIGHT="45" BORDER="0"
+ SRC="img326.png"
+ ALT="\begin{displaymath}
+\mbox{\boldmath$\hat{r}$}\times(\mbox{\boldmath$\hat{n}$}\ti...
+...{r}$}\cdot\mbox{\boldmath$\hat{n}$})\mbox{\boldmath$\nabla$}s,
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.83)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+but <!-- MATH
+ $\mbox{\boldmath$\hat{n}$}\times\mbox{\boldmath$\nabla$}s=0$
+ -->
+<IMG
+ WIDTH="103" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img327.png"
+ ALT="$\mbox{\boldmath$\hat{n}$}\times\mbox{\boldmath$\nabla$}s=0$">, since the normal of a level surface
+is parallel to the gradient; therefore,
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\mbox{\boldmath$\hat{n}$}\cdot(\textsf{A}\cdot\mbox{\boldmath$\nabla$}s) = 
+	\frac{(\mbox{\boldmath$\hat{r}$}\cdot\mbox{\boldmath$\hat{n}$})}{(\mbox{\boldmath$\hat{r}$}\cdot\mbox{\boldmath$\nabla$}s)}
+			\mbox{\boldmath$\nabla$}s\cdot(\textsf{A}\cdot\mbox{\boldmath$\nabla$}s) > 0
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="eqn:ndotAdotgrads_positive"></A><IMG
+ WIDTH="334" HEIGHT="58" BORDER="0"
+ SRC="img328.png"
+ ALT="\begin{displaymath}
+\mbox{\boldmath$\hat{n}$}\cdot(\textsf{A}\cdot\mbox{\boldmat...
+...h$\nabla$}s\cdot(\textsf{A}\cdot\mbox{\boldmath$\nabla$}s) &gt; 0
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.84)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+by (<A HREF="node30.html#eqn:rdotgrads_positive">2.81</A>), (<A HREF="node30.html#eqn:rdotn_positive">2.82</A>) and since
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img329.png"
+ ALT="$\textsf{A}$"> is positive definite.
+
+<P>
+Integrate the steady-state advection-diffusion equation (<A HREF="node30.html#eqn:SSAD">2.76</A>)
+over the volume <IMG
+ WIDTH="20" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img22.png"
+ ALT="$V$"> enclosed by <IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img66.png"
+ ALT="$S$">:
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\int\!\!\!\int\!\!\!\int _{V} \mbox{\boldmath$\nabla$}\cdot [-\textsf{A}\cdot\mbox{\boldmath$\nabla$}s
+	+\sum_{i=1}^N h_{(i)}(s) \mathbf{v}_{(i)}] \,\mathrm{d}V.
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="308" HEIGHT="60" BORDER="0"
+ SRC="img330.png"
+ ALT="\begin{displaymath}
+\int\!\!\!\int\!\!\!\int _{V} \mbox{\boldmath$\nabla$}\cdot ...
+...$}s
++\sum_{i=1}^N h_{(i)}(s) \mathbf{v}_{(i)}] \,\mathrm{d}V.
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.85)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+Applying the divergence theorem gives:
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\sum_{i=1}^N\int\!\!\!\int _S \mbox{\boldmath$\hat{n}$}\cdot h_{(i)}(s) \mathbf{v}_{(i)} \,\mathrm{d}S =
+	\int\!\!\!\int _S \mbox{\boldmath$\hat{n}$}\cdot\mathsf{A}\cdot\mbox{\boldmath$\nabla$}s\,\mathrm{d}S,
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="354" HEIGHT="60" BORDER="0"
+ SRC="img331.png"
+ ALT="\begin{displaymath}
+\sum_{i=1}^N\int\!\!\!\int _S \mbox{\boldmath$\hat{n}$}\cdot...
+...}$}\cdot\mathsf{A}\cdot\mbox{\boldmath$\nabla$}s\,\mathrm{d}S,
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.86)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+of which the right hand side is positive by (<A HREF="node30.html#eqn:ndotAdotgrads_positive">2.84</A>).
+The left hand side, however, vanishes;
+<BR>
+<DIV ALIGN="CENTER">
+
+<!-- MATH
+ \begin{eqnarray}
+\int\!\!\!\int _S \mbox{\boldmath$\hat{n}$}\cdot h_{(i)}(s)\mathbf{v}_{(i)} \,\mathrm{d}S &=&
+	h_{(i)}(s_1)\int\!\!\!\int _S \mbox{\boldmath$\hat{n}$}\cdot\mathbf{v}_{(i)} \,\mathrm{d}S\\
+&=& h_{(i)}(s_1)\int\!\!\!\int\!\!\!\int _V \mbox{\boldmath$\nabla$}\cdot\mathbf{v}_{(i)} \,\mathrm{d}V=0;
+\end{eqnarray}
+ -->
+<TABLE ALIGN="CENTER" CELLPADDING="0" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="167" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img332.png"
+ ALT="$\displaystyle \int\!\!\!\int _S \mbox{\boldmath$\hat{n}$}\cdot h_{(i)}(s)\mathbf{v}_{(i)} \,\mathrm{d}S$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="178" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img333.png"
+ ALT="$\displaystyle h_{(i)}(s_1)\int\!\!\!\int _S \mbox{\boldmath$\hat{n}$}\cdot\mathbf{v}_{(i)} \,\mathrm{d}S$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.87)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="236" HEIGHT="53" ALIGN="MIDDLE" BORDER="0"
+ SRC="img334.png"
+ ALT="$\displaystyle h_{(i)}(s_1)\int\!\!\!\int\!\!\!\int _V \mbox{\boldmath$\nabla$}\cdot\mathbf{v}_{(i)} \,\mathrm{d}V=0;$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.88)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+by virtue of the hypotheses on the <!-- MATH
+ $\mathbf{v}_{(i)}$
+ -->
+<IMG
+ WIDTH="32" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img313.png"
+ ALT="$\mathbf{v}_{(i)}$">.
+
+<P>
+This is a contradiction, so that the theorem is proved.<IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img124.png"
+ ALT="$\Box$">
+<P><P>
+<BR>
+
+<P>
+
+<P>
+<I>Notes:</I> 
+
+<UL>
+<LI>There would always be a net diffusion through a closed level surface
+surrounding a strong relative extremum, but the net advection would vanish.
+</LI>
+<LI>The application to the multicomponent energy equation is clear (cf. Bird et al. 1960, pp.&nbsp;561-6).  The variables <IMG
+ WIDTH="14" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img67.png"
+ ALT="$s$">, <IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img14.png"
+ ALT="$\mathsf{A}$">, <IMG
+ WIDTH="31" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img312.png"
+ ALT="$h_{(i)}$">
+and <!-- MATH
+ $\mathbf{v}_{(i)}$
+ -->
+<IMG
+ WIDTH="32" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img313.png"
+ ALT="$\mathbf{v}_{(i)}$"> are the temperature, (tensor) conductivity, partial
+specific enthalpies and absolute species fluxes, respectively.  The required
+assumption is that the partial specific enthalpies are independent
+of pressure and composition.
+</LI>
+<LI>Often, as in this project, the diffusivity is isotropic;
+i.e. a product of a (positive) scalar field and the Kronecker delta; and so is
+symmetric and positive definite, as required.
+</LI>
+<LI>The diffusivity and velocities can depend on <IMG
+ WIDTH="14" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img67.png"
+ ALT="$s$">, so that the equation
+is only quasilinear.  In the proof, <IMG
+ WIDTH="14" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img67.png"
+ ALT="$s$"> is assumed given, so that <IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img14.png"
+ ALT="$\mathsf{A}$">
+and the <!-- MATH
+ $\mathbf{v}_{(i)}$
+ -->
+<IMG
+ WIDTH="32" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img313.png"
+ ALT="$\mathbf{v}_{(i)}$"> can be re-expressed as functions of position.
+</LI>
+<LI>Completely analogous theorems hold in one and two dimensions. 
+</LI>
+<LI>In the special case <!-- MATH
+ $\mathbf{v}_{(i)}=\mathbf{0}$
+ -->
+<IMG
+ WIDTH="68" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img335.png"
+ ALT="$\mathbf{v}_{(i)}=\mathbf{0}$"> and 
+<!-- MATH
+ $A_{ij}=A\delta_{ij}$
+ -->
+<IMG
+ WIDTH="89" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img336.png"
+ ALT="$A_{ij}=A\delta_{ij}$">, where <IMG
+ WIDTH="19" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img141.png"
+ ALT="$A$"> is a constant,
+the steady-state advection-diffusion equation (<A HREF="node30.html#eqn:SSAD">2.76</A>) 
+reduces to Laplace's equation, for which the
+corresponding result is classical (Lamb 1932, p.&nbsp;39).
+</LI>
+<LI>The species (<A HREF="node24.html#eqn:species">2.53</A>) and energy (<A HREF="node24.html#eqn:energy">2.55</A>) equations
+both fall under the hypotheses of the theorem.
+
+<UL>
+<LI>For (<A HREF="node24.html#eqn:species">2.53</A>), take
+	<IMG
+ WIDTH="55" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img337.png"
+ ALT="$s=m$">, <!-- MATH
+ $A_{ij}=\delta_{ij}$
+ -->
+<IMG
+ WIDTH="75" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img338.png"
+ ALT="$A_{ij}=\delta_{ij}$">, <IMG
+ WIDTH="56" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img339.png"
+ ALT="$N=1$">, <!-- MATH
+ $h_{(1)}(m)=\mbox{\textit{Sc}}\;m$
+ -->
+<IMG
+ WIDTH="131" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img340.png"
+ ALT="$h_{(1)}(m)=\mbox{\textit{Sc}}\;m$">
+	and <!-- MATH
+ $\mathbf{v}_{(1)}=\mbox{\textit{Gr}}(1+N)\;\mathbf{u}$
+ -->
+<IMG
+ WIDTH="165" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img341.png"
+ ALT="$\mathbf{v}_{(1)}=\mbox{\textit{Gr}}(1+N)\;\mathbf{u}$">.  The hypothesis on
+	<!-- MATH
+ $\mathbf{v}_{(1)}$
+ -->
+<IMG
+ WIDTH="34" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img342.png"
+ ALT="$\mathbf{v}_{(1)}$"> follows from (<A HREF="node24.html#eqn:continuity">2.52</A>).
+</LI>
+<LI>For (<A HREF="node24.html#eqn:energy">2.55</A>), take <IMG
+ WIDTH="52" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img343.png"
+ ALT="$s=T$">, <!-- MATH
+ $A_{ij}=\delta_{ij}$
+ -->
+<IMG
+ WIDTH="75" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img338.png"
+ ALT="$A_{ij}=\delta_{ij}$">, 
+		<IMG
+ WIDTH="56" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img344.png"
+ ALT="$N=2$"> and
+	<BR>
+<DIV ALIGN="CENTER">
+
+<!-- MATH
+ \begin{eqnarray}
+h_{(1)}(T)&=&\mbox{\textit{Pr}}_r T,\\
+	\mathbf{v}_{(1)} & = & \mbox{\textit{Gr}}(1+N)\;\mathbf{u},\\
+	h_{(2)}(T) & = & \frac{\mbox{\textit{Pr}}_r}{\mbox{\textit{Sc}}}\left(1-\mathrm{e}^{-\varPhi }\right)T,
+		\quad\mbox{and}\\
+	\mathbf{v}_{(2)} & = & \mbox{\textit{Gr}}(1+N)\mbox{\textit{Sc}}\;m\;\mathbf{u}-\mbox{\boldmath$\nabla$}m.
+\end{eqnarray}
+ -->
+<TABLE ALIGN="CENTER" CELLPADDING="0" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="62" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img345.png"
+ ALT="$\displaystyle h_{(1)}(T)$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="52" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img346.png"
+ ALT="$\displaystyle \mbox{\textit{Pr}}_r T,$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.89)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="34" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img347.png"
+ ALT="$\displaystyle \mathbf{v}_{(1)}$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="115" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img348.png"
+ ALT="$\displaystyle \mbox{\textit{Gr}}(1+N)\;\mathbf{u},$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.90)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="62" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img349.png"
+ ALT="$\displaystyle h_{(2)}(T)$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="195" HEIGHT="60" ALIGN="MIDDLE" BORDER="0"
+ SRC="img350.png"
+ ALT="$\displaystyle \frac{\mbox{\textit{Pr}}_r}{\mbox{\textit{Sc}}}\left(1-\mathrm{e}^{-\varPhi }\right)T,
+\quad\mbox{and}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.91)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="34" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img351.png"
+ ALT="$\displaystyle \mathbf{v}_{(2)}$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="215" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img352.png"
+ ALT="$\displaystyle \mbox{\textit{Gr}}(1+N)\mbox{\textit{Sc}}\;m\;\mathbf{u}-\mbox{\boldmath$\nabla$}m.$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.92)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+The hypotheses on the <!-- MATH
+ $\mathbf{v}_{(i)}$
+ -->
+<IMG
+ WIDTH="32" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img313.png"
+ ALT="$\mathbf{v}_{(i)}$"> follow from the equations
+	of continuity of the mixture (<A HREF="node24.html#eqn:continuity">2.52</A>) and the vapour
+	(<A HREF="node24.html#eqn:species">2.53</A>).
+	
+</LI>
+</UL>
+</LI>
+<LI>Thus, no extrema of vapour mass fraction or temperature are expected
+in the solutions of our system of equations (<A HREF="node24.html#eqn:continuity">2.52</A>)-(<A HREF="node24.html#eqn:energy">2.55</A>), and one can
+conclude that the temperature minimum discovered by Weaver &amp; Viskanta
+(1991<I>a</I>;
+referred to in &#167;<A HREF="node18.html#sec:weavV91a_minimum">2.1.3</A>) was erroneous.
+</LI>
+<LI>Extrema might occur if there were source or sink terms in the equations, 
+such as if the vapour condensed in the domain; the Dufour effect were
+appreciable; or there were viscous heating.
+</LI>
+<LI>Extrema are
+of course possible in transient advection-diffusion, as for example they
+may be specified as part of the initial conditions.  I leave unanswered the
+question of whether strong local extrema can arise in the evolution of a scalar
+field; this was predicted in the two-dimensional
+numerical solutions of Bergman and Hyun (1996)  
+for the mass fraction of tin in a nonisothermal amalgam with lead.
+</LI>
+</UL>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html729"
+  HREF="node31.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html725"
+  HREF="node29.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html719"
+  HREF="node29.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html727"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html730"
+  HREF="node31.html">The nonexistence of hydrostatic</A>
+<B> Up:</B> <A NAME="tex2html726"
+  HREF="node29.html">Some properties of the</A>
+<B> Previous:</B> <A NAME="tex2html720"
+  HREF="node29.html">Some properties of the</A>
+ &nbsp <B>  <A NAME="tex2html728"
+  HREF="node2.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Geordie McBain
+2001-01-27
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,201 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.47)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>The Floor and the Ceiling</TITLE>
+<META NAME="description" CONTENT="The Floor and the Ceiling">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="thesis.css">
+
+<LINK REL="next" HREF="node92.html">
+<LINK REL="previous" HREF="node62.html">
+<LINK REL="up" HREF="thesis.html">
+<LINK REL="next" HREF="node75.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1311"
+  HREF="node75.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1307"
+  HREF="thesis.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1301"
+  HREF="node73.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1309"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1312"
+  HREF="node75.html">Vapour transport in Fastflo</A>
+<B> Up:</B> <A NAME="tex2html1308"
+  HREF="thesis.html">Vapour transport across gas-filled</A>
+<B> Previous:</B> <A NAME="tex2html1302"
+  HREF="node73.html">Conclusions</A>
+ &nbsp <B>  <A NAME="tex2html1310"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION001100000000000000000"></A>
+<A NAME="ch:FC"></A>
+<BR>
+The Floor and the Ceiling
+</H1>
+
+<P>
+I<SMALL>N CHAPTER</SMALL>&nbsp;<A HREF="node62.html#ch:NCL">4</A>, the equations of gas-vapour
+transport were solved
+for one of the simplest geometries possible: the infinite vertical channel.
+The usefulness of this solution is limited, of course, by the fact that
+real cavities are not infinitely tall; they have floors and ceilings.
+The question here is whether the narrow cavity limiting solution can in fact
+describe the behaviour of a gas-vapour mixture in a finitely tall cavity,
+sufficiently far from the floor or ceiling, and in particular, how narrow
+the cavity must be for this description to be adequate.  In this chapter,
+numerical methods and solutions for the floor and ceiling problems are
+explained.  The assumption of two-dimensionality is retained.  The
+two-dimensional domain is illustrated in figure&nbsp;<A HREF="node74.html#fig:FC_geombcs">5.1</A>.
+
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="fig:FC_geombcs"></A><A NAME="7239"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 5.1:</STRONG>
+Geometry and boundary conditions for the <I>Fastflo</I> solutions.</CAPTION>
+<TR><TD><IMG
+ WIDTH="236" HEIGHT="424" BORDER="0"
+ SRC="img620.png"
+ ALT="\begin{figure}\centering\setlength{\unitlength}{1mm}\begin{picture}(82,93)(-16,-...
+...}{\partial y} = \frac{\partial m}{\partial y} = 0\;$}}
+\end{picture}\end{figure}"></TD></TR>
+</TABLE>
+</DIV><P></P>
+
+<P>
+As pointed out in &#167;<A HREF="node71.html#sec:NCL_Cfr">4.6.1</A>, the full equations--or at least 
+those of &#167;<A HREF="node64.html#sec:NCL_2De">4.2</A>--must be solved
+in the floor and ceiling regions; the terms inversely proportional to
+positive integral powers of
+the vertical length scale, <IMG
+ WIDTH="20" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img13.png"
+ ALT="$\mathcal A$">, can no longer be ignored.  This greatly
+increases the difficulty of the problem--in particular, the equations are
+now nonlinear and strongly coupled--so necessitating a numerical approach.
+A significant hydrodynamical difficulty in solving these equations is that the
+boundary condition on the velocity at a mass transfer interface
+(<A HREF="node25.html#bc:transpiration">2.59</A>) depends on the unknown composition gradient.
+The flexibility of the finite element package <I>Fastflo</I> (CSIRO 1997)
+ makes it well suited to the solution of this class of problems.
+
+<P>
+The first part of this
+chapter (&#167;&#167;<A HREF="node75.html#sec:FC_Mvtf">5.1</A> - <A HREF="node85.html#sec:FC_Cuf">5.3</A>) is devoted to the
+development of a numerical method for solving the basic equations of
+vapour transport, after which it is used used to investigate the problem
+raised in &#167;<A HREF="node71.html#sec:NCL_Cfr">4.6.1</A>: the floor and ceiling regions.
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html1313"
+  HREF="node75.html">Vapour transport in <I>Fastflo</I></A>
+<UL>
+<LI><A NAME="tex2html1314"
+  HREF="node76.html">Continuum model</A>
+<LI><A NAME="tex2html1315"
+  HREF="node77.html">The interfacial velocity</A>
+<LI><A NAME="tex2html1316"
+  HREF="node78.html">Augmented Lagrangian algorithm</A>
+<LI><A NAME="tex2html1317"
+  HREF="node79.html">Implementation of unusual terms</A>
+<LI><A NAME="tex2html1318"
+  HREF="node80.html">The finite element mesh</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html1319"
+  HREF="node81.html">Results</A>
+<UL>
+<LI><A NAME="tex2html1320"
+  HREF="node82.html">Grid independence</A>
+<LI><A NAME="tex2html1321"
+  HREF="node83.html">Postprocessing</A>
+<LI><A NAME="tex2html1322"
+  HREF="node84.html">Overall transfer rates</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html1323"
+  HREF="node85.html">Conclusions on the use of <I>Fastflo</I></A>
+<LI><A NAME="tex2html1324"
+  HREF="node86.html">The floor and ceiling problems</A>
+<UL>
+<LI><A NAME="tex2html1325"
+  HREF="node87.html">The fully developed solution</A>
+<LI><A NAME="tex2html1326"
+  HREF="node88.html">Numerical solutions</A>
+</UL>
+<BR>
+<LI><A NAME="tex2html1327"
+  HREF="node89.html">The conduction-diffusion regime</A>
+<LI><A NAME="tex2html1328"
+  HREF="node90.html">A possible analytical approach</A>
+<LI><A NAME="tex2html1329"
+  HREF="node91.html">Conclusions</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1311"
+  HREF="node75.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1307"
+  HREF="thesis.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1301"
+  HREF="node73.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1309"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1312"
+  HREF="node75.html">Vapour transport in Fastflo</A>
+<B> Up:</B> <A NAME="tex2html1308"
+  HREF="thesis.html">Vapour transport across gas-filled</A>
+<B> Previous:</B> <A NAME="tex2html1302"
+  HREF="node73.html">Conclusions</A>
+ &nbsp <B>  <A NAME="tex2html1310"
+  HREF="node2.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Geordie McBain
+2001-01-27
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,225 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.47)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>The finite element mesh</TITLE>
+<META NAME="description" CONTENT="The finite element mesh">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="thesis.css">
+
+<LINK REL="previous" HREF="node79.html">
+<LINK REL="up" HREF="node75.html">
+<LINK REL="next" HREF="node81.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1403"
+  HREF="node81.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1399"
+  HREF="node75.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1395"
+  HREF="node79.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1401"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1404"
+  HREF="node81.html">Results</A>
+<B> Up:</B> <A NAME="tex2html1400"
+  HREF="node75.html">Vapour transport in Fastflo</A>
+<B> Previous:</B> <A NAME="tex2html1396"
+  HREF="node79.html">Implementation of unusual terms</A>
+ &nbsp <B>  <A NAME="tex2html1402"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001115000000000000000"></A>
+<A NAME="sec:FC_Fem"></A>
+<BR>
+The finite element mesh
+</H2>
+
+<P>
+<I>Fastflo</I> has two mesh generators for rectangular domains.
+The first, a C program called <code>unit.c</code>,
+uses a square grid (thereby limiting the domain aspect ratio to
+the quotient of two integers) and the second, a built-in, creates an
+unstructured grid from triangular elements.
+Neither of these is particularly satisfactory 
+since a graded structured quadrilateral mesh is preferred for
+rectangular cavity flows (Cleary 1995<I>b</I>).
+The square mesh generator is
+easily adapted though, by simple stretching of the nodal coordinates
+while preserving connectivity.  This could be achieved in <EM>Fasttalk</EM>, the language of <I>Fastflo</I>, or, as the mesh data file consists
+of simply formatted ascii, with a short C program.  Here, <code>unit.c</code> was
+modified to include the stretching function recommended (originally for finite
+difference grids) by Vinokur (1983):
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+x = \frac{1}{2} \left\{ 1+\frac{\tanh
+	\left[ s
+		\left( \frac{x'}{l'} - \frac{1}{2}
+		\right)
+	\right] }{\tanh \frac{s}{2}} \right\},
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="261" HEIGHT="66" BORDER="0"
+ SRC="img630.png"
+ ALT="\begin{displaymath}
+x = \frac{1}{2} \left\{ 1+\frac{\tanh
+\left[ s
+\left( \fra...
+...- \frac{1}{2}
+\right)
+\right] }{\tanh \frac{s}{2}} \right\},
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(5.5)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+where <IMG
+ WIDTH="20" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img631.png"
+ ALT="$x'$"> and <IMG
+ WIDTH="15" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img632.png"
+ ALT="$l'$"> are the nodal coordinate and domain dimension of the
+unstretched mesh and <IMG
+ WIDTH="14" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img67.png"
+ ALT="$s$"> is the stretching factor.  The function can be
+applied with different values of <IMG
+ WIDTH="14" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img67.png"
+ ALT="$s$"> to each of the coordinates, <IMG
+ WIDTH="15" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img80.png"
+ ALT="$x$"> and
+<IMG
+ WIDTH="15" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img82.png"
+ ALT="$y$"> (the values of <IMG
+ WIDTH="15" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img82.png"
+ ALT="$y$"> being afterwards multiplied by <IMG
+ WIDTH="20" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img13.png"
+ ALT="$\mathcal A$">).  The function is
+plotted for various values of <IMG
+ WIDTH="14" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img67.png"
+ ALT="$s$"> in figure&nbsp;<A HREF="node80.html#fig:vnkr">5.2</A>.
+
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="fig:vnkr"></A><A NAME="7336"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 5.2:</STRONG>
+Vinokur's (1983) symmetric stretching function.</CAPTION>
+<TR><TD><IMG
+ WIDTH="411" HEIGHT="411" BORDER="0"
+ SRC="img633.png"
+ ALT="\begin{figure}\centering\setlength{\unitlength}{1mm}\begin{picture}(100,87)
+% pu...
+...(0,0)[l]\{1\}\}
+% put(55,38)\{ makebox(0,0)\{$s=0$\}\}
+\end{picture}\end{figure}"></TD></TR>
+</TABLE>
+</DIV><P></P>
+The advantage of a nonuniform grid in this problem is that the mass fraction
+gradients near the vertical walls can be calculated more accurately with
+smaller elements, while a lesser number of elements overall is obtained
+by using larger elements in the core.  Further, a very fine mesh can be
+used near the corners, where the velocity boundary conditions are
+singular--a problem first described by Jhaveri et al. 
+(1981; &#167;<A HREF="node45.html#sec:LR_jhavMR81">3.3.3</A>), who also prescribed this
+remedy.  An example of a mesh created by such a procedure is shown in
+figure&nbsp;<A HREF="node80.html#fig:mesh">5.3</A>.
+
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="fig:mesh"></A><A NAME="7344"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 5.3:</STRONG>
+A 16<IMG
+ WIDTH="20" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img626.png"
+ ALT="$\times$">16 mesh for a domain of aspect ratio <!-- MATH
+ $\mbox{$\mathcal A$}=5$
+ -->
+<IMG
+ WIDTH="54" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img634.png"
+ ALT="$\mbox{$\mathcal A$}=5$"> 
+with stretching factor <IMG
+ WIDTH="48" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img635.png"
+ ALT="$s=2$"> in both directions.</CAPTION>
+<TR><TD><IMG
+ WIDTH="82" HEIGHT="405" BORDER="0"
+ SRC="img636.png"
+ ALT="\begin{figure}\centering\epsfig{file=mesh.ps, height=90mm, clip=, bbllx=52, bblly=132,
+bburx=152, bbury=613}\end{figure}"></TD></TR>
+</TABLE>
+</DIV><P></P>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1403"
+  HREF="node81.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1399"
+  HREF="node75.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1395"
+  HREF="node79.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1401"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1404"
+  HREF="node81.html">Results</A>
+<B> Up:</B> <A NAME="tex2html1400"
+  HREF="node75.html">Vapour transport in Fastflo</A>
+<B> Previous:</B> <A NAME="tex2html1396"
+  HREF="node79.html">Implementation of unusual terms</A>
+ &nbsp <B>  <A NAME="tex2html1402"
+  HREF="node2.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Geordie McBain
+2001-01-27
+</ADDRESS>
+</BODY>
+</HTML>

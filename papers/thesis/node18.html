@@ -1,0 +1,250 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.47)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Possible difficulties with the energy equation</TITLE>
+<META NAME="description" CONTENT="Possible difficulties with the energy equation">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="thesis.css">
+
+<LINK REL="previous" HREF="node17.html">
+<LINK REL="up" HREF="node17.html">
+<LINK REL="next" HREF="node19.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html582"
+  HREF="node19.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html578"
+  HREF="node17.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html574"
+  HREF="node17.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html580"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html583"
+  HREF="node19.html">Boundary conditions</A>
+<B> Up:</B> <A NAME="tex2html579"
+  HREF="node17.html">The energy equation</A>
+<B> Previous:</B> <A NAME="tex2html575"
+  HREF="node17.html">The energy equation</A>
+ &nbsp <B>  <A NAME="tex2html581"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H3><A NAME="SECTION00813100000000000000"></A>
+<A NAME="sec:BE_Pdee"></A>
+<BR>
+Possible difficulties with the energy equation
+</H3>
+
+<P>
+It does not make sense to treat the mixture specific heat capacity,
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+c_p = c_{pB} + m_* (c_{pA}-c_{pB}),
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="eqn:cp"></A><IMG
+ WIDTH="209" HEIGHT="45" BORDER="0"
+ SRC="img196.png"
+ ALT="\begin{displaymath}
+c_p = c_{pB} + m_* (c_{pA}-c_{pB}),
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.17)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+as a constant in the bulk advection term
+if the interdiffusion term is included.  
+Two different difficulties would
+thereby arise, depending on whether it were treated as constant 
+before or after the divergence of the energy flux was taken.
+
+<P>
+In the first case, constant <IMG
+ WIDTH="20" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img197.png"
+ ALT="$c_p$"> in (<A HREF="node17.html#eqn:prim_e">2.15</A>), it is not possible to
+use the species equation (<A HREF="node14.html#eqn:prim_species_i.t.o.n">2.5</A>) 
+to simplify the energy
+equation and an additional term appears on the right hand side of
+(<A HREF="node17.html#eqn:prim_energy">2.16</A>):
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\rho D(c_{pA}-c_{pB})(T_*-T_{*r})\nabla^2_* m_*.
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="249" HEIGHT="45" BORDER="0"
+ SRC="img198.png"
+ ALT="\begin{displaymath}
+\rho D(c_{pA}-c_{pB})(T_*-T_{*r})\nabla^2_* m_*.
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.18)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+This would mean that the reference temperature, <IMG
+ WIDTH="30" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img199.png"
+ ALT="$T_{*r}$">, the datum for the
+enthalpies, would appear in the energy
+equation,  so that the temperature field would depend on a completely
+arbitrary quantity, which is obviously unphysical and unacceptable.
+
+<P>
+In the second case, constant <IMG
+ WIDTH="20" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img197.png"
+ ALT="$c_p$"> in (<A HREF="node17.html#eqn:prim_energy">2.16</A>), if one
+attempts to write the energy equation (<A HREF="node17.html#eqn:prim_energy">2.16</A>) in the
+form of a divergence (<A HREF="node17.html#eqn:prim_energy_i.t.o.e">2.11</A>), a spurious
+source term appears:
+<BR>
+<DIV ALIGN="CENTER">
+
+<!-- MATH
+ \begin{eqnarray}
+\mbox{\boldmath$\nabla$}_*\cdot\mathbf{e}_* & = & -\rho D(c_{pA}-c_{pB})T\nabla^2_* m_*
+\nonumber \\
+			  & = & (c_{pA}-c_{pB})T(\mbox{\boldmath$\nabla$}_*\cdot\mathbf{j}_*)
+\end{eqnarray}
+ -->
+<TABLE ALIGN="CENTER" CELLPADDING="0" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="62" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img200.png"
+ ALT="$\displaystyle \mbox{\boldmath$\nabla$}_*\cdot\mathbf{e}_*$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="196" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img201.png"
+ ALT="$\displaystyle -\rho D(c_{pA}-c_{pB})T\nabla^2_* m_*$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="177" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img202.png"
+ ALT="$\displaystyle (c_{pA}-c_{pB})T(\mbox{\boldmath$\nabla$}_*\cdot\mathbf{j}_*)$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.19)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+This would mean that energy was not conserved.  While the degree to which
+the conservation of energy
+(<A HREF="node17.html#eqn:prim_energy_i.t.o.e">2.11</A>) was violated might be small and within the
+limits of accuracy of the Boussinesq approximation, it is inconvenient for a 
+number of reasons.  
+For example, a global energy balance is often a useful check on the
+accuracy of an analytic or numerical solution (e.g. Incropera
+&amp; DeWitt 1990, p.&nbsp;198; de Vahl Davis 1983).  
+Further, it would be necessary to
+specify the method by which the overall energy transfer rate was calculated.
+
+<P>
+Most importantly, however, the order of approximation involved in a constant
+mixture specific heat is inconsistent with the inclusion of
+interdiffusion.  It should be clear by now--if not
+from the fundamental expression for the
+energy flux (<A HREF="node17.html#eqn:prim_e_basic">2.12</A>) then at least from the two
+possible errors
+exposed here--that the bulk advection of thermal energy and the interdiffusion
+of enthalpy are closely related.  Indeed, they are an often convenient but
+somewhat artificial way of repartitioning the thermal energy transported by
+each of the species present when they move.  
+
+<P>
+Another error was committed by myself (McBain 1995, 1997<I>b</I>) and
+Weaver and Viskanta (1991<I>a</I>): 
+allowing the mixture specific heat to vary, but excluding the
+interdiffusion term.  In the case of Weaver and Viskanta (1991<I>a</I>;
+discussed
+in &#167;<A HREF="node54.html#sec:LR_weavV91a">3.3.12</A>), this
+may have caused their prediction
+of a spatial minimum in the gas-vapour phase
+temperature; an impossibility (as proven in &#167;<A HREF="node30.html#sec:BE_Eas">2.6.1</A>)
+strongly suggestive of a spurious
+sink in the energy equation.  
+<A NAME="sec:weavV91a_minimum"></A>
+<P>
+In conclusion, the interdiffusion term
+should be included in the energy equation if, and only if, the mixture specific
+heat is treated as a function of the vapour mass fraction.  The question of
+when these should be included is taken up once the equations are
+nondimensionalized and some examples examined (ch.&nbsp;<A HREF="node92.html#ch:RA">6</A>).
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html582"
+  HREF="node19.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html578"
+  HREF="node17.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html574"
+  HREF="node17.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html580"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html583"
+  HREF="node19.html">Boundary conditions</A>
+<B> Up:</B> <A NAME="tex2html579"
+  HREF="node17.html">The energy equation</A>
+<B> Previous:</B> <A NAME="tex2html575"
+  HREF="node17.html">The energy equation</A>
+ &nbsp <B>  <A NAME="tex2html581"
+  HREF="node2.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Geordie McBain
+2001-01-27
+</ADDRESS>
+</BODY>
+</HTML>

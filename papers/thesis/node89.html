@@ -1,0 +1,508 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.47)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>The conduction-diffusion regime</TITLE>
+<META NAME="description" CONTENT="The conduction-diffusion regime">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="thesis.css">
+
+<LINK REL="next" HREF="node90.html">
+<LINK REL="previous" HREF="node86.html">
+<LINK REL="up" HREF="node74.html">
+<LINK REL="next" HREF="node90.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1512"
+  HREF="node90.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1508"
+  HREF="node74.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1502"
+  HREF="node88.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1510"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1513"
+  HREF="node90.html">A possible analytical approach</A>
+<B> Up:</B> <A NAME="tex2html1509"
+  HREF="node74.html">The Floor and the</A>
+<B> Previous:</B> <A NAME="tex2html1503"
+  HREF="node88.html">Numerical solutions</A>
+ &nbsp <B>  <A NAME="tex2html1511"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION001150000000000000000"></A>
+<A NAME="sec:FC_Cdr"></A>
+<BR>
+The conduction-diffusion regime
+</H1>
+
+<P>
+That the temperature and mass fraction are practically independent of
+height near <!-- MATH
+ $y=\mbox{$\mathcal A$}/2$
+ -->
+<IMG
+ WIDTH="74" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img448.png"
+ ALT="$y=\mbox{$\mathcal A$}/2$"> in the examples of 
+figure&nbsp;<A HREF="node88.html#fig:FC_conts">5.8</A>
+is qualitatively evident.  To quantify the extent of the
+fully developed region, and hence the existence or otherwise of the
+conduction-diffusion regime, the discrepancies
+between the finite element solution and the fully developed profiles
+(<A HREF="node66.html#soln:narrow_m">4.24</A>)-(<A HREF="node66.html#soln:narrow_T">4.26</A>), now subscripted with <IMG
+ WIDTH="24" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img134.png"
+ ALT="$\infty$">,
+are introduced:
+<BR>
+<DIV ALIGN="CENTER"><A NAME="def:mprime"></A><A NAME="def:uprime"></A><A NAME="def:vprime"></A><A NAME="def:pprime"></A><A NAME="def:Tprime"></A>
+<!-- MATH
+ \begin{eqnarray}
+m' & = & m - m_{\infty};\\
+u' & = & \frac{u-u_{\infty}}{\max |u|};\\
+v' & = & \frac{v-v_{\infty}}{\max |v|};\\
+\frac{\partial p'}{\partial y} & = & \frac{\frac{\partial p}{\partial y}-\frac{\,\mathrm{d}p_{\infty}}{\,\mathrm{d}y}}
+		{\frac{\,\mathrm{d}p_{\infty}}{\,\mathrm{d}y}};\\
+T' & = & T - T_{\infty}.\\
+\end{eqnarray}
+ -->
+<TABLE ALIGN="CENTER" CELLPADDING="0" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="26" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img677.png"
+ ALT="$\displaystyle m'$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="80" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img678.png"
+ ALT="$\displaystyle m - m_{\infty};$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(5.7)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="20" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img679.png"
+ ALT="$\displaystyle u'$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="73" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img680.png"
+ ALT="$\displaystyle \frac{u-u_{\infty}}{\max \vert u\vert};$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(5.8)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="19" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img681.png"
+ ALT="$\displaystyle v'$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="72" HEIGHT="56" ALIGN="MIDDLE" BORDER="0"
+ SRC="img682.png"
+ ALT="$\displaystyle \frac{v-v_{\infty}}{\max \vert v\vert};$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(5.9)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="33" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img683.png"
+ ALT="$\displaystyle \frac{\partial p'}{\partial y}$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="89" HEIGHT="74" ALIGN="MIDDLE" BORDER="0"
+ SRC="img684.png"
+ ALT="$\displaystyle \frac{\frac{\partial p}{\partial y}-\frac{\,\mathrm{d}p_{\infty}}{\,\mathrm{d}y}}
+{\frac{\,\mathrm{d}p_{\infty}}{\,\mathrm{d}y}};$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(5.10)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="23" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img685.png"
+ ALT="$\displaystyle T'$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="72" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img686.png"
+ ALT="$\displaystyle T - T_{\infty}.$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(5.11)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+The maxima in the definitions of the velocity component discrepancies,
+<IMG
+ WIDTH="20" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img687.png"
+ ALT="$u'$"> (<A HREF="node89.html#def:uprime">5.8</A>) and <IMG
+ WIDTH="19" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img688.png"
+ ALT="$v'$"> (<A HREF="node89.html#def:vprime">5.9</A>)
+are taken over the nodal values of the <I>Fastflo</I> solution.
+
+<P>
+Determination of the velocity profile,
+<IMG
+ WIDTH="28" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img689.png"
+ ALT="$v_{\infty}$">, from (<A HREF="node66.html#soln:narrow_v">4.27</A>), 
+requires evaluation of the integration constant <IMG
+ WIDTH="13" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img5.png"
+ ALT="$c$">.  Here,
+<IMG
+ WIDTH="13" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img5.png"
+ ALT="$c$"> was chosen so as to minimize the root-mean-square discrepancy 
+on the mid-height line, <!-- MATH
+ $y=\mbox{$\mathcal A$}/2$
+ -->
+<IMG
+ WIDTH="74" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img448.png"
+ ALT="$y=\mbox{$\mathcal A$}/2$">, using the 32 nodal values.  This
+value of <IMG
+ WIDTH="13" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img5.png"
+ ALT="$c$"> can then be checked against the numerical vertical
+pressure gradient via (<A HREF="node66.html#soln:narrow_p">4.28</A>) and (<A HREF="node89.html#def:pprime">5.10</A>).  
+Figure <A HREF="node89.html#fig:discs">5.9</A> plots the discrepancies for the same run as
+
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="fig:discs"></A><A NAME="7817"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 5.9:</STRONG>
+Discrepancies between the <I>Fastflo</I> and analytic solutions:
+(<I>a</I>)
+<IMG
+ WIDTH="20" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img687.png"
+ ALT="$u'$">, (<I>b</I>) <IMG
+ WIDTH="19" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img688.png"
+ ALT="$v'$">, (<I>c</I>) <IMG
+ WIDTH="23" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img644.png"
+ ALT="$T'$">, (<I>d</I>)  <IMG
+ WIDTH="26" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img690.png"
+ ALT="$m'$"> and 
+(<I>e</I>) <!-- MATH
+ $\partial p'/\partial y$
+ -->
+<IMG
+ WIDTH="60" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img691.png"
+ ALT="$\partial p'/\partial y$">.  
+Same run as figures&nbsp;<A HREF="node88.html#fig:FC_conts">5.8</A>(<I>d-f</I>).  
+Contours shown at <IMG
+ WIDTH="47" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img645.png"
+ ALT="$\pm1,2$"> and 5%, with
+signs marked by circled symbols.</CAPTION>
+<TR><TD><IMG
+ WIDTH="498" HEIGHT="429" BORDER="0"
+ SRC="img692.png"
+ ALT="\begin{figure}\begin{center}
+\epsfig{file=fig.discsi.eps, width=110mm}\end{center}\end{figure}"></TD></TR>
+</TABLE>
+</DIV><P></P>
+figures&nbsp;<A HREF="node88.html#fig:FC_conts">5.8</A>(<I>d-f</I>).
+
+<P>
+The obvious irregularity of the pressure field in
+figure&nbsp;<A HREF="node89.html#fig:discs">5.9</A>(<I>e</I>) is not unexpected, nor is it necessarily
+of purely numerical origin.  Pressure singularities were anticipated in the
+corners due to the multivalued boundary condition on <IMG
+ WIDTH="15" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img74.png"
+ ALT="$u$">
+(&#167;<A HREF="node45.html#sec:LR_jhavMR81">3.3.3</A>).  They do appear to have deleteriously affected
+large regions of the pressure solution, but the result in the fully developed
+zone accords with the analytic solution of chapter&nbsp;<A HREF="node62.html#ch:NCL">4</A>.
+
+<P>
+Since the discrepancies (<A HREF="node89.html#def:mprime">5.7</A>)-(<A HREF="node89.html#def:Tprime">5.11</A>) are less than
+1% for some continuous horizontal lines in each of 
+figures&nbsp;<A HREF="node89.html#fig:discs">5.9</A>(<I>a-e</I>),
+this set of parameters pertains to the
+conduction-diffusion regime.  The proportion of the height of the cavity
+between the end-zones is small, so that this case is near the limit
+of the regime.  To investigate this, <I>Fastflo</I> solutions were obtained for
+the same set of parameters except for the vertical aspect ratio, <IMG
+ WIDTH="20" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img13.png"
+ ALT="$\mathcal A$">, which
+was varied.  The temperature discrepancy, <IMG
+ WIDTH="23" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img644.png"
+ ALT="$T'$">, is plotted in
+figure&nbsp;<A HREF="node89.html#fig:A">5.10</A>.  These plots clearly reveal that the
+
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="fig:A"></A><A NAME="7824"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure:</STRONG>
+The effect of <IMG
+ WIDTH="20" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img13.png"
+ ALT="$\mathcal A$"> on the existence of the conduction-diffusion regime.  
+Temperature discrepancy levels as in figure&nbsp;<A HREF="node89.html#fig:discs">5.9</A>(<I>c</I>).
+<!-- MATH
+ $\mbox{\textit{Gr}},\,\mbox{\textit{Sc}},\,\mbox{\textit{Pr}}_r,\,\mbox{\textit{Pr}}_I,\,N$
+ -->
+<IMG
+ WIDTH="173" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img693.png"
+ ALT="$\mbox{\textit{Gr}},\,\mbox{\textit{Sc}},\,\mbox{\textit{Pr}}_r,\,\mbox{\textit{Pr}}_I,\,N$"> and <IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.png"
+ ALT="$\varPhi $"> as in
+figures&nbsp;<A HREF="node88.html#fig:FC_conts">5.8</A>(<I>d-f</I>).</CAPTION>
+<TR><TD><IMG
+ WIDTH="323" HEIGHT="407" BORDER="0"
+ SRC="img694.png"
+ ALT="\begin{figure}\centering\begin{picture}(82,90)(-56,0)
+\put(-54,0){\makebox(0,0)[...
+...ox(0,0)[tr]{\rotatebox{90}{$\mbox{$\mathcal A$}=10$}}}
+\end{picture}\end{figure}"></TD></TR>
+</TABLE>
+</DIV><P></P>
+conduction-diffusion regime can be destroyed simply by decreasing the vertical
+aspect ratio--the critical aspect ratio here being somewhere between 2
+and 5.  The idea, then, that the boundary of the regime could
+depend simply on a critical combined Grashof or Rayleigh number (based
+on the cavity width) is false.  Another interesting feature of
+figure&nbsp;<A HREF="node89.html#fig:A">5.10</A> is the similarity of the end-zones in the cavities of
+vertical aspect ratio 5 and 10.  This suggests that it
+may be possible to correlate the overall energy 
+transfer rates in a form analogous to that proposed by Batchelor (1954;
+see also Lee &amp; Korpela 1983)
+for the conduction regime in the pure fluid problem:
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\mbox{$\mathcal A$}\overline{\mbox{\textit{Nu}}} = \mbox{$\mathcal A$}\mbox{\textit{Nu}}_{\infty} + f(\mbox{\textit{Gr}},\mbox{\textit{Sc}},\mbox{\textit{Pr}}_r,\mbox{\textit{Pr}}_I,N,\varPhi )
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="eqn:f"></A><IMG
+ WIDTH="343" HEIGHT="45" BORDER="0"
+ SRC="img695.png"
+ ALT="\begin{displaymath}
+\mbox{$\mathcal A$}\overline{\mbox{\textit{Nu}}} = \mbox{$\m...
+...tit{Sc}},\mbox{\textit{Pr}}_r,\mbox{\textit{Pr}}_I,N,\varPhi )
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(5.12)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+where <!-- MATH
+ $\mbox{\textit{Nu}}$
+ -->
+<IMG
+ WIDTH="30" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img696.png"
+ ALT="$\mbox{\textit{Nu}}$"> is a dimensionless energy transfer rate and
+the overbar denotes an average over <!-- MATH
+ $0<y<\mbox{$\mathcal A$}$
+ -->
+<IMG
+ WIDTH="90" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img697.png"
+ ALT="$0&lt;y&lt;\mbox{$\mathcal A$}$">.  The complete set of average
+sensible Nusselt numbers from the <I>Fastflo</I> runs is given in
+table&nbsp;<A HREF="node89.html#tbl:nu">5.3</A>.
+<BR><P></P>
+<DIV ALIGN="CENTER"><A NAME="7825"></A>
+<TABLE>
+<CAPTION><STRONG>Table:</STRONG>
+Sensible Nusselt numbers, <!-- MATH
+ $\mbox{\textit{Nu}}_{sen}$
+ -->
+<IMG
+ WIDTH="52" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img699.png"
+ ALT="$\mbox{\textit{Nu}}_{sen}$">, from <I>Fastflo</I> runs for
+<!-- MATH
+ $\varPhi =0.69, N=0.5, \mbox{\textit{Pr}}_r=0.71, \mbox{\textit{Pr}}_I=\mbox{\textit{Sc}}=0.61$
+ -->
+<IMG
+ WIDTH="389" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img700.png"
+ ALT="$\varPhi =0.69, N=0.5, \mbox{\textit{Pr}}_r=0.71, \mbox{\textit{Pr}}_I=\mbox{\textit{Sc}}=0.61$">.</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER"><TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="RIGHT">&nbsp;</TD>
+<TD ALIGN="CENTER" COLSPAN=3><IMG
+ WIDTH="20" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img13.png"
+ ALT="$\mathcal A$"></TD>
+</TR>
+<TR><TD ALIGN="RIGHT"><!-- MATH
+ $\mbox{\textit{Gr}}(1+N)\mbox{\textit{Pr}}_r$
+ -->
+<IMG
+ WIDTH="123" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img698.png"
+ ALT="$\mbox{\textit{Gr}}(1+N)\mbox{\textit{Pr}}_r$"></TD>
+<TD ALIGN="CENTER">2</TD>
+<TD ALIGN="CENTER">5</TD>
+<TD ALIGN="CENTER">10</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">100</TD>
+<TD ALIGN="CENTER">1.00</TD>
+<TD ALIGN="CENTER">1.00</TD>
+<TD ALIGN="CENTER">1.00</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">1000</TD>
+<TD ALIGN="CENTER">1.17</TD>
+<TD ALIGN="CENTER">1.08</TD>
+<TD ALIGN="CENTER">1.04</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">2000</TD>
+<TD ALIGN="CENTER">--</TD>
+<TD ALIGN="CENTER">1.08</TD>
+<TD ALIGN="CENTER">1.11</TD>
+</TR>
+<TR><TD ALIGN="RIGHT">5000</TD>
+<TD ALIGN="CENTER">--</TD>
+<TD ALIGN="CENTER">--</TD>
+<TD ALIGN="CENTER">1.32</TD>
+</TR>
+</TABLE>
+
+<A NAME="tbl:nu"></A></DIV></TD></TR>
+</TABLE>
+</DIV><P></P>
+<BR>
+This validity of this approach was demonstrated in an earlier joint paper
+(McBain &amp; Harris 1998, fig.&nbsp;6), using the data of
+table&nbsp;<A HREF="node89.html#tbl:nu">5.3</A> and Dr Harris's FIDAP solutions.
+
+<P>
+A similar result may be expected to hold for the overall mass transfer rate.
+
+<P>
+The other principal parameter involved in the determination of the
+conduction-diffusion regime is the combined Grashof number,
+<!-- MATH
+ $\mbox{\textit{Gr}}(1+N)$
+ -->
+<IMG
+ WIDTH="93" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img11.png"
+ ALT="$\mbox{\textit{Gr}}(1+N)$">.  Figure <A HREF="node89.html#fig:gr">5.11</A> shows how the regime can be
+
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="fig:gr"></A><A NAME="7826"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 5.11:</STRONG>
+Destruction of the conduction-diffusion regime by a
+gradual penetration of convective effects into the core as the Grashof
+number increases.  <!-- MATH
+ $\mbox{\textit{Gr}}(1+N)\mbox{\textit{Pr}}_r=$
+ -->
+<IMG
+ WIDTH="143" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img701.png"
+ ALT="$\mbox{\textit{Gr}}(1+N)\mbox{\textit{Pr}}_r=$"> (<I>a</I>) 100, (<I>b</I>) 1000 and
+(<I>c</I>) 2000.  
+Temperature discrepancy contours, levels as in
+figure&nbsp;<A HREF="node89.html#fig:discs">5.9</A>(<I>c</I>).
+<!-- MATH
+ $\mbox{\textit{Sc}}, \mbox{\textit{Pr}}_r, \mbox{\textit{Pr}}_I, N, \mbox{$\mathcal A$}$
+ -->
+<IMG
+ WIDTH="150" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img702.png"
+ ALT="$\mbox{\textit{Sc}}, \mbox{\textit{Pr}}_r, \mbox{\textit{Pr}}_I, N, \mbox{$\mathcal A$}$"> and <IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.png"
+ ALT="$\varPhi $"> as in
+figures&nbsp;<A HREF="node88.html#fig:FC_conts">5.8</A>(<I>d-f</I>).</CAPTION>
+<TR><TD><IMG
+ WIDTH="303" HEIGHT="339" BORDER="0"
+ SRC="img703.png"
+ ALT="\begin{figure}\center
+\epsfig{file=fig.gr.eps, height=75mm}\end{figure}"></TD></TR>
+</TABLE>
+</DIV><P></P>
+destroyed by increasing <I>Gr</I> with all other parameters fixed.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1512"
+  HREF="node90.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1508"
+  HREF="node74.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1502"
+  HREF="node88.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1510"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1513"
+  HREF="node90.html">A possible analytical approach</A>
+<B> Up:</B> <A NAME="tex2html1509"
+  HREF="node74.html">The Floor and the</A>
+<B> Previous:</B> <A NAME="tex2html1503"
+  HREF="node88.html">Numerical solutions</A>
+ &nbsp <B>  <A NAME="tex2html1511"
+  HREF="node2.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Geordie McBain
+2001-01-27
+</ADDRESS>
+</BODY>
+</HTML>

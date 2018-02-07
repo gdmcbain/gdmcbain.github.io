@@ -1,0 +1,210 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.47)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>The single fluid heat transfer problem</TITLE>
+<META NAME="description" CONTENT="The single fluid heat transfer problem">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="thesis.css">
+
+<LINK REL="next" HREF="node28.html">
+<LINK REL="previous" HREF="node22.html">
+<LINK REL="up" HREF="node12.html">
+<LINK REL="next" HREF="node28.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html692"
+  HREF="node28.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html688"
+  HREF="node12.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html682"
+  HREF="node26.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html690"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html693"
+  HREF="node28.html">Geometry</A>
+<B> Up:</B> <A NAME="tex2html689"
+  HREF="node12.html">Basic Equations of Vapour</A>
+<B> Previous:</B> <A NAME="tex2html683"
+  HREF="node26.html">Wall fluxes</A>
+ &nbsp <B>  <A NAME="tex2html691"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION00840000000000000000"></A>
+<A NAME="sec:BE_Sfhtp"></A>
+<BR>
+The single fluid heat transfer problem
+</H1>
+
+<P>
+In discussing various hydrodynamic features of the present problem, I shall
+often have cause to refer to the `analogous single fluid heat transfer
+problem', for which there exists an extremely extensive body of
+literature; see Gebhart et al. (1988, pp.&nbsp;737-52), Ostrach (1988) or
+Bejan (1995, ch.&nbsp;5) for a review.
+
+<P>
+To facilitate this, its equations are derived here;
+this being briefly accomplished since they are merely a limiting
+case of the present set, formed by setting the vapour mass fraction difference,
+<IMG
+ WIDTH="44" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img287.png"
+ ALT="$\Delta m_{*}$">, to zero (i.e. <IMG
+ WIDTH="94" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img298.png"
+ ALT="$\varPhi =N=0$">) in the equations of
+motion (<A HREF="node24.html#eqn:motion">2.54</A>) and energy (<A HREF="node24.html#eqn:energy">2.55</A>):
+<BR>
+<DIV ALIGN="CENTER"><A NAME="eqn:SF_energy"></A>
+<!-- MATH
+ \begin{eqnarray}
+\mbox{\textit{Gr}}\,\mathbf{u}\cdot\mbox{\boldmath$\nabla$}\mathbf{u} & = & -\mbox{\boldmath$\nabla$}p+T\mbox{\boldmath$\hat{\jmath}$}+\mbox{\boldmath$\nabla$}^2\mathbf{u}; \\
+\mbox{\textit{Gr}}\mbox{\textit{Pr}}_r\mathbf{u}\cdot\mbox{\boldmath$\nabla$}T & = &\nabla^2T.
+\end{eqnarray}
+ -->
+<TABLE ALIGN="CENTER" CELLPADDING="0" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="88" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img299.png"
+ ALT="$\displaystyle \mbox{\textit{Gr}}\,\mathbf{u}\cdot\mbox{\boldmath$\nabla$}\mathbf{u}$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="158" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img300.png"
+ ALT="$\displaystyle -\mbox{\boldmath$\nabla$}p+T\mbox{\boldmath$\hat{\jmath}$}+\mbox{\boldmath$\nabla$}^2\mathbf{u};$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.69)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="117" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img301.png"
+ ALT="$\displaystyle \mbox{\textit{Gr}}\mbox{\textit{Pr}}_r\mathbf{u}\cdot\mbox{\boldmath$\nabla$}T$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="46" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img274.png"
+ ALT="$\displaystyle \nabla^2T.$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.70)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+It is clear that these equations are uncoupled from the equation of continuity
+of the diffusing species (<A HREF="node24.html#eqn:species">2.53</A>), which may therefore be dropped.
+The equation of continuity of the `mixture' (<A HREF="node24.html#eqn:continuity">2.52</A>)
+is unchanged.  The Nusselt number (<A HREF="node26.html#eqn:Nu">2.66</A>) becomes
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\mbox{\textit{Nu}}= \mbox{\boldmath$\hat{\imath}$}\cdot\mbox{\boldmath$\nabla$}T,
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="106" HEIGHT="44" BORDER="0"
+ SRC="img302.png"
+ ALT="\begin{displaymath}
+\mbox{\textit{Nu}}= \mbox{\boldmath$\hat{\imath}$}\cdot\mbox{\boldmath$\nabla$}T,
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.71)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+since
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\lim_{\varPhi \rightarrow 0}\frac{1-\exp(-\varPhi _T)}{\varPhi _T}=1.
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="189" HEIGHT="56" BORDER="0"
+ SRC="img303.png"
+ ALT="\begin{displaymath}
+\lim_{\varPhi \rightarrow 0}\frac{1-\exp(-\varPhi _T)}{\varPhi _T}=1.
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.72)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+
+<P>
+The product <!-- MATH
+ $\mbox{\textit{Gr}}\mbox{\textit{Pr}}_r$
+ -->
+<IMG
+ WIDTH="59" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img304.png"
+ ALT="$\mbox{\textit{Gr}}\mbox{\textit{Pr}}_r$"> is frequently called the Rayleigh number, <I>Ra</I>.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html692"
+  HREF="node28.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html688"
+  HREF="node12.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html682"
+  HREF="node26.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html690"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html693"
+  HREF="node28.html">Geometry</A>
+<B> Up:</B> <A NAME="tex2html689"
+  HREF="node12.html">Basic Equations of Vapour</A>
+<B> Previous:</B> <A NAME="tex2html683"
+  HREF="node26.html">Wall fluxes</A>
+ &nbsp <B>  <A NAME="tex2html691"
+  HREF="node2.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Geordie McBain
+2001-01-27
+</ADDRESS>
+</BODY>
+</HTML>

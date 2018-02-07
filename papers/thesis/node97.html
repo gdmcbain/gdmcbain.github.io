@@ -1,0 +1,433 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.47)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>A rational approximation for low mass transfer rates</TITLE>
+<META NAME="description" CONTENT="A rational approximation for low mass transfer rates">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="thesis.css">
+
+<LINK REL="next" HREF="node100.html">
+<LINK REL="previous" HREF="node93.html">
+<LINK REL="up" HREF="node92.html">
+<LINK REL="next" HREF="node98.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1615"
+  HREF="node98.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1611"
+  HREF="node92.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1605"
+  HREF="node96.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1613"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1616"
+  HREF="node98.html">The low mass transfer</A>
+<B> Up:</B> <A NAME="tex2html1612"
+  HREF="node92.html">Low Mass Transfer Rates</A>
+<B> Previous:</B> <A NAME="tex2html1606"
+  HREF="node96.html">Transport rate dependence on</A>
+ &nbsp <B>  <A NAME="tex2html1614"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION001220000000000000000"></A>
+<A NAME="sec:Ralmtr"></A>
+<BR>
+A rational approximation 
+<BR>
+for low mass transfer rates
+</H1>
+
+<P>
+In the field equations, <IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.png"
+ ALT="$\varPhi $"> enters only in the energy equation in the
+factor <!-- MATH
+ $[1-\exp(-\varPhi )]$
+ -->
+<IMG
+ WIDTH="118" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img715.png"
+ ALT="$[1-\exp(-\varPhi )]$">, which has the Maclaurin series
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+1-\mathrm{e}^{-\varPhi }  \equiv -B = 
+	\sum_{n=1}^{\infty} \frac{(-1)^{n+1}\varPhi ^n}{n!}
+\qquad(|\varPhi |<\infty)
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="eqn:B_Maclaurin"></A><IMG
+ WIDTH="378" HEIGHT="60" BORDER="0"
+ SRC="img725.png"
+ ALT="\begin{displaymath}
+1-\mathrm{e}^{-\varPhi } \equiv -B =
+\sum_{n=1}^{\infty} \frac{(-1)^{n+1}\varPhi ^n}{n!}
+\qquad(\vert\varPhi \vert&lt;\infty)
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(6.7)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+and vanishes like <IMG
+ WIDTH="47" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img726.png"
+ ALT="$O(\varPhi )$">.
+
+<P>
+From its definition (<A HREF="node23.html#def:Phi">2.33</A>), it is clear that for <IMG
+ WIDTH="70" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img727.png"
+ ALT="$m_{*r}&lt;1$">, <IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.png"
+ ALT="$\varPhi $">
+only vanishes when the vapour mass fraction difference, <IMG
+ WIDTH="44" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img287.png"
+ ALT="$\Delta m_{*}$">, does.
+If this difference were zero, the buoyancy ratio, <IMG
+ WIDTH="22" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.png"
+ ALT="$N$">, would be too.  Note
+that <IMG
+ WIDTH="22" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.png"
+ ALT="$N$"> can be expressed
+<BR>
+<DIV ALIGN="CENTER">
+
+<!-- MATH
+ \begin{eqnarray}
+N & \equiv & \frac{\zeta\Delta m_*}{\beta\Delta T_*} \\
+ & = & \frac{1-\mathrm{e}^{-\varPhi }}{[\beta/\zeta(1-m_{*r})]\Delta T_*} \\
+ & \sim & \frac{\varPhi }{[\beta/\zeta(1-m_{*r})]\Delta T_*}
+	\left[1+O(\varPhi )\right]\qquad(\varPhi \rightarrow 0).
+\end{eqnarray}
+ -->
+<TABLE ALIGN="CENTER" CELLPADDING="0" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="22" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img240.png"
+ ALT="$\displaystyle N$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="20" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img236.png"
+ ALT="$\textstyle \equiv$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="58" HEIGHT="60" ALIGN="MIDDLE" BORDER="0"
+ SRC="img728.png"
+ ALT="$\displaystyle \frac{\zeta\Delta m_*}{\beta\Delta T_*}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(6.8)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="161" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img729.png"
+ ALT="$\displaystyle \frac{1-\mathrm{e}^{-\varPhi }}{[\beta/\zeta(1-m_{*r})]\Delta T_*}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(6.9)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="20" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img730.png"
+ ALT="$\textstyle \sim$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="361" HEIGHT="60" ALIGN="MIDDLE" BORDER="0"
+ SRC="img731.png"
+ ALT="$\displaystyle \frac{\varPhi }{[\beta/\zeta(1-m_{*r})]\Delta T_*}
+\left[1+O(\varPhi )\right]\qquad(\varPhi \rightarrow 0).$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(6.10)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+It would be inappropriate to require <IMG
+ WIDTH="22" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.png"
+ ALT="$N$"> to vanish in the low mass transfer
+rate limit, however, since it is inversely proportional to
+temperature difference,
+<IMG
+ WIDTH="39" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img732.png"
+ ALT="$\Delta T_{*}$">.  In applying the Boussinesq approximation
+in chapter&nbsp;<A HREF="node12.html#ch:BE">2</A>, <!-- MATH
+ $\beta\Delta T_{*}$
+ -->
+<IMG
+ WIDTH="50" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img733.png"
+ ALT="$\beta\Delta T_{*}$"> was assumed to be a small quantity.
+Moreover, in applications, there will often be a direct link between the
+temperature difference and the mass fraction difference, and so the mass
+transfer rate factor.
+In physical vapour
+transport, for example, the vapour mass fraction difference is created by
+differentially heating two opposing surfaces of pure solidified vapour
+(Jhaveri &amp; Rosenberger 1982).  Indeed, quite generally, the
+partial pressure of the vapour over the condensed phase will increase with
+temperature, as may be quantified by Clapeyron's relation (Guggenheim 1959,
+p.&nbsp;148).  
+Consider, for example, an ideal saturated mixture: the limiting value
+of the buoyancy ratio is (Close &amp; Sheridan 1989)
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\lim_{\Delta T_*\rightarrow 0} N = \frac{m_*(M_B-M_A)h_{fg}}{\Re T_*},
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="247" HEIGHT="56" BORDER="0"
+ SRC="img734.png"
+ ALT="\begin{displaymath}
+\lim_{\Delta T_*\rightarrow 0} N = \frac{m_*(M_B-M_A)h_{fg}}{\Re T_*},
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(6.11)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+where <IMG
+ WIDTH="19" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img735.png"
+ ALT="$\Re$"> is the universal gas constant and <IMG
+ WIDTH="34" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img736.png"
+ ALT="$M_A$"> and <IMG
+ WIDTH="35" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img737.png"
+ ALT="$M_B$"> are the
+molar masses of the vapour and gas, respectively.  This limit is finite;
+substituting in the properties of air and water vapour at 30<FONT SIZE="-1"><IMG
+ WIDTH="14" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img125.png"
+ ALT="$\circ$"></FONT>C,
+for example, gives a limiting value of <IMG
+ WIDTH="22" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.png"
+ ALT="$N$"> of 0.28,
+which is hardly negligible compared to unity.
+
+<P>
+In the unsaturated case there is no such general 
+relation between <IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.png"
+ ALT="$\varPhi $"> and <IMG
+ WIDTH="39" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img224.png"
+ ALT="$\Delta T_*$">.  Nevertheless,
+the buoyancy ratio, and any other
+terms containing a similar ratio of <IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.png"
+ ALT="$\varPhi $"> and <IMG
+ WIDTH="39" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img732.png"
+ ALT="$\Delta T_{*}$">
+should not be eliminated in the low mass transfer rate limit.
+
+<P>
+Another example is furnished by the product <!-- MATH
+ $\varLambda \varPhi _T$
+ -->
+<IMG
+ WIDTH="41" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img738.png"
+ ALT="$\varLambda \varPhi _T$">, appearing
+in the expression for the latent Nusselt number (<A HREF="node26.html#def:Nulat">2.68</A>). It can
+be expressed (cf. equation <A HREF="node66.html#eqn:LeA">4.32</A>) as
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\varLambda \varPhi _T  = \frac{\varPhi }{(\lambda/\rho Dh_{fg})\Delta T_*},
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="189" HEIGHT="58" BORDER="0"
+ SRC="img739.png"
+ ALT="\begin{displaymath}
+\varLambda \varPhi _T = \frac{\varPhi }{(\lambda/\rho Dh_{fg})\Delta T_*},
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(6.12)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+or
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\varLambda \varPhi _T = \frac{\mbox{\textit{Pr}}_r}{\mbox{\textit{Sc}}}\frac{\varPhi }{c_{pr}\Delta T_*/h_{fg}},
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="eqn:LambdaPhiT"></A><IMG
+ WIDTH="195" HEIGHT="58" BORDER="0"
+ SRC="img740.png"
+ ALT="\begin{displaymath}
+\varLambda \varPhi _T = \frac{\mbox{\textit{Pr}}_r}{\mbox{\textit{Sc}}}\frac{\varPhi }{c_{pr}\Delta T_*/h_{fg}},
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(6.13)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+which shows that,
+by the rule established above, <!-- MATH
+ $\mbox{\textit{Nu}}_{lat}$
+ -->
+<IMG
+ WIDTH="47" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img741.png"
+ ALT="$\mbox{\textit{Nu}}_{lat}$"> should be retained in the low mass
+transfer rate limit.  To take a numerical example, for humid air at
+30<FONT SIZE="-1"><IMG
+ WIDTH="14" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img125.png"
+ ALT="$\circ$"></FONT>C, <!-- MATH
+ $h_{fg}/c_{pr}\approx 2400$
+ -->
+<IMG
+ WIDTH="125" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img742.png"
+ ALT="$h_{fg}/c_{pr}\approx 2400$">K, which will make the denominator
+of (<A HREF="node97.html#eqn:LambdaPhiT">6.13</A>) small indeed.
+
+<P>
+In summary, the rational approximation for low mass transfer rates is obtained
+by taking the limit <!-- MATH
+ $\varPhi \rightarrow 0$
+ -->
+<IMG
+ WIDTH="56" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img418.png"
+ ALT="$\varPhi \rightarrow 0$"> with
+<BR>
+<BR>
+<DIV ALIGN="CENTER">
+
+<!-- MATH
+ \begin{eqnarray}
+\frac{\Delta T_*}{\zeta(1-m_{*r})/\beta} & = & O(\varPhi ) \\
+\frac{\Delta T_*}{\mathit{Pr}_r\;h_{fg}/(\mathit{Sc}\;c_{pr})} & = &
+O(\varPhi ).
+\end{eqnarray}
+ -->
+<TABLE ALIGN="CENTER" CELLPADDING="0" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="117" HEIGHT="60" ALIGN="MIDDLE" BORDER="0"
+ SRC="img743.png"
+ ALT="$\displaystyle \frac{\Delta T_*}{\zeta(1-m_{*r})/\beta}$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="47" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img744.png"
+ ALT="$\displaystyle O(\varPhi )$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(6.14)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="142" HEIGHT="60" ALIGN="MIDDLE" BORDER="0"
+ SRC="img745.png"
+ ALT="$\displaystyle \frac{\Delta T_*}{\mathit{Pr}_r\;h_{fg}/(\mathit{Sc}\;c_{pr})}$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="52" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img746.png"
+ ALT="$\displaystyle O(\varPhi ).$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(6.15)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html1617"
+  HREF="node98.html">The low mass transfer rate equations</A>
+<LI><A NAME="tex2html1618"
+  HREF="node99.html">Other low mass transfer rate limits</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1615"
+  HREF="node98.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1611"
+  HREF="node92.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1605"
+  HREF="node96.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1613"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1616"
+  HREF="node98.html">The low mass transfer</A>
+<B> Up:</B> <A NAME="tex2html1612"
+  HREF="node92.html">Low Mass Transfer Rates</A>
+<B> Previous:</B> <A NAME="tex2html1606"
+  HREF="node96.html">Transport rate dependence on</A>
+ &nbsp <B>  <A NAME="tex2html1614"
+  HREF="node2.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Geordie McBain
+2001-01-27
+</ADDRESS>
+</BODY>
+</HTML>

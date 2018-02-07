@@ -1,0 +1,381 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.47)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Wall fluxes</TITLE>
+<META NAME="description" CONTENT="Wall fluxes">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="thesis.css">
+
+<LINK REL="previous" HREF="node25.html">
+<LINK REL="up" HREF="node22.html">
+<LINK REL="next" HREF="node27.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html680"
+  HREF="node27.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html676"
+  HREF="node22.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html672"
+  HREF="node25.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html678"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html681"
+  HREF="node27.html">The single fluid heat</A>
+<B> Up:</B> <A NAME="tex2html677"
+  HREF="node22.html">Nondimensionalization</A>
+<B> Previous:</B> <A NAME="tex2html673"
+  HREF="node25.html">Dimensionless transpiration condition</A>
+ &nbsp <B>  <A NAME="tex2html679"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00834000000000000000"></A>
+<A NAME="sec:BE_Wf"></A>
+<BR>
+Wall fluxes
+</H2>
+
+<P>
+In this project, the primary interest is in vapour transport
+between parallel vertical walls.  Denoting their common unit normal by <IMG
+ WIDTH="11" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img31.png"
+ ALT="$\hat{\imath}$"> (see &#167;<A HREF="node28.html#sec:BE_G">2.5</A>),
+the reduced vapour flux at these walls, the (local) Sherwood number, is
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\mbox{\textit{Sh}}\equiv -\mbox{\boldmath$\hat{\imath}$}\cdot\mathbf{n}.
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="def:Sh"></A><IMG
+ WIDTH="98" HEIGHT="41" BORDER="0"
+ SRC="img283.png"
+ ALT="\begin{displaymath}
+\mbox{\textit{Sh}}\equiv -\mbox{\boldmath$\hat{\imath}$}\cdot\mathbf{n}.
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.60)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+
+<P>
+Since the walls are impermeable to the gas, (<A HREF="node20.html#bc:basic_transpiration">2.21</A>)
+holds.  In dimensionless form this is
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\frac{\mbox{\textit{Gr}}(1+N)\mbox{\textit{Sc}}}{\varPhi }\mbox{\boldmath$\hat{n}$}\cdot\mathbf{u}=\mbox{\boldmath$\hat{n}$}\cdot\mathbf{n},
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="218" HEIGHT="53" BORDER="0"
+ SRC="img284.png"
+ ALT="\begin{displaymath}
+\frac{\mbox{\textit{Gr}}(1+N)\mbox{\textit{Sc}}}{\varPhi }\m...
+...{n}$}\cdot\mathbf{u}=\mbox{\boldmath$\hat{n}$}\cdot\mathbf{n},
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.61)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+so that the Sherwood number can be calculated from the transverse component
+of velocity:
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\mbox{\textit{Sh}}= -\frac{\mbox{\textit{Gr}}(1+N)\mbox{\textit{Sc}}}{\varPhi }\;\mbox{\boldmath$\hat{\imath}$}\cdot\mathbf{u};
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="eqn:Sh_i.t.o.u"></A><IMG
+ WIDTH="215" HEIGHT="53" BORDER="0"
+ SRC="img285.png"
+ ALT="\begin{displaymath}
+\mbox{\textit{Sh}}= -\frac{\mbox{\textit{Gr}}(1+N)\mbox{\tex...
+...c}}}{\varPhi }\;\mbox{\boldmath$\hat{\imath}$}\cdot\mathbf{u};
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.62)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+or, because of the transpiration boundary condition (<A HREF="node25.html#bc:transpiration">2.59</A>),
+from the mass fraction field:
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\mbox{\textit{Sh}}= \frac{1-\mathrm{e}^{-\varPhi }}
+	{\varPhi \left[1-m\left(1-\mathrm{e}^{-\varPhi }\right)\right]}\;
+		\mbox{\boldmath$\hat{\imath}$}\cdot\mbox{\boldmath$\nabla$}m.
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="eqn:Sh_i.t.o.m"></A><IMG
+ WIDTH="269" HEIGHT="58" BORDER="0"
+ SRC="img286.png"
+ ALT="\begin{displaymath}
+\mbox{\textit{Sh}}= \frac{1-\mathrm{e}^{-\varPhi }}
+{\varPh...
+... \mbox{\boldmath$\hat{\imath}$}\cdot\mbox{\boldmath$\nabla$}m.
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.63)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+
+<P>
+This definition of the Sherwood number 
+(<A HREF="node26.html#def:Sh">2.60</A>, see also equation <A HREF="node23.html#def:n">2.32</A>), 
+using the mass transfer rate factor, <IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.png"
+ ALT="$\varPhi $">, instead of the mass
+fraction difference, <IMG
+ WIDTH="44" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img287.png"
+ ALT="$\Delta m_{*}$">, for the driving force, is
+unconventional, though it was used by Jhaveri and Rosenberger (1982).
+
+Spalding (1960, 1963)
+has explained in detail the disadvantages of using the mass fraction
+difference as a driving force, but instead proposed the use of a quantity
+equivalent to <!-- MATH
+ $[\exp(-\varPhi )-1]$
+ -->
+<IMG
+ WIDTH="118" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img288.png"
+ ALT="$[\exp(-\varPhi )-1]$">.
+The superiority of the present choice will
+become apparent once solutions of the system of equations are found and
+examined (ch.&nbsp;<A HREF="node62.html#ch:NCL">4</A>), especially when a rational approximation
+for the system at low mass transfer rates is considered (ch.&nbsp;<A HREF="node92.html#ch:RA">6</A>).
+
+<P>
+The (local) Nusselt number, <I>Nu</I>, is defined at the parallel vertical walls by:
+<BR>
+<DIV ALIGN="CENTER"><A NAME="def:Nu"></A>
+<!-- MATH
+ \begin{eqnarray}
+\mbox{\textit{Nu}}& \equiv &  -\mbox{\boldmath$\hat{\imath}$}\cdot\mathbf{e}\\
+& = & \frac{1-\exp(-\varPhi _T)}{\varPhi _T}\bigg\{
+	\mbox{\boldmath$\hat{\imath}$}\cdot\mbox{\boldmath$\nabla$}T \nonumber\\
+& & - {}\mbox{\textit{Gr}}(1+N)
+	\left[\mbox{\textit{Pr}}_r+\mbox{\textit{Pr}}_I\left(1-\mathrm{e}^{-\varPhi }\right)m\right]
+	T\mbox{\boldmath$\hat{\imath}$}\cdot\mathbf{u}\nonumber\\
+& & + \frac{\mbox{\textit{Pr}}_I}{\mbox{\textit{Sc}}}(1-\mathrm{e}^{-\varPhi })T\mbox{\boldmath$\hat{\imath}$}\cdot\mbox{\boldmath$\nabla$}m
+	+\varPhi _T\varLambda \mbox{\textit{Sh}}\bigg\}.
+\end{eqnarray}
+ -->
+<TABLE ALIGN="CENTER" CELLPADDING="0" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="30" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img289.png"
+ ALT="$\displaystyle \mbox{\textit{Nu}}$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="20" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img236.png"
+ ALT="$\textstyle \equiv$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="51" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img290.png"
+ ALT="$\displaystyle -\mbox{\boldmath$\hat{\imath}$}\cdot\mathbf{e}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.64)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="187" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img291.png"
+ ALT="$\displaystyle \frac{1-\exp(-\varPhi _T)}{\varPhi _T}\bigg\{
+\mbox{\boldmath$\hat{\imath}$}\cdot\mbox{\boldmath$\nabla$}T$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="362" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img292.png"
+ ALT="$\displaystyle - {}\mbox{\textit{Gr}}(1+N)
+\left[\mbox{\textit{Pr}}_r+\mbox{\tex...
+...rm{e}^{-\varPhi }\right)m\right]
+T\mbox{\boldmath$\hat{\imath}$}\cdot\mathbf{u}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="296" HEIGHT="60" ALIGN="MIDDLE" BORDER="0"
+ SRC="img293.png"
+ ALT="$\displaystyle + \frac{\mbox{\textit{Pr}}_I}{\mbox{\textit{Sc}}}(1-\mathrm{e}^{-...
+...\cdot\mbox{\boldmath$\nabla$}m
++\varPhi _T\varLambda \mbox{\textit{Sh}}\bigg\}.$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.65)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+The interfacial velocity and the mass fraction gradient can be eliminated 
+from this expression by the equations for the
+Sherwood number (<A HREF="node26.html#eqn:Sh_i.t.o.u">2.62</A>) and (<A HREF="node26.html#eqn:Sh_i.t.o.m">2.63</A>):
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\mbox{\textit{Nu}}= \frac{1-\exp(-\varPhi _T)}{\varPhi _T}\left[\mbox{\boldmath$\hat{\imath}$}\cdot\mbox{\boldmath$\nabla$}T
+	+(T + \varLambda )\varPhi _T\mbox{\textit{Sh}}\right]
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="eqn:Nu"></A><IMG
+ WIDTH="364" HEIGHT="56" BORDER="0"
+ SRC="img294.png"
+ ALT="\begin{displaymath}
+\mbox{\textit{Nu}}= \frac{1-\exp(-\varPhi _T)}{\varPhi _T}\l...
+...abla$}T
++(T + \varLambda )\varPhi _T\mbox{\textit{Sh}}\right]
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.66)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+
+<P>
+Since the latent heat factor, <IMG
+ WIDTH="18" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img97.png"
+ ALT="$\varLambda $">, does not appear in the field
+equations (<A HREF="node24.html#eqn:continuity">2.52</A>)-(<A HREF="node24.html#eqn:energy">2.55</A>), it will occasionally
+be convenient to consider that part of the energy transfer rate independent
+of it--the sensible Nusselt number:
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\mbox{\textit{Nu}}_{sen}=
+\frac{1-\exp(-\varPhi _T)}{\varPhi _T}\left(\mbox{\boldmath$\hat{\imath}$}\cdot\mbox{\boldmath$\nabla$}T
+	+ T \varPhi _T \mbox{\textit{Sh}}\right).
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="def:Nusen"></A><IMG
+ WIDTH="348" HEIGHT="56" BORDER="0"
+ SRC="img295.png"
+ ALT="\begin{displaymath}
+\mbox{\textit{Nu}}_{sen}=
+\frac{1-\exp(-\varPhi _T)}{\varPhi...
+...\boldmath$\nabla$}T
++ T \varPhi _T \mbox{\textit{Sh}}\right).
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.67)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+The remainder,
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\mbox{\textit{Nu}}_{lat}\equiv\mbox{\textit{Nu}}-\mbox{\textit{Nu}}_{sen}=[1-\exp(-\varPhi _T)]\varLambda \mbox{\textit{Sh}},
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="def:Nulat"></A><IMG
+ WIDTH="350" HEIGHT="45" BORDER="0"
+ SRC="img296.png"
+ ALT="\begin{displaymath}
+\mbox{\textit{Nu}}_{lat}\equiv\mbox{\textit{Nu}}-\mbox{\textit{Nu}}_{sen}=[1-\exp(-\varPhi _T)]\varLambda \mbox{\textit{Sh}},
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.68)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+is the latent Nusselt number.
+
+<P>
+The above comments on the unconventionality of the definition of the Sherwood
+number apply equally to the Nusselt number.  As will be
+seen in &#167;<A HREF="node27.html#sec:BE_Sfhtp">2.4</A>, the present Nusselt number reverts to the
+conventional definition 
+(e.g. Incropera &amp; DeWitt 1990, p.&nbsp;347) 
+in the absence of mass transfer (<IMG
+ WIDTH="52" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img297.png"
+ ALT="$\varPhi =0$">).
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html680"
+  HREF="node27.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html676"
+  HREF="node22.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html672"
+  HREF="node25.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html678"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html681"
+  HREF="node27.html">The single fluid heat</A>
+<B> Up:</B> <A NAME="tex2html677"
+  HREF="node22.html">Nondimensionalization</A>
+<B> Previous:</B> <A NAME="tex2html673"
+  HREF="node25.html">Dimensionless transpiration condition</A>
+ &nbsp <B>  <A NAME="tex2html679"
+  HREF="node2.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Geordie McBain
+2001-01-27
+</ADDRESS>
+</BODY>
+</HTML>

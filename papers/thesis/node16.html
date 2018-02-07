@@ -1,0 +1,255 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.47)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>The equation of motion</TITLE>
+<META NAME="description" CONTENT="The equation of motion">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="thesis.css">
+
+<LINK REL="next" HREF="node17.html">
+<LINK REL="previous" HREF="node14.html">
+<LINK REL="up" HREF="node13.html">
+<LINK REL="next" HREF="node17.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html561"
+  HREF="node17.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html557"
+  HREF="node13.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html551"
+  HREF="node15.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html559"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html562"
+  HREF="node17.html">The energy equation</A>
+<B> Up:</B> <A NAME="tex2html558"
+  HREF="node13.html">Field equations</A>
+<B> Previous:</B> <A NAME="tex2html552"
+  HREF="node15.html">Omissions in the species</A>
+ &nbsp <B>  <A NAME="tex2html560"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00812000000000000000"></A>
+<A NAME="sec:BE_Em"></A>
+<BR>
+The equation of motion
+</H2>
+
+<P>
+The equation of motion used here is not that derived by
+Bird et al. (1960, pp.&nbsp;320, 563)
+for free convection.  Neglecting the variation of
+pressure due to motion leads to an overconstrained system so that
+the equation for continuity of the mixture,
+(<A HREF="node14.html#eqn:prim_continuity">2.1</A>) or (<A HREF="node14.html#eqn:bouss_continuity">2.6</A>),
+could not be enforced (see Gresho 1988).
+
+<P>
+The basic steady-state Navier-Stokes equation (Bird et al. 1960, p.&nbsp;80) is:
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\rho\mathbf{u}_*\cdot\mbox{\boldmath$\nabla$}_* \mathbf{u}_*=-\mbox{\boldmath$\nabla$}_*  p_*+\rho\mathbf{g}
+	+\mu\mbox{\boldmath$\nabla$}_* ^2\mathbf{u}_*
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="eqn:navierstokes"></A><IMG
+ WIDTH="293" HEIGHT="45" BORDER="0"
+ SRC="img168.png"
+ ALT="\begin{displaymath}
+\rho\mathbf{u}_*\cdot\mbox{\boldmath$\nabla$}_* \mathbf{u}_*...
+...+\rho\mathbf{g}
++\mu\mbox{\boldmath$\nabla$}_* ^2\mathbf{u}_*
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.8)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+where <IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img52.png"
+ ALT="$p$"> and <IMG
+ WIDTH="16" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img99.png"
+ ALT="$\mu$"> are the pressure and viscosity, and <IMG
+ WIDTH="16" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img26.png"
+ ALT="$\mathbf{g}$"> is the 
+body force per unit mass, assumed hereafter to be uniform and downward.
+The density and viscosity are
+assumed uniform in (<A HREF="node16.html#eqn:navierstokes">2.8</A>), except in the body
+force term, <!-- MATH
+ $\rho\mathbf{g}$
+ -->
+<IMG
+ WIDTH="26" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img169.png"
+ ALT="$\rho\mathbf{g}$">, where <IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img102.png"
+ ALT="$\rho$"> is replaced by its 
+linear Taylor series
+expansion as a function of the temperature and vapour mass fraction about
+some reference state (Bird et al. 1960, p.&nbsp;563):
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\rho \left[1 - \beta(T_*-T_{*r})-\zeta(m_*-m_{*r})\right],
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="281" HEIGHT="45" BORDER="0"
+ SRC="img170.png"
+ ALT="\begin{displaymath}
+\rho \left[1 - \beta(T_*-T_{*r})-\zeta(m_*-m_{*r})\right],
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.9)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+where <IMG
+ WIDTH="16" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img86.png"
+ ALT="$\beta$"> and <IMG
+ WIDTH="14" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img91.png"
+ ALT="$\zeta$"> are the thermal and vapour mass fraction coefficients
+of volumetric expansion.
+This Boussinesq approximation forms the basis of the vast majority of studies
+in natural convection.  Its consistency and limitations are discussed by
+Spiegel and Veronis (1960),
+Ostrach (1964),
+Chenoweth and Paolucci (1986),
+Gebhart et al. (1988, ch.&nbsp;2)
+and
+Perez-Cordon and Mengual (1997),
+amongst others.  Few of the works reviewed in
+&#167;<A HREF="node42.html#sec:LR_Ge">3.3</A> did not use
+the approximation, and, as noted there, no qualitatively different
+features were found nor were any quantitative effects on the overall
+vapour or energy transport rates reported.  Particular attention is
+drawn to my earlier non-Boussinesq numerical simulations, which gave
+results quite consistent with Boussinesq models (McBain 1995,
+1997<I>b</I>).
+
+Boyadjiev and Halatchev (1998) came to the same conclusion
+for vapour transport from a vertical semi-infinite plate.
+Apart from the obvious simplification of the governing equations,
+the principal advantage in using the approximation is the increase in
+generality of the results, that is, the differences between various species
+are reduced to their essentials.
+
+<P>
+On rearranging the simple potential part of the body force and the pressure
+term,
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\mathbf{u}_*\cdot\mbox{\boldmath$\nabla$}_* \mathbf{u}_* = 
+	-\mbox{\boldmath$\nabla$}_* \left(\frac{p_*}{\rho}+gy_*\right)
+	+g\left[\beta(T_*-T_{*r})+\zeta(m_*-m_{*r})\right]\mbox{\boldmath$\hat{\jmath}$}
+	+\nu\mbox{\boldmath$\nabla$}_*^2\mathbf{u}_*,
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="eqn:bouss_motion"></A><IMG
+ WIDTH="576" HEIGHT="59" BORDER="0"
+ SRC="img171.png"
+ ALT="\begin{displaymath}
+\mathbf{u}_*\cdot\mbox{\boldmath$\nabla$}_* \mathbf{u}_* =
+...
+...$\hat{\jmath}$}
++\nu\mbox{\boldmath$\nabla$}_*^2\mathbf{u}_*,
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.10)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+where <IMG
+ WIDTH="21" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img172.png"
+ ALT="$y_*$"> and <IMG
+ WIDTH="12" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img34.png"
+ ALT="$\hat{\jmath}$"> are the vertical coordinate and unit vector,
+and <IMG
+ WIDTH="71" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img173.png"
+ ALT="$\nu=\mu/\rho$"> is the kinematic viscosity.
+
+<P>
+It is obvious from (<A HREF="node16.html#eqn:bouss_motion">2.10</A>) that the temperature field must
+be known for the distribution of velocity, and therefore vapour, to be
+calculable.  To this end, the equation of (thermal) energy is obtained in
+&#167;<A HREF="node17.html#sec:BE_Ee">2.1.3</A>.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html561"
+  HREF="node17.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html557"
+  HREF="node13.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html551"
+  HREF="node15.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html559"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html562"
+  HREF="node17.html">The energy equation</A>
+<B> Up:</B> <A NAME="tex2html558"
+  HREF="node13.html">Field equations</A>
+<B> Previous:</B> <A NAME="tex2html552"
+  HREF="node15.html">Omissions in the species</A>
+ &nbsp <B>  <A NAME="tex2html560"
+  HREF="node2.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Geordie McBain
+2001-01-27
+</ADDRESS>
+</BODY>
+</HTML>

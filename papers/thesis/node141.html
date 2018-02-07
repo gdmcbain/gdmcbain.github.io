@@ -1,0 +1,440 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.47)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Sample Fasttalk Code</TITLE>
+<META NAME="description" CONTENT="Sample Fasttalk Code">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="thesis.css">
+
+<LINK REL="next" HREF="node142.html">
+<LINK REL="previous" HREF="node140.html">
+<LINK REL="up" HREF="thesis.html">
+<LINK REL="next" HREF="node142.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html2183"
+  HREF="node142.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html2179"
+  HREF="thesis.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html2173"
+  HREF="node140.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html2181"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html2184"
+  HREF="node142.html">Vector Fields in a</A>
+<B> Up:</B> <A NAME="tex2html2180"
+  HREF="thesis.html">Vapour transport across gas-filled</A>
+<B> Previous:</B> <A NAME="tex2html2174"
+  HREF="node140.html">References</A>
+ &nbsp <B>  <A NAME="tex2html2182"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION001700000000000000000"></A>
+<A NAME="app:SFC"></A>
+<BR>
+Sample <I>Fasttalk</I> Code
+</H1>
+
+<P>
+A listing of a fully functioning sample <I>Fasttalk</I> file of the
+type described in &#167;<A HREF="node75.html#sec:FC_Mvtf">5.1</A> follows.  Note that the
+notation is that of the earlier works for which it was used (McBain
+1997<I>a</I>; McBain &amp; Harris 1998), rather
+than that of this thesis.
+
+<P>
+<PRE>
+%humid.tal.prob
+P Sc 0.61
+P Le0 Sc/0.71
+P GrSTAR 1000.0/(Sc/Le0)
+P N 0.5
+P B -0.5
+P I 0.5
+%
+P LeA (B*Le0)/(B-(I*Le0))
+P lnBp1 log(B+1.0)
+P Lambda lnBp1/LeA
+%
+P Pen 5e2
+P rvtol 1e-3
+P rvtol2 5e-4
+P rdiltol 1e-3
+P Relx 0.5
+%
+F . ffFlib/cavbtag
+%
+A momentum
+%
+e D_i {-Pen} D_j U1_j + D_i {v201} - D_j D_j U1_i +\
+  {v100*GrSTAR}_j D_j U1_i = {0.0, (1/(1.0+N))}_i U2 +\
+  {0.0, (N/(1.0+N))}_i U3
+e D_j D_j U2 + {v300 * I}_j D_j U2 =\
+  {GrSTAR * Sc * ((I*v104)+(1.0/Le0)) * v100}_j D_j U2
+e D_j D_j U3 =\
+  {GrSTAR * Sc * v100}_j D_j U3
+e v300 = [grad] {v104}
+b floor U1 = {0.0, 0.0}
+b rightwall U1 = {rightblow * v301, rightblow * v302}
+b ceiling U1 = {0.0, 0.0}
+b leftwall U1 = {leftblow * v301, leftblow * v302}
+b rightwall U2 = {1.0}
+b leftwall U2 = {0.0}
+b rightwall U3 = {1.0}
+b leftwall U3 = {0.0}
+%
+A [reduced] dilatation
+e U1 = {1.0} D_j {v100}_j
+%
+F . ffFlib/myutes
+%
+A fickfluxp
+e U1_i = {-1.0} D_i {v104}
+%
+A advvapflux
+e v000={GrSTAR*Sc*v101*v104,GrSTAR*Sc*v102*v104}
+%
+A mflux
+% bulk advective flux 
+e v500={GrSTAR*Sc*v101*v104,GrSTAR*Sc*v102*v104}
+% Fickian diffusion flux
+e v600=grad{-v104}		
+% total flux w.r.t. stationary coordinates
+e v000={v500+v600}		
+%
+
+&lt; momloop
+	mtitno = 1
+	while rmaxchange&gt;rvtol | mtitno&lt;3
+		show mtitno
+		momentum
+		solv
+		v500=v200
+		if ((mtitno*bigitno)&lt;2)
+			v200 = v100
+		endif
+		if ((mtitno*bigitno)&gt;1)
+			v200 = (Relx*v100) + ((1.0-Relx)*v500)
+		endif
+		popp
+		clea
+		arro
+		cont 103
+		cont 104
+		v500 = v100 - v400
+		v500 = abs v500
+		v600 = abs v100
+		v601 = max v601
+		v602 = max v602
+		v603 = max v603
+		v604 = max v604
+		v500 = v500/v600
+		rmaxchange = max v500
+		show rmaxchange
+		mtitno = mtitno + 1
+	endwhile
+&gt;
+
+&lt; run
+	clock
+	prim
+	paras
+	leftblow =  B/(GrSTAR*Sc)
+	rightblow = leftblow/(B+1.0)
+	bigitno = 1
+	RelMaxDil=rdiltol+1
+	keeplooping=1
+	while keeplooping
+		show bigitno
+		momloop
+		rvtol=rvtol2
+		dilatation
+		solv
+		expand 1
+		v301 = v301 - (Pen * v101)
+		cont 301
+		v101=abs v101
+		MaxDil = max v101
+		show MaxDil
+		popp
+		oldrmd=RelMaxDil
+		uscal = max v601
+		vscal = max v602
+		uscal = uscal M vscal
+		RelMaxDil = MaxDil/uscal
+		show RelMaxDil
+
+		if RelMaxDil&lt;rdiltol
+			keeplooping=0
+		endif
+
+		if RelMaxDil&gt;rdiltol &amp; RelMaxDil&lt;oldrmd
+			keeplooping=1
+		endif
+
+		if RelMaxDil&gt;oldrmd &amp; bigitno&gt;1
+			!#Divergence diverging!
+			keeplooping=keeplooping-0.2
+		endif
+
+		bigitno = bigitno + 1
+
+	endwhile
+	clock
+	name 100 velocity
+	name 103 temperature
+	name 104 mass fraction
+	name 201 pressure
+&gt;
+
+
+&lt; hhmark
+	!marknodes 2 1.0 # the second argument should be A/2
+&gt;
+
+&lt; eflux
+	% conduction flux
+	nostack
+	gradient 300 101 v103
+	solv 300
+	nostack -1
+	v300=-v300
+	name 301 conduction
+	name 302 conduction
+
+	% bulk advection flux
+	v401=GrSTAR*Sc*(I*v104 + (1.0/Le0))*v101*v103
+	v402=GrSTAR*Sc*(I*v104 + (1.0/Le0))*v102*v103
+	name 401 advection flux
+	name 402 advection flux
+
+	% interdiffusion flux
+	nostack
+	gradient 500 101 v104
+	solv 500
+	nostack -1
+	v501=-I*v501*v103
+	v502=-I*v502*v103
+	name 501 interdiffusion
+	name 502 interdiffusion
+
+	% total energy flux
+	v600 = v300 + v400 + v500
+	name 601 energy flux
+	name 602 energy flux
+&gt;
+
+&lt; heatlines
+	eflux
+	total_int 101 101 v601
+	ANubar=-Out
+	show ANubar
+	lscalint 101 101 v601
+	ANu0=-Out
+	Nuinfty=Lambda/(exp(Lambda)-1)
+	show ANu0
+	show Lambda
+	show Nuinfty
+	heatf 101 100 v600
+	solv
+	cont 101
+	popp
+&gt;
+
+&lt; b4c4
+	hhmark
+	mark 0
+	mark 102
+	show B
+	show Sc
+	show LeA
+	show N
+&gt;
+
+&lt; afterc4
+	push
+	push
+	limits -0.05 0.05
+% calculate comparison with fully developed solution
+
+% horizontal component of velocity, normalised by max u
+
+	uinf = lnBp1/(GrSTAR*Sc)
+	v101 = uinf
+	name 101 uinf
+	v201 = v301 - v101
+	umin = min v301
+	umax = max v301
+	umin = abs umin
+	uscal = umin M umax
+	v201 = v201/uscal
+	name 201 udefectnrmd
+
+% temperature, not normalised (no need)
+
+	v103 = ((B+1.0)^(X1/LeA)-1.0)/((B+1.0)^(1.0/LeA)-1.0)
+	name 103 thetainf
+	v203 = v303 - v103
+	name 203 tdefect
+
+% mass fraction, not normalised (no need)
+
+	v104 = ((B+1.0)^X1 - 1.0)/B
+	name 104 phiinf
+	v204 = v304 - v104
+	name 204 mdefect
+
+% vertical component of velocity, normalised by max vinf
+
+	c1 = LeA*LeA/(Sc-LeA)/lnBp1/lnBp1
+	c2 = N/(Sc-1.0)/lnBp1/lnBp1
+	c3 = (((LeA+N)/lnBp1) + c4 * (N+1.0))/lnBp1
+	v102 = ((B+1.0)^(X1/Sc)-1.0)/((B+1.0)^(1.0/Sc)-1.0)
+	name 102 sigma
+	v102 = Sc*(c1*(v102-v103) + c2*(v102-v104) +\
+		 c3*(v102-X1))/(N+1.0)
+	name 102 vinf
+	vscal = max v102
+	v202 = v302 - v102
+	v202 = v202/vscal
+	name 202 vdefectnrmd
+
+% vertical pressure gradient, normalised by dpdyinf
+
+	phibar = 1.0/lnBp1 - 1.0/B
+	thetabar = LeA/lnBp1 - 1.0/((B+1.0)^(1/LeA)-1.0)
+	denpertbar = (thetabar + N * phibar)/(1.0 + N)
+	nostack
+	gradient 501 101 v401
+	solv 501
+	nostack -1
+	name 501 pressure gradient
+	name 502 pressure gradient
+	dpdyinf = denpertbar + c4
+	v504 = v502 - dpdyinf
+	v504 = v504/dpdyinf
+	name 504 dpdydefectnrmd
+	
+	hhmark
+	mark 0
+	mark 201
+	mark 202
+	mark 203
+	mark 204
+	mark 504
+&gt;
+
+&lt; paras
+	!#Problem Parameters:
+	show GrSTAR*Sc/Le0
+	show Sc/Le0
+	show Sc
+	show B
+	show I
+	show N
+	!#Solution Method Parameters:
+	show Pen
+	show Relx
+	show rvtol
+	show rvtol2
+	show rdiltol
+&gt;
+
+&lt; reading
+	open #1 r A5/a516sq._0.5.s.out
+	read #1
+	clos #1
+	v100=v100
+	open #2 r A5/a516sq._0.5.p.out
+	read #2
+	clos #2
+	v201=v201
+&gt;
+</PRE>
+
+<P>
+The file inclusion commands, beginning with an <code>F</code>, include the contents
+of the files <code>ffFlib/cavbtag</code>:
+<PRE>
+D 1 floor
+D 2 rightwall
+D 3 ceiling
+D 4 leftwall
+</PRE>
+and <code>ffFlib/myutes</code>:
+<PRE>
+A total_int
+e [integrated] {v101}
+%
+A fscalint
+b floor [integrated] {v101}
+A rscalint
+b rightwall [integrated] {v101}
+A cscalint
+b ceiling [integrated] {v101}
+A lscalint
+b leftwall [integrated] {v101}
+%
+A strf
+e v101 = [curlv] {-v100}
+e D_j D_j U1 = {v101}
+b floor U1 = {0.0}
+%
+A heatf
+e v101 = [curlv] {-v100}
+e D_j D_j U1 = {v101}
+b floor U1 = {0.0}
+b ceiling U1 = {-ANubar}
+A gradient
+e U1_i = {1.0} D_i {v101}
+%
+</PRE>
+
+<P>
+The <I>Fasttalk</I> file calls a Bourne shell script,
+<code>marknodes</code>, which is listed below.
+<PRE>
+# marknodes coord_number coord_value:
+#	creates a mark.dat file from a mesh.dat
+# Use coord_number = 1 for x, 2 for y
+# Do not use on mesh.dat files invoking 
+#	the triangular mesh generator
+
+awk '
+NF == 2 &amp;&amp; $c == v { print }
+' c=$1 v=$2 mesh.dat &gt;mark.dat
+</PRE>
+<BR><HR>
+<ADDRESS>
+Geordie McBain
+2001-01-27
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,192 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.47)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Meyer and Kostin (1975)</TITLE>
+<META NAME="description" CONTENT="Meyer and Kostin (1975)">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="thesis.css">
+
+<LINK REL="next" HREF="node38.html">
+<LINK REL="previous" HREF="node36.html">
+<LINK REL="up" HREF="node35.html">
+<LINK REL="next" HREF="node38.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html845"
+  HREF="node38.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html841"
+  HREF="node35.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html835"
+  HREF="node36.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html843"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html846"
+  HREF="node38.html">Markham and Rosenberger (1980)</A>
+<B> Up:</B> <A NAME="tex2html842"
+  HREF="node35.html">The Stefan diffusion tube</A>
+<B> Previous:</B> <A NAME="tex2html836"
+  HREF="node36.html">The no-slip condition</A>
+ &nbsp <B>  <A NAME="tex2html844"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00922000000000000000"></A>
+<A NAME="sec:LR_meyeK75"></A>
+<BR>
+Meyer and Kostin (1975)
+</H2>
+
+<P>
+Meyer and Kostin (1975) considered a system similar to the Stefan diffusion
+tube, except that it was two-dimensional (planar).  They formulated an
+approximate model and solved the resulting equations numerically.
+
+<P>
+Their model omits the inertial terms from the equation of motion, which
+is inconsistent with the inclusion of the
+advective terms in the species equation, since the ratio of the magnitudes
+of these is obviously the reciprocal of the Schmidt number, which is of order
+unity for most gas-vapour mixtures.  
+
+<P>
+The correct approach would have been an asymptotic expansion for small
+values of <IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.png"
+ ALT="$\varPhi $">.  The velocity vanishes in the limit
+<!-- MATH
+ $\varPhi \rightarrow 0$
+ -->
+<IMG
+ WIDTH="56" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img418.png"
+ ALT="$\varPhi \rightarrow 0$">.  The zeroth order approximation for the
+species would then be Laplace's equation, with the simple solution
+that <IMG
+ WIDTH="21" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="$m$"> would be a linear function of the height above the liquid
+surface.  This could then be used to calculate the boundary conditions
+for the first order velocity correction, leading to a Stokes problem
+with uniform inflow and outflow at the vapour source and sink.  The
+resulting velocity field can be used in an advection-diffusion
+equation for the first order correction to the vapour mass fraction
+field, and so forth.  At each stage the velocity and vapour mass
+fraction fields are uncoupled.  Each correction to the vapour mass
+fraction influences the boundary conditions for the next correction to
+the velocity field, and each correction to the velocity field enters
+into the advection terms in the equation for the next correction to
+the vapour mass fraction.
+
+<P>
+Nevertheless, their conclusion that nonzero values of the mass transfer rate
+factor, <IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.png"
+ ALT="$\varPhi $">, must lead to circulation of the gas is correct: in 1967,
+Whitaker showed that a stagnant gas
+(i.e. <!-- MATH
+ $\rho\mathbf{u}_*\equiv\mathbf{n}_*$
+ -->
+<IMG
+ WIDTH="79" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img419.png"
+ ALT="$\rho\mathbf{u}_*\equiv\mathbf{n}_*$">)
+is not consistent with the presence
+of nonslip boundaries joining the vapour source and sink.
+The circulation was confirmed by the rigorous numerical solutions of Markham
+and Rosenberger (1980; reviewed in &#167;<A HREF="node38.html#sec:LR_markR80">3.2.3</A>).
+
+<P>
+There is also some confusion in Meyer and Kostin's
+use of both mass and molar quantities.
+Their expressions for the molar fluxes contain the mass average velocity,
+whereas they should use the molar average velocity (see Bird et al. 1960, 
+pp.&nbsp;496-502 for consistent formulations).  Gross error is avoided, however,
+since both the total density and the total molar concentration are assumed
+uniform. This is equivalent to an assumption of equal molar masses.
+If the molar masses of the stagnant and diffusing species are
+equal, mass fractions and mole fractions are identical and very little is
+gained from this mixed formulation.  
+
+<P>
+It would seem that in any vapour
+transport problem except for the most hydrodynamically trivial, such as 
+one-dimensional Stefan diffusion (Bird et al. 1960, pp.&nbsp;522-7),
+a momentum equation must be solved, which
+must be formulated in terms of a mass average velocity, as
+Newton's Law of Viscosity is (Bird et al. 1960, pp.&nbsp;79-80, 565).
+The molar fluxes involve the molar average
+velocity, which can only be simply expressed in terms of the mass average
+velocity in the special case of equal molar masses.  Indeed, `if the
+molecular weights...are significantly different, the
+problem takes on an appalling complexity';
+the two average velocities not even being parallel in general
+(Rao, S. S. &amp; Bennett 1967).  
+It was for these reasons that a consistently mass-based formulation was used
+in chapter <A HREF="node12.html#ch:BE">2</A>.  A mass-based formulation was also adopted by
+Markham and Rosenberger (1980) and Greenwell et al. (1981)
+who fully accounted for differing molar masses; i.e. did not use the
+Boussinesq approximation.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html845"
+  HREF="node38.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html841"
+  HREF="node35.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html835"
+  HREF="node36.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html843"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html846"
+  HREF="node38.html">Markham and Rosenberger (1980)</A>
+<B> Up:</B> <A NAME="tex2html842"
+  HREF="node35.html">The Stefan diffusion tube</A>
+<B> Previous:</B> <A NAME="tex2html836"
+  HREF="node36.html">The no-slip condition</A>
+ &nbsp <B>  <A NAME="tex2html844"
+  HREF="node2.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Geordie McBain
+2001-01-27
+</ADDRESS>
+</BODY>
+</HTML>

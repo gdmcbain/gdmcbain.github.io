@@ -1,0 +1,256 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.47)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Inertial generation of spanwise flow</TITLE>
+<META NAME="description" CONTENT="Inertial generation of spanwise flow">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="thesis.css">
+
+<LINK REL="previous" HREF="node125.html">
+<LINK REL="up" HREF="node125.html">
+<LINK REL="next" HREF="node127.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1997"
+  HREF="node127.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1993"
+  HREF="node125.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1989"
+  HREF="node125.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1995"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1998"
+  HREF="node127.html">Spherical enclosures</A>
+<B> Up:</B> <A NAME="tex2html1994"
+  HREF="node125.html">The spanwise component of</A>
+<B> Previous:</B> <A NAME="tex2html1990"
+  HREF="node125.html">The spanwise component of</A>
+ &nbsp <B>  <A NAME="tex2html1996"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001411000000000000000"></A>
+<A NAME="sec:BC_Igsf"></A>
+<BR>
+Inertial generation of spanwise flow
+</H2>
+
+<P>
+The inertial generation of a spanwise or axial flow by the viscous interaction
+of a rotating body of fluid and a perpendicular solid surface occurs in
+several areas of fluid mechanics, such as in curved rivers (Thomson 1876, 1877;
+Reynolds 1888;
+Falc&#243;n 1984;
+Johannesson &amp; Parker 1989)
+and pipes (Thomson 1876; Eustice 1911; Dean, W. R. 1927;
+Patankar, Pratap and Spalding 1974;
+Jabbari, Burns &amp; Goldstein 1998).
+The phenomenon is utilized in aquaculture to rid tanks of unwanted settleable
+solids (Timmons, Summerfelt &amp; Vinci 1998; Peterson 1999).
+ Perhaps its most familiar manifestation is the
+gathering of tea leaves at the centre of the bottom of the cup on stirring.
+
+<P>
+This last quotidian example is quite instructive.  One immediately notices
+that the tea leaves travel radially inward along the bottom and begin to rise
+along the axis regardless of whether the tea is stirred clockwise or
+anticlockwise; i.e. the secondary flow is independent of the sign of the
+rotational speed, <IMG
+ WIDTH="20" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img114.png"
+ ALT="$\varOmega $">, of the stirring.  This implies
+that the axial component of velocity at any point on the axis near the base
+must be an even function of <IMG
+ WIDTH="20" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img114.png"
+ ALT="$\varOmega $">.  Assuming that for
+sufficiently slow stirring, i.e. small Reynolds number
+<!-- MATH
+ $\mathit{Re}\equiv \varOmega b^2/\nu$
+ -->
+<IMG
+ WIDTH="104" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1011.png"
+ ALT="$\mathit{Re}\equiv \varOmega b^2/\nu$">, the dimensional axial velocity, <IMG
+ WIDTH="26" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1012.png"
+ ALT="$w_*$">,
+can be expanded in a power series, it
+will only contain the terms involving even powers of <IMG
+ WIDTH="20" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img114.png"
+ ALT="$\varOmega $">:
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\varOmega ^0, \varOmega ^2,\ldots,\varOmega ^{2n},\ldots
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="156" HEIGHT="44" BORDER="0"
+ SRC="img1013.png"
+ ALT="\begin{displaymath}
+\varOmega ^0, \varOmega ^2,\ldots,\varOmega ^{2n},\ldots
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(8.1)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+It is obvious that the coefficient of <IMG
+ WIDTH="28" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1014.png"
+ ALT="$\varOmega ^0$"> must vanish, since there
+is no secondary flow without the primary flow, so that the first term is
+quadratic.  The immediate conclusion is that there is no secondary
+flow in the creeping flow limit (<!-- MATH
+ $\mathit{Re}\rightarrow 0$
+ -->
+<IMG
+ WIDTH="67" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1015.png"
+ ALT="$\mathit{Re}\rightarrow 0$">).  The
+corresponding dimensionless axial velocity, <!-- MATH
+ $w_*/\varOmega b$
+ -->
+<IMG
+ WIDTH="58" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1016.png"
+ ALT="$w_*/\varOmega b$">,
+will be an odd function of <IMG
+ WIDTH="27" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img63.png"
+ ALT="$\mathit{Re}$">.
+
+<P>
+The earliest scientific description of this general phenomenon seems to be
+Stokes's (1845). Of the motion of fluid between
+concentric coaxially rotating spheres (spherical Couette flow), he noted that
+motion in circular stream-lines about the axis of rotation was impossible
+unless the centrifugal force were neglected, whereas if it were included:
+<BLOCKQUOTE>
+it is easy to see that from the excess of centrifugal force in the
+neighbourhood of the equator of the [inner] revolving sphere the particles in
+that part will recede from the sphere, and approach it again in the
+neighbourhood of the poles, and this circulating motion will be combined with
+a motion about the axis. (Stokes 1845)
+
+</BLOCKQUOTE>
+
+<P>
+Spherical Couette flow was later studied by Lamb (1932, p.&nbsp;588), who gave the
+creeping flow limiting solution, and Munson and Joseph (1971),
+who presented results from an asymptotic expansion for low
+Reynolds number indicating the correctness of Stokes's and Lamb's
+predictions; in particular, the expansion for the motion in meridian planes
+involves only odd powers of the Reynolds number.
+There are also several recent numerical studies
+(Schwengels &amp; Schulz 1989; Riad Mossad 1993; Ni &amp; Nigro 1994;
+Nakabayashi &amp; Tsuchida 1995; Zikanov 1996).
+
+<P>
+If the entire boundary of a fluid were
+rotating, the fluid, at steady state, would rotate as a solid body (Rayleigh
+1913),
+in which case the effect of the centrifugal force would be to generate a
+pressure varying as the square of the azimuthal velocity 
+(Lamb 1932, p.&nbsp;28; Bird et al. 1960, pp.&nbsp;96-8).
+With one end-wall fixed, the azimuthal velocity (and therefore the centrifugal
+force and consequent pressure) must vary axially.  It is this axial
+variation in pressure which gives rise to the axial velocity.  Now, the
+centrifugal force is inversely proportional to the radius of curvature
+of the azimuthal velocity.  In the rotating cylinder this is simply
+equal to the distance from the axis, but if an analogy is drawn between
+Pao's problem and the buoyant flow in a cavity this need not be so.  For
+a unicellular flow in a very tall cavity, the stream-lines sufficiently
+far from the horizontal surfaces will be practically straight, so that
+their radius of curvature is infinite and the centrifugal force vanishes.
+There is, therefore, no centrifugally generated pressure, no axial
+variation of centrifugally generated pressure and no force to cause
+axial/spanwise flow.
+
+<P>
+Of course, the temperature will also be independent of <IMG
+ WIDTH="14" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img84.png"
+ ALT="$z$"> in the fully
+developed region so that the first (thermal) mechanism is eliminated too.
+
+<P>
+The centrifugal force is proportional to the square of the
+azimuthal velocity, and therefore must vanish faster than the primary
+circulating flow as the speed scale, <!-- MATH
+ $\nu\mbox{\textit{Gr}}(1+N)/b$
+ -->
+<IMG
+ WIDTH="121" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img625.png"
+ ALT="$\nu \mbox{\textit{Gr}}(1+N)/b$">, tends to zero.  
+Thus, the second
+(inertial) mechanism for spanwise flow in a confined convective roll vanishes
+if either the stream-lines are straight or terms quadratic in the
+velocity vanish (creeping flow).
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1997"
+  HREF="node127.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1993"
+  HREF="node125.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1989"
+  HREF="node125.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1995"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1998"
+  HREF="node127.html">Spherical enclosures</A>
+<B> Up:</B> <A NAME="tex2html1994"
+  HREF="node125.html">The spanwise component of</A>
+<B> Previous:</B> <A NAME="tex2html1990"
+  HREF="node125.html">The spanwise component of</A>
+ &nbsp <B>  <A NAME="tex2html1996"
+  HREF="node2.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Geordie McBain
+2001-01-27
+</ADDRESS>
+</BODY>
+</HTML>

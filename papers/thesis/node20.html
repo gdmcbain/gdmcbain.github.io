@@ -1,0 +1,231 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.47)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Velocity boundary conditions</TITLE>
+<META NAME="description" CONTENT="Velocity boundary conditions">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="thesis.css">
+
+<LINK REL="next" HREF="node21.html">
+<LINK REL="previous" HREF="node19.html">
+<LINK REL="up" HREF="node19.html">
+<LINK REL="next" HREF="node21.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html608"
+  HREF="node21.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html604"
+  HREF="node19.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html598"
+  HREF="node19.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html606"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html609"
+  HREF="node21.html">Heat and mass transfer</A>
+<B> Up:</B> <A NAME="tex2html605"
+  HREF="node19.html">Boundary conditions</A>
+<B> Previous:</B> <A NAME="tex2html599"
+  HREF="node19.html">Boundary conditions</A>
+ &nbsp <B>  <A NAME="tex2html607"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION00821000000000000000"></A>
+<A NAME="sec:BE_Vbc"></A>
+<BR>
+Velocity boundary conditions
+</H2>
+
+<P>
+The two types of velocity boundary conditions are those at solid
+and semipermeable walls.
+
+<P>
+At a solid wall, no fluid (gas or vapour) can pass through the boundary,
+therefore
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\mbox{\boldmath$\hat{n}$}\cdot\mathbf{u}_*=0
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="bc:prim_impvel"></A><IMG
+ WIDTH="81" HEIGHT="43" BORDER="0"
+ SRC="img203.png"
+ ALT="\begin{displaymath}
+\mbox{\boldmath$\hat{n}$}\cdot\mathbf{u}_*=0
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.20)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+where <!-- MATH
+ $\mbox{\boldmath$\hat{n}$}$
+ -->
+<IMG
+ WIDTH="18" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img204.png"
+ ALT="$\mbox{\boldmath$\hat{n}$}$"> is the unit outward normal.
+
+<P>
+At an ideally semipermeable  mass transfer interface, the vapour
+alone can pass; i.e. the surface is impermeable to the gas.  In this case, the normal
+component of the total mass flux must equal that of the 
+vapour mass flux (<A HREF="node14.html#eqn:prim_n_i.t.o.m">2.4</A>):
+<BR>
+<DIV ALIGN="CENTER"><A NAME="bc:basic_transpiration"></A><A NAME="bc:prim_transpiration"></A>
+<!-- MATH
+ \begin{eqnarray}
+\mbox{\boldmath$\hat{n}$}\cdot\rho\mathbf{u}_* &=& \mbox{\boldmath$\hat{n}$}\cdot\mathbf{n}_*\\
+\mbox{\boldmath$\hat{n}$}\cdot\rho\mathbf{u}_*&=&\mbox{\boldmath$\hat{n}$}\cdot\rho(m_*\mathbf{u}_*-D\mbox{\boldmath$\nabla$}_*m_*) \\
+\mbox{\boldmath$\hat{n}$}\cdot\mathbf{u}_* &=& \frac{-D}{1-m_*}\mbox{\boldmath$\hat{n}$}\cdot\mbox{\boldmath$\nabla$}_* m_*.
+\end{eqnarray}
+ -->
+<TABLE ALIGN="CENTER" CELLPADDING="0" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="61" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img205.png"
+ ALT="$\displaystyle \mbox{\boldmath$\hat{n}$}\cdot\rho\mathbf{u}_*$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="52" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img206.png"
+ ALT="$\displaystyle \mbox{\boldmath$\hat{n}$}\cdot\mathbf{n}_*$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.21)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="61" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img205.png"
+ ALT="$\displaystyle \mbox{\boldmath$\hat{n}$}\cdot\rho\mathbf{u}_*$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="189" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img207.png"
+ ALT="$\displaystyle \mbox{\boldmath$\hat{n}$}\cdot\rho(m_*\mathbf{u}_*-D\mbox{\boldmath$\nabla$}_*m_*)$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.22)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="52" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img208.png"
+ ALT="$\displaystyle \mbox{\boldmath$\hat{n}$}\cdot\mathbf{u}_*$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="148" HEIGHT="60" ALIGN="MIDDLE" BORDER="0"
+ SRC="img209.png"
+ ALT="$\displaystyle \frac{-D}{1-m_*}\mbox{\boldmath$\hat{n}$}\cdot\mbox{\boldmath$\nabla$}_* m_*.$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(2.23)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+This `transpiration' boundary condition was used by, for example, Hu and
+El-Wakil (1974), and Rosenberger  and M&#252;ller (1983).
+
+<P>
+The no-slip condition is uncontroversial
+for the semipermeable walls, except for situations like the experiments of
+Hu and El-Wakil (1974; &#167;<A HREF="node44.html#sec:LR_huE74">3.3.2</A>) or Weaver and Viskanta
+(1991<I>c</I>; &#167;<A HREF="node56.html#sec:LR_weavV91c">3.3.14</A>),
+where liquefied vapour streamed down the walls.
+For the solid walls, however, there is a deep division of opinion on the
+validity of the no-slip condition, dating back at least to 1954 
+(Lee, C. Y. &amp; Wilke), and continuing up to the present
+(&#167;<A HREF="node35.html#sec:LR_Sdt">3.2</A>).
+
+<P>
+Though the issue may have been obscured
+by several simultaneous phenomena, I am persuaded by the
+agreement between experiment and model (including nonslip solid walls) in the
+recent detailed study of Rosenberger et al. (1997),  and
+so accept the validity of the boundary condition.  
+Another test of the no-slip condition could be provided by the
+agreement between theory, numerical solutions and experiment on the criterion
+for the onset of convective flow in a Stefan diffusion tube with a light
+vapour (McBain, Suehrcke &amp; Harris, in press; &#167;<A HREF="node40.html#sec:LR_Be">3.2.5</A>), 
+ although to date measurements are only available for very low
+mass transfer rates (<!-- MATH
+ $0<\varPhi <0.012$
+ -->
+<IMG
+ WIDTH="119" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img210.png"
+ ALT="$0&lt;\varPhi &lt;0.012$">).
+
+<P>
+Further verification, in the form of a more specific experiment or
+`a rigorous statistical mechanical treatment', as suggested
+by Markham and Rosenberger (1980) and Jhaveri et al. (1981), 
+may be required before this question is finally settled.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html608"
+  HREF="node21.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html604"
+  HREF="node19.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html598"
+  HREF="node19.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html606"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html609"
+  HREF="node21.html">Heat and mass transfer</A>
+<B> Up:</B> <A NAME="tex2html605"
+  HREF="node19.html">Boundary conditions</A>
+<B> Previous:</B> <A NAME="tex2html599"
+  HREF="node19.html">Boundary conditions</A>
+ &nbsp <B>  <A NAME="tex2html607"
+  HREF="node2.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Geordie McBain
+2001-01-27
+</ADDRESS>
+</BODY>
+</HTML>

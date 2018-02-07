@@ -1,0 +1,352 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.47)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>The floor and ceiling problems</TITLE>
+<META NAME="description" CONTENT="The floor and ceiling problems">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="thesis.css">
+
+<LINK REL="next" HREF="node89.html">
+<LINK REL="previous" HREF="node85.html">
+<LINK REL="up" HREF="node74.html">
+<LINK REL="next" HREF="node87.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1476"
+  HREF="node87.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1472"
+  HREF="node74.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1466"
+  HREF="node85.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1474"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1477"
+  HREF="node87.html">The fully developed solution</A>
+<B> Up:</B> <A NAME="tex2html1473"
+  HREF="node74.html">The Floor and the</A>
+<B> Previous:</B> <A NAME="tex2html1467"
+  HREF="node85.html">Conclusions on the use</A>
+ &nbsp <B>  <A NAME="tex2html1475"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION001140000000000000000"></A>
+<A NAME="sec:FC_Fcp"></A>
+<BR>
+The floor and ceiling problems
+</H1>
+
+<P>
+In the remainder of this chapter, the solution and postprocessing
+method just developed is used to investigate the floor and ceiling problems.
+
+<P>
+The understanding of vapour transport across gas-filled enclosures has been
+hampered by the large number of dimensionless parameters and possible flow
+regimes.  Here, a conduction-diffusion regime is defined by the existence
+of a fully developed region, for which an analytic solution is available
+(ch.&nbsp;<A HREF="node62.html#ch:NCL">4</A>).  Numerical solutions demonstrating the existence of the
+regime for a cavity of finite vertical aspect ratio are presented.  The
+agreement between the numerical and analytic solutions gives mutual
+validation.  The range of parameters over which the regime applies is
+investigated, with emphasis on the penetration of end-effects into the core.
+The functional dependence of the overall transfer rates on the vertical
+aspect ratio is also presented.
+
+<P>
+First, let us review the relevant literature.
+
+<P>
+There have been several previous investigations of vapour transport across
+gas-filled enclosures, as summarized in chapter&nbsp;<A HREF="node33.html#ch:LR">3</A>.
+These studies have produced various formulae for the heat and mass transfer
+rates, but it is difficult to assess their domain of validity, given the
+large number of dimensionless governing parameters
+and the range of possible flow regimes, the principal
+divisions amongst which arise from the existence of turbulence, multiple
+cells and/or boundary layers.
+
+<P>
+A demarcation of regimes for strongly convective flows driven either
+by heat (<IMG
+ WIDTH="56" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img433.png"
+ ALT="$N=0$">) or mass (<IMG
+ WIDTH="74" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img659.png"
+ ALT="$N^{-1}=0$">) transfer with vanishingly dilute
+vapours (<IMG
+ WIDTH="52" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img297.png"
+ ALT="$\varPhi =0$">) according to the relative magnitudes of the
+Schmidt, <I>Sc</I>, and (reference) Prandtl, <!-- MATH
+ $\mbox{\textit{Pr}}_r$
+ -->
+<IMG
+ WIDTH="35" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img55.png"
+ ALT="$\mbox{\textit{Pr}}_r$">, numbers was made by
+Bejan (1985;
+&#167;<A HREF="node47.html#sec:LR_beja85">3.3.5</A>).  
+These results were verified by B&#233;ghein et al. (1992;
+&#167;<A HREF="node57.html#sec:LR_beghHA92">3.3.15</A>),
+but only for values of <I>Sc</I> and
+<!-- MATH
+ $\mbox{\textit{Pr}}_r$
+ -->
+<IMG
+ WIDTH="35" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img55.png"
+ ALT="$\mbox{\textit{Pr}}_r$"> much larger or smaller than unity.  Unfortunately, for
+gas-vapour mixtures, the diffusivities of momentum, temperature and
+species are all of similar order of magnitude.  Theoretically based
+formulae for the heat and mass transfer rates have been developed 
+that are valid for Prandtl and Schmidt numbers near, but not
+necessarily equal to, unity  (McBain 1997<I>b</I>;
+&#167;<A HREF="node58.html#sec:LR_mcba9597b">3.3.16</A>).
+These latter formulae are based on a scale
+analysis appropriate for boundary layer regimes, and so perform poorly
+for flows where diffusive effects penetrate across the width of the
+cavity.
+
+<P>
+In chapter&nbsp;<A HREF="node62.html#ch:NCL">4</A>, an analytic solution of the system of
+governing equations was presented that is valid in the narrow cavity limit,
+<!-- MATH
+ $\mbox{$\mathcal A$},\,\mbox{$\mathcal S$}\rightarrow\infty$
+ -->
+<IMG
+ WIDTH="93" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img660.png"
+ ALT="$\mbox{$\mathcal A$},\,\mbox{$\mathcal S$}\rightarrow\infty$">.  This solution is
+analogous to that of Jones and Furry (1946); 
+i.e. equations (<A HREF="node66.html#soln:narrow_u_Phi0">4.35</A>)-(<A HREF="node66.html#soln:narrow_T_Phi0">4.38</A>)
+with <IMG
+ WIDTH="47" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img579.png"
+ ALT="$c=0$">; for the single fluid
+heat transfer problem (defined in &#167;<A HREF="node27.html#sec:BE_Sfhtp">2.4</A>).
+Thus, this new solution can be taken to define a 
+`conduction-diffusion regime' for the nonisothermal vapour transport
+problem, in the same way that Batchelor (1954) and Eckert and
+Carlson (1961) 
+defined a conduction regime for the heat transfer problem,
+as that in which the one-dimensional profiles 
+occur over at least some section of the height of the cavity.  
+<A NAME="sec:CDR_defined"></A>
+<P>
+One of the present purposes is to demonstrate numerically that the
+conduction-diffusion regime can exist in a two-dimensional cavity of
+finite vertical aspect ratio.  Previously the only evidence was the qualitative
+assertion of Jhaveri et al. (1981)
+for a case of isothermal mass
+transfer; <!-- MATH
+ $N=\infty,\,\mbox{\textit{Gr}}=0,\,\mbox{\textit{Gr}}(1+N)=1.6,\,\mbox{\textit{Sc}}=1,\,\varPhi =-0.4$
+ -->
+<IMG
+ WIDTH="440" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img661.png"
+ ALT="$N=\infty,\,\mbox{\textit{Gr}}=0,\,\mbox{\textit{Gr}}(1+N)=1.6,\,\mbox{\textit{Sc}}=1,\,\varPhi =-0.4$"> and 
+<!-- MATH
+ $\mbox{$\mathcal A$}=4$
+ -->
+<IMG
+ WIDTH="54" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img431.png"
+ ALT="$\mbox{$\mathcal A$}=4$">; that the flow was essentially one-dimensional,
+except adjacent to the horizontal walls.
+Demonstrating the existence of the regime also simultaneously validates
+the former analytic and present finite element solutions.  
+
+<P>
+A second desirable purpose would be to determine the range of the
+dimensionless parameters for which the regime exists, but this is
+difficult for two reasons.  Firstly, the large number of governing
+parameters makes an exhaustive set of numerical experiments prohibitively
+expensive; there are seven parameters in the present model
+compared with three for the pure fluid problem: <I>Gr</I>, <I>Pr</I> and <IMG
+ WIDTH="20" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img13.png"
+ ALT="$\mathcal A$">.  
+Secondly, there may be several
+mechanisms which can lead to the destruction of the regime.
+According to Daniels (1985),
+the pure fluid conduction regime can break down in three ways:
+
+<UL>
+<LI>travelling wave instability;
+</LI>
+<LI>stationary spanwise roll instability with vertical periodicity; or
+</LI>
+<LI>a gradual penetration of convective effects into the core from the
+ends as the Grashof number increases.
+</LI>
+</UL>
+
+<P>
+The travelling wave instability, in the pure fluid case, occurs only for
+large Prandtl numbers so that it should not be relevant for gas-vapour
+mixtures.  The minimum Prandtl number is given as 11.4 by Gershuni and 
+Zhukhovitskii (1976, p.&nbsp;276), and 12.7 by Bergholz (1978).
+
+<P>
+A proper consideration of the second mechanism
+would require reference to the unsteady equations 
+(Cleary 1995<I>a</I>);
+the numerical model developed in &#167;&#167;<A HREF="node75.html#sec:FC_Mvtf">5.1</A> - <A HREF="node85.html#sec:FC_Cuf">5.3</A>
+treats only the stationary forms of the equations.  
+Linear stability analysis of the pure fluid problem predicts the appearance
+multiple rolls if the Grashof number exceeds a critical value
+weakly dependent on the Prandtl number.  It decreases from its
+zero Prandtl number limit of 7932
+(Korpela, G&#246;z&#252;m &amp; Baxi  1973) 
+to 7349.516 at <!-- MATH
+ $\mbox{\textit{Pr}}=0.1$
+ -->
+<IMG
+ WIDTH="76" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img662.png"
+ ALT="$\mbox{\textit{Pr}}=0.1$">, then increases to 8093.723 at
+<!-- MATH
+ $\mbox{\textit{Pr}}=0.5$
+ -->
+<IMG
+ WIDTH="76" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img663.png"
+ ALT="$\mbox{\textit{Pr}}=0.5$">, decreases again to 7848.831 at <!-- MATH
+ $\mbox{\textit{Pr}}=2.3$
+ -->
+<IMG
+ WIDTH="76" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img664.png"
+ ALT="$\mbox{\textit{Pr}}=2.3$"> and slowly
+increases thereafter, the value at <!-- MATH
+ $\mbox{\textit{Pr}}=10$
+ -->
+<IMG
+ WIDTH="71" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img665.png"
+ ALT="$\mbox{\textit{Pr}}=10$"> being 7870.43 (Ruth 1979).
+
+The discrepancy between the theoretical value, 8038, at <!-- MATH
+ $\mbox{\textit{Pr}}=0.71$
+ -->
+<IMG
+ WIDTH="86" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img666.png"
+ ALT="$\mbox{\textit{Pr}}=0.71$"> (Korpela et
+al. 1973) and Hollands and Konicek's (1973) experimental value of 11 000
+for air was ascribed by Lee and Korpela (1983) to the stabilizing effect of the
+slight positive vertical temperature gradient resulting from the finite
+vertical aspect ratio of the physical cavity.
+In the absence of knowledge of the effect of <!-- MATH
+ $\varPhi , N, \mbox{\textit{Pr}}_I$
+ -->
+<IMG
+ WIDTH="80" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img667.png"
+ ALT="$\varPhi , N, \mbox{\textit{Pr}}_I$"> or <I>Sc</I> on the
+critical Grashof number, the parameters for this study were chosen so that
+the combined Grashof number, <!-- MATH
+ $\mbox{\textit{Gr}}(1+N)$
+ -->
+<IMG
+ WIDTH="93" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img11.png"
+ ALT="$\mbox{\textit{Gr}}(1+N)$">, was considerably less than 8000.
+
+<P>
+Even if consideration is restricted to the third mechanism, the problem 
+has not yet been solved conclusively even for pure heat transfer.
+Some authors have asserted
+that the conduction regime exists below a certain fixed Rayleigh number,
+giving values between 1500 and 3000 (Vest &amp; Arpaci 1969; Dixon &amp; Probert
+1975; Gebhart et al. 1988, p.&nbsp;730).  
+The analyses of Batchelor (1954), Patterson and Imberger (1980),
+ and Daniels (1985), on the other hand, suggest that the
+maximum Rayleigh number is proportional to the vertical aspect ratio.  
+The boundary drawn on the <I>Ra</I>-<IMG
+ WIDTH="20" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img13.png"
+ ALT="$\mathcal A$"> plane by Eckert and Carlson (1961),
+based on their experimental results,
+gives a one-third power dependence on <IMG
+ WIDTH="20" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img13.png"
+ ALT="$\mathcal A$">.
+Though intermediate, this conclusion must be treated with some
+caution, since the sparsity of the experimental data points allowed
+Dixon and Probert to draw,  just as plausibly, their vertical line.  
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS"><STRONG>Subsections</STRONG></A>
+
+<UL>
+<LI><A NAME="tex2html1478"
+  HREF="node87.html">The fully developed solution</A>
+<LI><A NAME="tex2html1479"
+  HREF="node88.html">Numerical solutions</A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1476"
+  HREF="node87.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1472"
+  HREF="node74.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1466"
+  HREF="node85.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1474"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1477"
+  HREF="node87.html">The fully developed solution</A>
+<B> Up:</B> <A NAME="tex2html1473"
+  HREF="node74.html">The Floor and the</A>
+<B> Previous:</B> <A NAME="tex2html1467"
+  HREF="node85.html">Conclusions on the use</A>
+ &nbsp <B>  <A NAME="tex2html1475"
+  HREF="node2.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Geordie McBain
+2001-01-27
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,203 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.47)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Overall transfer rates</TITLE>
+<META NAME="description" CONTENT="Overall transfer rates">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="thesis.css">
+
+<LINK REL="previous" HREF="node83.html">
+<LINK REL="up" HREF="node81.html">
+<LINK REL="next" HREF="node85.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1452"
+  HREF="node85.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1448"
+  HREF="node81.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1444"
+  HREF="node83.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1450"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1453"
+  HREF="node85.html">Conclusions on the use</A>
+<B> Up:</B> <A NAME="tex2html1449"
+  HREF="node81.html">Results</A>
+<B> Previous:</B> <A NAME="tex2html1445"
+  HREF="node83.html">Postprocessing</A>
+ &nbsp <B>  <A NAME="tex2html1451"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001123000000000000000">
+Overall transfer rates</A>
+</H2>
+
+<P>
+The overall energy transfer rates may be calculated from (<A HREF="node26.html#eqn:Nu">2.66</A>) or
+by averaging the
+horizontal component of the total energy flux (<A HREF="node23.html#eqn:esplit">2.47</A>) over any
+vertical line segment joining the floor and the ceiling (since these
+boundaries are adiabatic).  The latter is chosen here
+as a test of the overall conservation of energy and the
+accuracy of the postprocessing operations involved in the calculation
+of <IMG
+ WIDTH="13" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img652.png"
+ ALT="$e$">.
+Results are presented for averages over the left
+wall, the right wall and the total domain in Table <A HREF="node84.html#tbl:Nu">5.2</A>.
+<BR><P></P>
+<DIV ALIGN="CENTER"><A NAME="7536"></A>
+<TABLE>
+<CAPTION><STRONG>Table 5.2:</STRONG>
+Overall energy transfer rate and test of conservation of energy.</CAPTION>
+<TR><TD>
+<DIV ALIGN="CENTER"><TABLE CELLPADDING=3 BORDER="1">
+<TR><TD ALIGN="CENTER"><!-- MATH
+ $\mbox{$\mathcal A$}^{-1}\int_{0}^{\mathcal{A}} e|_{x=0} \,\mathrm{d}y$
+ -->
+<IMG
+ WIDTH="130" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img653.png"
+ ALT="$\mbox{$\mathcal A$}^{-1}\int_{0}^{\mathcal{A}} e\vert _{x=0} \,\mathrm{d}y$"></TD>
+<TD ALIGN="CENTER">1.0788</TD>
+</TR>
+<TR><TD ALIGN="CENTER"><!-- MATH
+ $\mbox{$\mathcal A$}^{-1}\int_{0}^{\mathcal{A}} e|_{x=1} \,\mathrm{d}y$
+ -->
+<IMG
+ WIDTH="130" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img654.png"
+ ALT="$\mbox{$\mathcal A$}^{-1}\int_{0}^{\mathcal{A}} e\vert _{x=1} \,\mathrm{d}y$"></TD>
+<TD ALIGN="CENTER">1.0800</TD>
+</TR>
+<TR><TD ALIGN="CENTER"><!-- MATH
+ $\mbox{$\mathcal A$}^{-1}\int_{0}^{\mathcal{A}}\!\!\int_{0}^{1} e\,\,\mathrm{d}x\,\,\mathrm{d}y$
+ -->
+<IMG
+ WIDTH="144" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img655.png"
+ ALT="$\mbox{$\mathcal A$}^{-1}\int_{0}^{\mathcal{A}}\!\!\int_{0}^{1} e\,\,\mathrm{d}x\,\,\mathrm{d}y$"></TD>
+<TD ALIGN="CENTER">1.0843</TD>
+</TR>
+</TABLE>
+
+<A NAME="tbl:Nu"></A></DIV></TD></TR>
+</TABLE>
+</DIV><P></P>
+<BR>
+As can be seen, the estimates of the overall energy transfer rate agree
+with each other to within 0.5%.
+
+<P>
+The postprocessing for the mass transfer is similar to that for the
+energy transfer.  The details are omitted, though the overall
+transfer rate can be inferred from equation
+(<A HREF="node26.html#eqn:Sh_i.t.o.u">2.62</A>) and table&nbsp;<A HREF="node82.html#tbl:gridi">5.1</A>:
+<BR>
+<DIV ALIGN="CENTER">
+
+<!-- MATH
+ \begin{eqnarray}
+\overline{\mbox{\textit{Sh}}} & = & -\frac{\mbox{\textit{Gr}}(1+N)\mbox{\textit{Sc}}}{\varPhi }\times
+	\frac{\int_0^{\mathcal{A}}\int_0^1 u \,\mathrm{d}x\,\mathrm{d}y}{\mbox{$\mathcal A$}} \nonumber \\
+& = & -\frac{938.7(1+0.5)0.61}{0.69}\times\frac{-0.004252}{5} = 1.06.
+\end{eqnarray}
+ -->
+<TABLE ALIGN="CENTER" CELLPADDING="0" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="26" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img656.png"
+ ALT="$\displaystyle \overline{\mbox{\textit{Sh}}}$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="264" HEIGHT="68" ALIGN="MIDDLE" BORDER="0"
+ SRC="img657.png"
+ ALT="$\displaystyle -\frac{\mbox{\textit{Gr}}(1+N)\mbox{\textit{Sc}}}{\varPhi }\times...
+...\int_0^{\mathcal{A}}\int_0^1 u \,\mathrm{d}x\,\mathrm{d}y}{\mbox{$\mathcal A$}}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="346" HEIGHT="62" ALIGN="MIDDLE" BORDER="0"
+ SRC="img658.png"
+ ALT="$\displaystyle -\frac{938.7(1+0.5)0.61}{0.69}\times\frac{-0.004252}{5} = 1.06.$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(5.6)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+The closeness of the average transfer rates to unity is indicative of both the
+aptness of the scales chosen in &#167;<A HREF="node26.html#sec:BE_Wf">2.3.4</A> and the low degree of
+convective enhancement with the present parameter values.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1452"
+  HREF="node85.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1448"
+  HREF="node81.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1444"
+  HREF="node83.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1450"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1453"
+  HREF="node85.html">Conclusions on the use</A>
+<B> Up:</B> <A NAME="tex2html1449"
+  HREF="node81.html">Results</A>
+<B> Previous:</B> <A NAME="tex2html1445"
+  HREF="node83.html">Postprocessing</A>
+ &nbsp <B>  <A NAME="tex2html1451"
+  HREF="node2.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Geordie McBain
+2001-01-27
+</ADDRESS>
+</BODY>
+</HTML>

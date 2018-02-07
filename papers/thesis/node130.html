@@ -1,0 +1,581 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.47)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>The low Grashof number expansion</TITLE>
+<META NAME="description" CONTENT="The low Grashof number expansion">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="thesis.css">
+
+<LINK REL="next" HREF="node131.html">
+<LINK REL="previous" HREF="node129.html">
+<LINK REL="up" HREF="node127.html">
+<LINK REL="next" HREF="node131.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html2055"
+  HREF="node131.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html2051"
+  HREF="node127.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html2045"
+  HREF="node129.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html2053"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html2056"
+  HREF="node131.html">Conduction-diffusion</A>
+<B> Up:</B> <A NAME="tex2html2052"
+  HREF="node127.html">Spherical enclosures</A>
+<B> Previous:</B> <A NAME="tex2html2046"
+  HREF="node129.html">Geometry and boundary conditions</A>
+ &nbsp <B>  <A NAME="tex2html2054"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001423000000000000000">
+The low Grashof number expansion</A>
+</H2>
+
+<P>
+It may be worthwhile at the outset to note that although low Reynolds number
+expansions for unbounded domains, e.g. viscous flow past a solid sphere
+(Lamb 1932, p.&nbsp;609; Van Dyke 1964, ch.&nbsp;8), 
+are singular perturbation problems, this is not the case for 
+bounded domains (Munson &amp; Joseph 1971). 
+This makes sense: the region of nonuniformity in the former class of problems,
+where the neglected inertial terms are not negligible in comparison to the
+retained viscous terms, is typically a neighbourhood of the point at infinity.
+
+<P>
+Assume asymptotic expansions for the vapour mass fraction, velocity,
+pressure and temperature of the form:
+<BR>
+<DIV ALIGN="CENTER">
+
+<!-- MATH
+ \begin{eqnarray}
+m & \sim & m_0 + [\mbox{\textit{Gr}}(1+N)] m_1 + [\mbox{\textit{Gr}}(1+N)]^2 m_2 + \cdots \\
+\mathbf{u} & \sim & \mathbf{u}_0 + [\mbox{\textit{Gr}}(1+N)] \mathbf{u}_1 +
+	[\mbox{\textit{Gr}}(1+N)]^2 \mathbf{u}_2 +\cdots \\
+p & \sim & p_0 + [\mbox{\textit{Gr}}(1+N)] p_1 + [\mbox{\textit{Gr}}(1+N)]^2 p_2 + \cdots \\
+T & \sim & T_0 + [\mbox{\textit{Gr}}(1+N)] T_1 + [\mbox{\textit{Gr}}(1+N)]^2 T_2 + \cdots
+\end{eqnarray}
+ -->
+<TABLE ALIGN="CENTER" CELLPADDING="0" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="21" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img592.png"
+ ALT="$\displaystyle m$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="20" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img730.png"
+ ALT="$\textstyle \sim$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="373" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1032.png"
+ ALT="$\displaystyle m_0 + [\mbox{\textit{Gr}}(1+N)] m_1 + [\mbox{\textit{Gr}}(1+N)]^2 m_2 + \cdots$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(8.10)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="17" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1033.png"
+ ALT="$\displaystyle \mathbf{u}$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="20" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img730.png"
+ ALT="$\textstyle \sim$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="359" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1034.png"
+ ALT="$\displaystyle \mathbf{u}_0 + [\mbox{\textit{Gr}}(1+N)] \mathbf{u}_1 +
+[\mbox{\textit{Gr}}(1+N)]^2 \mathbf{u}_2 +\cdots$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(8.11)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1035.png"
+ ALT="$\displaystyle p$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="20" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img730.png"
+ ALT="$\textstyle \sim$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="352" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1036.png"
+ ALT="$\displaystyle p_0 + [\mbox{\textit{Gr}}(1+N)] p_1 + [\mbox{\textit{Gr}}(1+N)]^2 p_2 + \cdots$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(8.12)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="18" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img597.png"
+ ALT="$\displaystyle T$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="20" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img730.png"
+ ALT="$\textstyle \sim$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="357" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1037.png"
+ ALT="$\displaystyle T_0 + [\mbox{\textit{Gr}}(1+N)] T_1 + [\mbox{\textit{Gr}}(1+N)]^2 T_2 + \cdots$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(8.13)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+as <!-- MATH
+ $\mbox{\textit{Gr}}\rightarrow 0$
+ -->
+<IMG
+ WIDTH="68" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img444.png"
+ ALT="$\mbox{\textit{Gr}}\rightarrow 0$">, with <IMG
+ WIDTH="69" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1038.png"
+ ALT="$(1+N)$">, <!-- MATH
+ $\mbox{\textit{Sc}}$
+ -->
+<IMG
+ WIDTH="25" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img436.png"
+ ALT="$\mbox{\textit{Sc}}$"> and <!-- MATH
+ $\mbox{\textit{Pr}}$
+ -->
+<IMG
+ WIDTH="27" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1039.png"
+ ALT="$\mbox{\textit{Pr}}$"> fixed and finite.
+
+<P>
+Substituting these in to the low mass transfer rate equations,
+(<A HREF="node98.html#eqn:LMTR_continuity">6.16</A>)-(<A HREF="node98.html#eqn:LMTR_energy">6.19</A>), and taking the limit
+<!-- MATH
+ $\mbox{\textit{Gr}}\rightarrow 0$
+ -->
+<IMG
+ WIDTH="68" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img444.png"
+ ALT="$\mbox{\textit{Gr}}\rightarrow 0$"> leads to a hierarchy of problems:
+<BR>
+<DIV ALIGN="CENTER"><A NAME="eqn:mi"></A><A NAME="eqn:Ti"></A>
+<!-- MATH
+ \begin{eqnarray}
+A_{mi} & = & \nabla^2 m_i;\\
+A_{Ti} & = & \nabla^2 T_i;\\
+m_i = T_i  & = & \left\{ \begin{array}{lr}
+				x, & (i=0) \\
+				0, & (i=1,2,\ldots)
+			\end{array} \right.,\quad (r=\mbox{$\frac{1}{2}$}),
+\end{eqnarray}
+ -->
+<TABLE ALIGN="CENTER" CELLPADDING="0" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="36" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1040.png"
+ ALT="$\displaystyle A_{mi}$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="55" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1041.png"
+ ALT="$\displaystyle \nabla^2 m_i;$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(8.14)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="34" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1042.png"
+ ALT="$\displaystyle A_{Ti}$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="50" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1043.png"
+ ALT="$\displaystyle \nabla^2 T_i;$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(8.15)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="68" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1044.png"
+ ALT="$\displaystyle m_i = T_i$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="267" HEIGHT="87" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1045.png"
+ ALT="$\displaystyle \left\{ \begin{array}{lr}
+x, &amp; (i=0) \\
+0, &amp; (i=1,2,\ldots)
+\end{array} \right.,\quad (r=\mbox{$\frac{1}{2}$}),$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(8.16)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+where
+<BR>
+<DIV ALIGN="CENTER"><A NAME="def:Ami"></A><A NAME="def:ATi"></A>
+<!-- MATH
+ \begin{eqnarray}
+A_{mi} & \equiv & 
+\mbox{\textit{Sc}}\sum\limits_{k=0}^{i-1} \mathbf{u}_{i-1-k}\cdot\mbox{\boldmath$\nabla$}m_{k}\\
+A_{Ti} & \equiv &
+\mbox{\textit{Pr}}\sum\limits_{k=0}^{i-1} \mathbf{u}_{i-1-k}\cdot\mbox{\boldmath$\nabla$}T_{k}
+\end{eqnarray}
+ -->
+<TABLE ALIGN="CENTER" CELLPADDING="0" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="36" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1040.png"
+ ALT="$\displaystyle A_{mi}$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="20" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img236.png"
+ ALT="$\textstyle \equiv$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="165" HEIGHT="69" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1046.png"
+ ALT="$\displaystyle \mbox{\textit{Sc}}\sum\limits_{k=0}^{i-1} \mathbf{u}_{i-1-k}\cdot\mbox{\boldmath$\nabla$}m_{k}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(8.17)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="34" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1042.png"
+ ALT="$\displaystyle A_{Ti}$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="20" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img236.png"
+ ALT="$\textstyle \equiv$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="162" HEIGHT="69" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1047.png"
+ ALT="$\displaystyle \mbox{\textit{Pr}}\sum\limits_{k=0}^{i-1} \mathbf{u}_{i-1-k}\cdot\mbox{\boldmath$\nabla$}T_{k}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(8.18)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+and
+<BR>
+<DIV ALIGN="CENTER">
+
+<!-- MATH
+ \begin{eqnarray}
+\mbox{\boldmath$\nabla$}\cdot \mathbf{u}_i & = & 0 \\
+\mathbf{I}_i - \mathbf{B}_i & = & -\mbox{\boldmath$\nabla$}p_i +\nabla^2 \mathbf{u}_i \\
+\mathbf{u}_i & = & \mathbf{0},\quad(r=\mbox{$\frac{1}{2}$})
+\end{eqnarray}
+ -->
+<TABLE ALIGN="CENTER" CELLPADDING="0" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="54" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1048.png"
+ ALT="$\displaystyle \mbox{\boldmath$\nabla$}\cdot \mathbf{u}_i$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img165.png"
+ ALT="$\displaystyle 0$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(8.19)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="62" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1049.png"
+ ALT="$\displaystyle \mathbf{I}_i - \mathbf{B}_i$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="117" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1050.png"
+ ALT="$\displaystyle -\mbox{\boldmath$\nabla$}p_i +\nabla^2 \mathbf{u}_i$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(8.20)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="22" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1051.png"
+ ALT="$\displaystyle \mathbf{u}_i$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="102" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1052.png"
+ ALT="$\displaystyle \mathbf{0},\quad(r=\mbox{$\frac{1}{2}$})$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(8.21)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+where
+<BR>
+<DIV ALIGN="CENTER"><A NAME="def:Ii"></A><A NAME="def:Bi"></A>
+<!-- MATH
+ \begin{eqnarray}
+\mathbf{I}_i & \equiv &
+	\sum\limits_{k=0}^{i-1} \mathbf{u}_{i-1-k}\cdot\mbox{\boldmath$\nabla$}\mathbf{u}_{k}\\
+\mathbf{B}_i & \equiv & \frac{T_i+Nm_i}{1+N}\mbox{\boldmath$\hat{\jmath}$}.
+\end{eqnarray}
+ -->
+<TABLE ALIGN="CENTER" CELLPADDING="0" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="18" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1053.png"
+ ALT="$\displaystyle \mathbf{I}_i$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="20" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img236.png"
+ ALT="$\textstyle \equiv$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="137" HEIGHT="69" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1054.png"
+ ALT="$\displaystyle \sum\limits_{k=0}^{i-1} \mathbf{u}_{i-1-k}\cdot\mbox{\boldmath$\nabla$}\mathbf{u}_{k}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(8.22)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="25" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1055.png"
+ ALT="$\displaystyle \mathbf{B}_i$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="20" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img236.png"
+ ALT="$\textstyle \equiv$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="100" HEIGHT="60" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1056.png"
+ ALT="$\displaystyle \frac{T_i+Nm_i}{1+N}\mbox{\boldmath$\hat{\jmath}$}.$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(8.23)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+The series for <IMG
+ WIDTH="36" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1057.png"
+ ALT="$A_{mi}$">, <IMG
+ WIDTH="34" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1058.png"
+ ALT="$A_{Ti}$"> and <!-- MATH
+ $\mathbf{I}_{i}$
+ -->
+<IMG
+ WIDTH="18" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1059.png"
+ ALT="$\mathbf{I}_{i}$"> 
+are to be taken as zero if the lower index (zero) exceeds the upper;
+i.e. when <IMG
+ WIDTH="46" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1060.png"
+ ALT="$i=0$">.  Each <IMG
+ WIDTH="26" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1061.png"
+ ALT="$m_i$"> and <IMG
+ WIDTH="21" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1062.png"
+ ALT="$T_i$">
+satisfies a Laplace or Poisson equation, with source given in terms of
+previously calculated quantities.  These are, in principle, all soluble by
+expanding the source term and the independent variable in spherical harmonics.
+For the equations of motion, however, the presence of the
+unknown pressure terms and the continuity constraints means that at each
+order a Stokes problem with known `body force' must be solved.  
+The Stokes problem in a sphere
+can be reduced to an uncoupled unconstrained set of scalar partial
+differential equations (Poisson and inhomogeneous biharmonic equations) by
+decomposing the velocity term into its poloidal and toroidal parts.  This
+technique is summarized in appendix&nbsp;<A HREF="node142.html#app:VFS">B</A>.
+
+<P>
+The evaluation of <IMG
+ WIDTH="18" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1063.png"
+ ALT="$\mathbf{I}_i$"> may be tedious, but can be simplified by
+noting that except for <IMG
+ WIDTH="113" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1064.png"
+ ALT="$k=(i-1)/2$"> the terms of the series occur in pairs:
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\mathbf{u}_{i-1-k}\cdot\mbox{\boldmath$\nabla$}\mathbf{u}_k
+	+\mathbf{u}_k\cdot\mbox{\boldmath$\nabla$}\mathbf{u}_{i-1-k},
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="237" HEIGHT="44" BORDER="0"
+ SRC="img1065.png"
+ ALT="\begin{displaymath}
+\mathbf{u}_{i-1-k}\cdot\mbox{\boldmath$\nabla$}\mathbf{u}_k
++\mathbf{u}_k\cdot\mbox{\boldmath$\nabla$}\mathbf{u}_{i-1-k},
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(8.24)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+which can be evaluated via the vector identity
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\mathbf{u}\cdot\mbox{\boldmath$\nabla$}\mathbf{v}+\mathbf{v}\cdot\mbox{\boldmath$\nabla$}\mathbf{u} \equiv
+\mbox{\boldmath$\nabla$}(\mathbf{u}\cdot\mathbf{v})
++ (\mbox{\boldmath$\nabla$}\times\mathbf{v})\times\mathbf{u}
++ (\mbox{\boldmath$\nabla$}\times\mathbf{u})\times\mathbf{v}.
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="487" HEIGHT="45" BORDER="0"
+ SRC="img1066.png"
+ ALT="\begin{displaymath}
+\mathbf{u}\cdot\mbox{\boldmath$\nabla$}\mathbf{v}+\mathbf{v}...
+...
++ (\mbox{\boldmath$\nabla$}\times\mathbf{u})\times\mathbf{v}.
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(8.25)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+The exceptional case, <IMG
+ WIDTH="113" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1064.png"
+ ALT="$k=(i-1)/2$">, is expressed in spherical coordinates
+and components <!-- MATH
+ $(u_r,u_{\theta},u_{\phi})$
+ -->
+<IMG
+ WIDTH="92" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1067.png"
+ ALT="$(u_r,u_{\theta},u_{\phi})$"> as (Lamb 1932, p.&nbsp;159):
+<BR>
+<DIV ALIGN="CENTER"><A NAME="eqn:uicdotdelui"></A>
+<!-- MATH
+ \begin{eqnarray}
+\mathbf{u}\cdot\mbox{\boldmath$\nabla$}\mathbf{u} & = &
+\left(u_r\frac{\partial u_r}{\partial r} + \frac{u_{\theta}}{r}\frac{\partial u_r}{\partial \theta}
+	+ \frac{u_{\phi}}{r\sin\theta}\frac{\partial u_r}{\partial \phi}
+	- \frac{u_{\theta}^2+u_{\phi}^2}{r}\right)\;\mbox{\boldmath$\hat{r}$}\\
+& & + \left(u_r\frac{\partial u_{\theta}}{\partial r}
+	+ \frac{u_{\theta}}{r}\frac{\partial u_{\theta}}{\partial \theta}
+	+ \frac{u_{\phi}}{r\sin\theta}\frac{\partial u_{\theta}}{\partial \phi}
+	+ \frac{u_r u_{\theta}-u_{\phi}^2\cot\theta}{r}\right)
+	\;\mbox{\boldmath$\hat{\theta}$}
+\nonumber \\
+& & + \left(u_r\frac{\partial u_{\phi}}{\partial r} +
+	\frac{u_{\theta}}{r}\frac{\partial u_{\phi}}{\partial \theta} +
+	\frac{u_{\phi}}{r\sin\theta}\frac{\partial u_{\phi}}{\partial \phi} +
+	\frac{u_r u_{\phi}+u_{\theta}u_{\phi}\cot\theta}{r}\right)
+	\;\mbox{\boldmath$\hat{\phi}$}. \nonumber
+\end{eqnarray}
+ -->
+<TABLE ALIGN="CENTER" CELLPADDING="0" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="61" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1068.png"
+ ALT="$\displaystyle \mathbf{u}\cdot\mbox{\boldmath$\nabla$}\mathbf{u}$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="372" HEIGHT="67" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1069.png"
+ ALT="$\displaystyle \left(u_r\frac{\partial u_r}{\partial r} + \frac{u_{\theta}}{r}\f...
+...ial \phi}
+- \frac{u_{\theta}^2+u_{\phi}^2}{r}\right)\;\mbox{\boldmath$\hat{r}$}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(8.26)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="449" HEIGHT="67" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1070.png"
+ ALT="$\displaystyle + \left(u_r\frac{\partial u_{\theta}}{\partial r}
++ \frac{u_{\the...
+...u_r u_{\theta}-u_{\phi}^2\cot\theta}{r}\right)
+\;\mbox{\boldmath$\hat{\theta}$}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="480" HEIGHT="65" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1071.png"
+ ALT="$\displaystyle + \left(u_r\frac{\partial u_{\phi}}{\partial r} +
+\frac{u_{\theta...
+..._{\phi}+u_{\theta}u_{\phi}\cot\theta}{r}\right)
+\;\mbox{\boldmath$\hat{\phi}$}.$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html2055"
+  HREF="node131.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html2051"
+  HREF="node127.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html2045"
+  HREF="node129.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html2053"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html2056"
+  HREF="node131.html">Conduction-diffusion</A>
+<B> Up:</B> <A NAME="tex2html2052"
+  HREF="node127.html">Spherical enclosures</A>
+<B> Previous:</B> <A NAME="tex2html2046"
+  HREF="node129.html">Geometry and boundary conditions</A>
+ &nbsp <B>  <A NAME="tex2html2054"
+  HREF="node2.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Geordie McBain
+2001-01-27
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,555 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.47)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>First order flow correction for buoyancy</TITLE>
+<META NAME="description" CONTENT="First order flow correction for buoyancy">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="thesis.css">
+
+<LINK REL="next" HREF="node136.html">
+<LINK REL="previous" HREF="node134.html">
+<LINK REL="up" HREF="node127.html">
+<LINK REL="next" HREF="node136.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html2115"
+  HREF="node136.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html2111"
+  HREF="node127.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html2105"
+  HREF="node134.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html2113"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html2116"
+  HREF="node136.html">Flow structure to first</A>
+<B> Up:</B> <A NAME="tex2html2112"
+  HREF="node127.html">Spherical enclosures</A>
+<B> Previous:</B> <A NAME="tex2html2106"
+  HREF="node134.html">First order flow correction</A>
+ &nbsp <B>  <A NAME="tex2html2114"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001428000000000000000">
+First order flow correction for buoyancy</A>
+</H2>
+
+<P>
+Since the buoyancy force, <IMG
+ WIDTH="28" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1188.png"
+ ALT="$\mathbf{B}_1$">, is purely vertical and
+axisymmetric about the <IMG
+ WIDTH="15" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img82.png"
+ ALT="$y$">-axis, the analysis of the first order flow
+correction for buoyancy is considerably simplified by erecting a new set of
+spherical coordinates:
+<BR>
+<DIV ALIGN="CENTER">
+
+<!-- MATH
+ \begin{eqnarray}
+r & \equiv & \left(z^2+x^2+y^2\right)^{1/2} \\
+\eta & \equiv & \arctan\frac{\left(z^2+x^2\right)^{1/2}}{y} \\
+\upsilon & \equiv & \arctan\frac{x}{z},
+\end{eqnarray}
+ -->
+<TABLE ALIGN="CENTER" CELLPADDING="0" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1018.png"
+ ALT="$\displaystyle r$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="20" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img236.png"
+ ALT="$\textstyle \equiv$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="144" HEIGHT="55" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1189.png"
+ ALT="$\displaystyle \left(z^2+x^2+y^2\right)^{1/2}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(8.63)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="15" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1190.png"
+ ALT="$\displaystyle \eta$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="20" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img236.png"
+ ALT="$\textstyle \equiv$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="158" HEIGHT="73" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1191.png"
+ ALT="$\displaystyle \arctan\frac{\left(z^2+x^2\right)^{1/2}}{y}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(8.64)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="16" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1192.png"
+ ALT="$\displaystyle \upsilon$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="20" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img236.png"
+ ALT="$\textstyle \equiv$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="80" HEIGHT="50" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1193.png"
+ ALT="$\displaystyle \arctan\frac{x}{z},$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(8.65)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+in terms of which the force is independent of the azimuth, <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img104.png"
+ ALT="$\upsilon$">:
+<BR>
+<DIV ALIGN="CENTER">
+
+<!-- MATH
+ \begin{eqnarray}
+\mathbf{B}_1 & \equiv & \frac{T_1+Nm_1}{1+N}\mbox{\boldmath$\hat{\jmath}$}\\
+& = & \frac{\mbox{\textit{Pr}}+N\mbox{\textit{Sc}}}{1+N}r(1-4r^2)(9-20r^2)
+(\cos^2\eta\mbox{\boldmath$\hat{r}$}-\frac{\sin 2\eta}{2}\mbox{\boldmath$\hat{\eta}$}).
+\end{eqnarray}
+ -->
+<TABLE ALIGN="CENTER" CELLPADDING="0" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="28" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1194.png"
+ ALT="$\displaystyle \mathbf{B}_1$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="20" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img236.png"
+ ALT="$\textstyle \equiv$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="99" HEIGHT="60" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1195.png"
+ ALT="$\displaystyle \frac{T_1+Nm_1}{1+N}\mbox{\boldmath$\hat{\jmath}$}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(8.66)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="417" HEIGHT="60" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1196.png"
+ ALT="$\displaystyle \frac{\mbox{\textit{Pr}}+N\mbox{\textit{Sc}}}{1+N}r(1-4r^2)(9-20r...
+...eta\mbox{\boldmath$\hat{r}$}-\frac{\sin 2\eta}{2}\mbox{\boldmath$\hat{\eta}$}).$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(8.67)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+Note that the choice of polar axis for the spherical coordinates has no
+effect on the decomposition of vector fields described in
+appendix&nbsp;<A HREF="node142.html#app:VFS">B</A>; only the radial coordinate is used explicitly.
+
+<P>
+The scalars defining the decomposition of the force are:
+<BR>
+<DIV ALIGN="CENTER">
+
+<!-- MATH
+ \begin{eqnarray}
+\mbox{$\mathcal S$}[-\mathbf{B}_1] & = & -\frac{\mbox{\textit{Pr}}+N\mbox{\textit{Sc}}}{2\,419\,200(1+N)}\left[
+	3(80r^6-84r^4+27r^2)\right. \nonumber \\
+	& & \qquad \left.+4(80r^6-72r^4+21r^2)P_2^0(\cos\eta)\right] \\
+\mbox{$\mathcal P$}[-\mathbf{B}_1] & = &
+	-\frac{\mbox{\textit{Pr}}+N\mbox{\textit{Sc}}\;r^2(4r^2-1)(20r^2-13)P_2^0(\cos\eta)}
+	{1\,209\,600(1+N)} \\
+\mbox{$\mathcal T$}[-\mathbf{B}_1] & = & 0.
+\end{eqnarray}
+ -->
+<TABLE ALIGN="CENTER" CELLPADDING="0" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="66" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1197.png"
+ ALT="$\displaystyle \mbox{$\mathcal S$}[-\mathbf{B}_1]$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="348" HEIGHT="60" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1198.png"
+ ALT="$\displaystyle -\frac{\mbox{\textit{Pr}}+N\mbox{\textit{Sc}}}{2\,419\,200(1+N)}\left[
+3(80r^6-84r^4+27r^2)\right.$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="317" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1199.png"
+ ALT="$\displaystyle \qquad \left.+4(80r^6-72r^4+21r^2)P_2^0(\cos\eta)\right]$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(8.68)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="68" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1200.png"
+ ALT="$\displaystyle \mbox{$\mathcal P$}[-\mathbf{B}_1]$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="368" HEIGHT="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1201.png"
+ ALT="$\displaystyle -\frac{\mbox{\textit{Pr}}+N\mbox{\textit{Sc}}\;r^2(4r^2-1)(20r^2-13)P_2^0(\cos\eta)}
+{1\,209\,600(1+N)}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(8.69)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="68" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1202.png"
+ ALT="$\displaystyle \mbox{$\mathcal T$}[-\mathbf{B}_1]$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img212.png"
+ ALT="$\displaystyle 0.$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(8.70)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+Again, the velocity is purely poloidal:
+<BR>
+<DIV ALIGN="CENTER">
+
+<!-- MATH
+ \begin{eqnarray}
+\mbox{$\mathcal P$}[\mathbf{u}_{1B}] & = & \frac{(\mbox{\textit{Pr}}+N\mbox{\textit{Sc}})
+	r^2(1-4r^2)^2(23-20r^2)P_2^0(\cos\eta)} 
+	{319\,334\,400(1+N)} \\
+\mbox{$\mathcal T$}[\mathbf{u}_{1B}] & = & 0.
+\end{eqnarray}
+ -->
+<TABLE ALIGN="CENTER" CELLPADDING="0" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="60" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1203.png"
+ ALT="$\displaystyle \mbox{$\mathcal P$}[\mathbf{u}_{1B}]$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="370" HEIGHT="64" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1204.png"
+ ALT="$\displaystyle \frac{(\mbox{\textit{Pr}}+N\mbox{\textit{Sc}})
+r^2(1-4r^2)^2(23-20r^2)P_2^0(\cos\eta)}
+{319\,334\,400(1+N)}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(8.71)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="61" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1205.png"
+ ALT="$\displaystyle \mbox{$\mathcal T$}[\mathbf{u}_{1B}]$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img212.png"
+ ALT="$\displaystyle 0.$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(8.72)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+Its spherical components are:
+<BR>
+<DIV ALIGN="CENTER">
+
+<!-- MATH
+ \begin{eqnarray}
+\mathbf{u}_{1B} & = & \frac{\mbox{\textit{Pr}}+N\mbox{\textit{Sc}}}{106\,444\,800(1+N)}\left[
+	r(1-4r^2)^2(23-20r^2)(3\cos^2\eta-1)\mbox{\boldmath$\hat{r}$}\right. \nonumber \\
+& & \left.-3r(1-4r^2)(240r^4-248r^2+23)\sin\eta\cos\eta\mbox{\boldmath$\hat{\eta}$}
+	\right].
+\end{eqnarray}
+ -->
+<TABLE ALIGN="CENTER" CELLPADDING="0" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="35" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1206.png"
+ ALT="$\displaystyle \mathbf{u}_{1B}$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="473" HEIGHT="60" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1207.png"
+ ALT="$\displaystyle \frac{\mbox{\textit{Pr}}+N\mbox{\textit{Sc}}}{106\,444\,800(1+N)}\left[
+r(1-4r^2)^2(23-20r^2)(3\cos^2\eta-1)\mbox{\boldmath$\hat{r}$}\right.$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="390" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1208.png"
+ ALT="$\displaystyle \left.-3r(1-4r^2)(240r^4-248r^2+23)\sin\eta\cos\eta\mbox{\boldmath$\hat{\eta}$}
+\right].$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(8.73)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+
+<P>
+As <!-- MATH
+ $\mbox{$\mathcal P$}[\mathbf{u}_{1B}]$
+ -->
+<IMG
+ WIDTH="60" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1209.png"
+ ALT="$\mbox{$\mathcal P$}[\mathbf{u}_{1B}]$"> is independent of the azimuthal angle, <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img104.png"
+ ALT="$\upsilon$">,
+the stream-lines of <!-- MATH
+ $\mathbf{u}_{1B}$
+ -->
+<IMG
+ WIDTH="35" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1210.png"
+ ALT="$\mathbf{u}_{1B}$"> are confined to planes passing through
+the <IMG
+ WIDTH="15" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img82.png"
+ ALT="$y$">-axis and can be represented by the contours of a
+Stokes's stream-function:
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\psi_{1B} = \frac{\mbox{\textit{Pr}}+N\mbox{\textit{Sc}}}{106\,444\,800(1+N)}
+	r^3(1-4r^2)^2(20r^2-23)\sin^2\eta\cos\eta,
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="soln:psi1B"></A><IMG
+ WIDTH="495" HEIGHT="58" BORDER="0"
+ SRC="img1211.png"
+ ALT="\begin{displaymath}
+\psi_{1B} = \frac{\mbox{\textit{Pr}}+N\mbox{\textit{Sc}}}{106\,444\,800(1+N)}
+r^3(1-4r^2)^2(20r^2-23)\sin^2\eta\cos\eta,
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(8.74)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+which is plotted in figure&nbsp;<A HREF="node135.html#fig:psi1B">8.9</A>.
+
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="fig:psi1B"></A><A NAME="14619"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 8.9:</STRONG>
+Stream-lines of the first order flow due to buoyancy (<A HREF="node135.html#soln:psi1B">8.74</A>) in any
+plane of constant <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img104.png"
+ ALT="$\upsilon$">.  <IMG
+ WIDTH="35" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1212.png"
+ ALT="$\psi_{1B}$"> is nonnegative for <IMG
+ WIDTH="49" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1213.png"
+ ALT="$y\leq 0$">.
+Contour levels at 0.01, 0.1(0.1)0.4, 0.6(0.1)0.9, 0.99 of range.</CAPTION>
+<TR><TD><IMG
+ WIDTH="373" HEIGHT="360" BORDER="0"
+ SRC="img1030.png"
+ ALT="\begin{figure}\centering\begin{picture}(80,76)(-40,-36)
+\put(0,0){\makebox(0,0){...
+...w$} $x$}
+% bbllx=54, bblly=134, bburx=532, bbury=373\}
+\end{picture}\end{figure}"></TD></TR>
+</TABLE>
+</DIV><P></P>
+The pressure,
+<BR>
+<DIV ALIGN="CENTER"><A NAME="soln:p1B"></A>
+<!-- MATH
+ \begin{eqnarray}
+p_{1B} & = & \frac{\mbox{\textit{Pr}}+N\mbox{\textit{Sc}}}{26\,611\,200(1+N)}r^2\left[
+	880r^4-1188r^2+357 \right. \nonumber \\
+	& & \left. \qquad +6(880r^4-792r^2+267)\cos^2\eta\right],
+\end{eqnarray}
+ -->
+<TABLE ALIGN="CENTER" CELLPADDING="0" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="32" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1214.png"
+ ALT="$\displaystyle p_{1B}$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="356" HEIGHT="60" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1215.png"
+ ALT="$\displaystyle \frac{\mbox{\textit{Pr}}+N\mbox{\textit{Sc}}}{26\,611\,200(1+N)}r^2\left[
+880r^4-1188r^2+357 \right.$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="311" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1216.png"
+ ALT="$\displaystyle \left. \qquad +6(880r^4-792r^2+267)\cos^2\eta\right],$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(8.75)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+is illustrated in figure&nbsp;<A HREF="node135.html#fig:p1B">8.10</A>.
+
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="fig:p1B"></A><A NAME="14623"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 8.10:</STRONG>
+First order pressure due to buoyancy,
+<IMG
+ WIDTH="32" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1217.png"
+ ALT="$p_{1B}$">, (<A HREF="node135.html#soln:p1B">8.75</A>) in any plane of constant
+<IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img104.png"
+ ALT="$\upsilon$">.  The maxima at the poles, <IMG
+ WIDTH="75" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1218.png"
+ ALT="$\sin\eta=0$">.
+Contour levels at 0.01, 0.1(0.1)0.4, 0.6(0.1)0.9, 0.99 of range.</CAPTION>
+<TR><TD><IMG
+ WIDTH="438" HEIGHT="359" BORDER="0"
+ SRC="img1219.png"
+ ALT="\begin{figure}\centering\begin{picture}(80,76)(-40,-36)
+\put(0,0){\makebox(0,0){...
+...y$}
+\put(36,0){{\LARGE$\rightarrow$} $\sqrt{x^2+z^2}$}
+\end{picture}\end{figure}"></TD></TR>
+</TABLE>
+</DIV><P></P>
+
+<P>
+Since the stream-function is nonnegative in the lower hemisphere,
+<!-- MATH
+ $\pi/2\leq\eta\leq\pi$
+ -->
+<IMG
+ WIDTH="107" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1220.png"
+ ALT="$\pi/2\leq\eta\leq\pi$">, the flow is radially outward along the <IMG
+ WIDTH="15" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img82.png"
+ ALT="$y$">-axis
+and inward in the <IMG
+ WIDTH="25" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1221.png"
+ ALT="$zx$">-plane, as might be expected from the distribution
+of vapour mass fraction and temperature given by <IMG
+ WIDTH="29" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1135.png"
+ ALT="$m_1$"> and <IMG
+ WIDTH="23" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1137.png"
+ ALT="$T_1$">
+(fig.&nbsp;<A HREF="node133.html#fig:m1">8.5</A>). 
+
+<P>
+The first order correction to the flow field due to buoyancy is similar to
+that in a long axially heated horizontal tube (Bejan &amp; Tien 1978).
+  
+The cause is the same: the redistribution
+of buoyancy forces due to the primary flow leaves the lightest fluid directly
+above the centre of the sphere (see fig.&nbsp;<A HREF="node133.html#fig:m1">8.5</A>) or tube axis.  This
+leads to a vertical flow, which parts at the ceiling and moves outward and
+downward along the confining walls before returning inward along the
+horizontal mid-plane.  The situation is the same in the lower half, but
+reversed.
+
+<P>
+The result of this section supports the conclusion of Mallinson and de Vahl
+Davis (1977) that (in the analogous pure fluid heat transfer problem) the
+thermal correction to the flow field depends only on the Grashof and Prandtl
+numbers in the combination, <!-- MATH
+ $\mbox{\textit{Gr}}\mbox{\textit{Pr}}=\mbox{\textit{Ra}}$
+ -->
+<IMG
+ WIDTH="100" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1222.png"
+ ALT="$\mbox{\textit{Gr}}\mbox{\textit{Pr}}=\mbox{\textit{Ra}}$">.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html2115"
+  HREF="node136.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html2111"
+  HREF="node127.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html2105"
+  HREF="node134.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html2113"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html2116"
+  HREF="node136.html">Flow structure to first</A>
+<B> Up:</B> <A NAME="tex2html2112"
+  HREF="node127.html">Spherical enclosures</A>
+<B> Previous:</B> <A NAME="tex2html2106"
+  HREF="node134.html">First order flow correction</A>
+ &nbsp <B>  <A NAME="tex2html2114"
+  HREF="node2.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Geordie McBain
+2001-01-27
+</ADDRESS>
+</BODY>
+</HTML>

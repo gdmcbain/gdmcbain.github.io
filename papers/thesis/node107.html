@@ -1,0 +1,316 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.47)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Natural flow</TITLE>
+<META NAME="description" CONTENT="Natural flow">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="thesis.css">
+
+<LINK REL="next" HREF="node108.html">
+<LINK REL="previous" HREF="node106.html">
+<LINK REL="up" HREF="node105.html">
+<LINK REL="next" HREF="node108.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1759"
+  HREF="node108.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1755"
+  HREF="node105.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1749"
+  HREF="node106.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1757"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1760"
+  HREF="node108.html">Completely enclosed flows</A>
+<B> Up:</B> <A NAME="tex2html1756"
+  HREF="node105.html">Narrow cavities with bounded</A>
+<B> Previous:</B> <A NAME="tex2html1750"
+  HREF="node106.html">Forced flow</A>
+ &nbsp <B>  <A NAME="tex2html1758"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001332000000000000000">
+Natural flow</A>
+</H2>
+
+<P>
+Solution of (<A HREF="node105.html#eqn:vn">7.20</A>) requires a particular integral.  Two rational
+choices for this integral can be obtained by considering the asymptotic
+solutions for large and small <IMG
+ WIDTH="18" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img64.png"
+ ALT="$\mathcal S$">.
+
+<P>
+The solution valid in the limit <!-- MATH
+ $\mbox{$\mathcal S$}\rightarrow\infty$
+ -->
+<IMG
+ WIDTH="67" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img121.png"
+ ALT="$\mbox{$\mathcal S$}\rightarrow\infty$"> is (cf. equation
+<A HREF="node66.html#soln:narrow_v_Phi0">4.36</A>):
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+v_n^{\|}=\frac{X(1-4X^2)}{24}.
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="eqn:JF"></A><IMG
+ WIDTH="149" HEIGHT="53" BORDER="0"
+ SRC="img820.png"
+ ALT="\begin{displaymath}
+v_n^{\Vert}=\frac{X(1-4X^2)}{24}.
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(7.24)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+
+<P>
+This result, due to Jones and Furry (1946), 
+and used by Batchelor (1954)
+and many others (Vest &amp; Arpaci 1969; Hart 1971; Gershuni &amp;
+Zhukhovitskii 1976, ch.&nbsp;10;  Nagata &amp; Busse 1983; Daniels 1985; 
+Chait &amp; Korpela 1989) 
+in the analysis of narrow cavities, describes the flow between infinite
+parallel plane vertical walls.  It satisfies (<A HREF="node105.html#bc:vfvn">7.21</A>) at
+<IMG
+ WIDTH="90" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img806.png"
+ ALT="$X=\pm 1/2$"> but not at <IMG
+ WIDTH="87" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img550.png"
+ ALT="$Z=\pm1/2$">.  The combination <!-- MATH
+ $v_f^{\|}+v_n^{\|}$
+ -->
+<IMG
+ WIDTH="63" HEIGHT="47" ALIGN="MIDDLE" BORDER="0"
+ SRC="img821.png"
+ ALT="$v_f^{\Vert}+v_n^{\Vert}$">
+was noted by Aung (1972) as the solution for the transversely
+heated duct problem with <!-- MATH
+ $\mbox{$\mathcal S$}\rightarrow\infty$
+ -->
+<IMG
+ WIDTH="67" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img121.png"
+ ALT="$\mbox{$\mathcal S$}\rightarrow\infty$">.
+
+<P>
+The solution of equation (<A HREF="node105.html#eqn:vn">7.20</A>) matching the boundary conditions
+(<A HREF="node105.html#bc:vfvn">7.21</A>) then follows readily from Fourier's method:
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+v_n = v_n^{\|} +
+	\frac{1}{4\upi ^3}\sum_{k=1}^\infty
+	\frac{(-1)^k}{k^3}\sin(2k\upi X)
+	\frac{\cosh(2k\upi \mbox{$\mathcal S$}Z)}{\cosh(k\upi \mbox{$\mathcal S$})}.
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="soln:vn"></A><IMG
+ WIDTH="403" HEIGHT="61" BORDER="0"
+ SRC="img822.png"
+ ALT="\begin{displaymath}
+v_n = v_n^{\Vert} +
+\frac{1}{4\upi ^3}\sum_{k=1}^\infty
+\f...
+...\upi \mbox{$\mathcal S$}Z)}{\cosh(k\upi \mbox{$\mathcal S$})}.
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(7.25)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+The difference <IMG
+ WIDTH="64" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img823.png"
+ ALT="$v_n-v_n^{\Vert}$"> quantifies the effect of the end-walls.
+
+<P>
+For small <IMG
+ WIDTH="18" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img64.png"
+ ALT="$\mathcal S$">, the geometry approaches that of the flow in the
+experiments of Hele-Shaw 
+(1898, 1899)--the dominant effect
+on the flow being from the viscous damping of the end-walls.  These
+experiments were analysed by Stokes (1899) who showed that the
+general form for the vertical velocity component is: 
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+v_n(X,Z) = \mbox{$\mathcal S$}^2v_n(X,0)\frac{1-4Z^2}{8}
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="eqn:HSgeneral"></A><IMG
+ WIDTH="249" HEIGHT="53" BORDER="0"
+ SRC="img824.png"
+ ALT="\begin{displaymath}
+v_n(X,Z) = \mbox{$\mathcal S$}^2v_n(X,0)\frac{1-4Z^2}{8}
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(7.26)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+The function of this form satisfying (<A HREF="node105.html#eqn:vn">7.20</A>) is
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+v_n^{=} = \mbox{$\mathcal S$}^{2}\frac{X(1-4Z^2)}{8}.
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="eqn:HS"></A><IMG
+ WIDTH="170" HEIGHT="53" BORDER="0"
+ SRC="img825.png"
+ ALT="\begin{displaymath}
+v_n^{=} = \mbox{$\mathcal S$}^{2}\frac{X(1-4Z^2)}{8}.
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(7.27)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+This function
+satisfies the boundary conditions (<A HREF="node105.html#bc:vfvn">7.21</A>) at <IMG
+ WIDTH="87" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img550.png"
+ ALT="$Z=\pm1/2$">,
+but not those at <IMG
+ WIDTH="90" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img806.png"
+ ALT="$X=\pm 1/2$">.  The corresponding full solution is:
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+v_n = v_n^{=} - 
+	\frac{2S^2}{\upi ^3}\sum_{k=0}^{\infty}
+	  \frac{(-1)^k}{(2k+1)^3}
+  	  \frac{\sinh[(2k+1)\upi X/\mbox{$\mathcal S$}]}
+	       {\sinh[(2k+1)\upi /2\mbox{$\mathcal S$}]}
+	  \cos[(2k+1)\upi Z],
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="soln:vn_HSp"></A><IMG
+ WIDTH="528" HEIGHT="61" BORDER="0"
+ SRC="img826.png"
+ ALT="\begin{displaymath}
+v_n = v_n^{=} -
+\frac{2S^2}{\upi ^3}\sum_{k=0}^{\infty}
+\...
+...{\sinh[(2k+1)\upi /2\mbox{$\mathcal S$}]}
+\cos[(2k+1)\upi Z],
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(7.28)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+which clearly tends to (<A HREF="node107.html#eqn:HS">7.27</A>) as <!-- MATH
+ $\mbox{$\mathcal S$}\rightarrow 0$
+ -->
+<IMG
+ WIDTH="57" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img123.png"
+ ALT="$\mbox{$\mathcal S$}\rightarrow 0$">, for fixed <IMG
+ WIDTH="22" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img561.png"
+ ALT="$X$">,
+<IMG
+ WIDTH="85" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img827.png"
+ ALT="$\vert X\vert&lt;1/2$">.
+The difference <IMG
+ WIDTH="67" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img828.png"
+ ALT="$v_n-v_n^{=}$"> quantifies the effect of the hot and cold
+walls on the Hele-Shaw flow.
+
+<P>
+Both (<A HREF="node107.html#soln:vn">7.25</A>) and (<A HREF="node107.html#soln:vn_HSp">7.28</A>) are exact solutions of
+(<A HREF="node105.html#eqn:vn">7.20</A>) and (<A HREF="node105.html#bc:vfvn">7.21</A>), and also; when combined with
+(<A HREF="node105.html#soln:BSNCL_mT">7.16</A>), (<A HREF="node105.html#soln:BSNCL_uw">7.13</A>) and (<A HREF="node106.html#soln:vf">7.22</A>);
+the full equation of motion (<A HREF="node24.html#eqn:motion">2.54</A>), 
+for all values of <!-- MATH
+ $\mbox{$\mathcal S$}\in(0,\infty)$
+ -->
+<IMG
+ WIDTH="92" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img829.png"
+ ALT="$\mbox{$\mathcal S$}\in(0,\infty)$">.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1759"
+  HREF="node108.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1755"
+  HREF="node105.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1749"
+  HREF="node106.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1757"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1760"
+  HREF="node108.html">Completely enclosed flows</A>
+<B> Up:</B> <A NAME="tex2html1756"
+  HREF="node105.html">Narrow cavities with bounded</A>
+<B> Previous:</B> <A NAME="tex2html1750"
+  HREF="node106.html">Forced flow</A>
+ &nbsp <B>  <A NAME="tex2html1758"
+  HREF="node2.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Geordie McBain
+2001-01-27
+</ADDRESS>
+</BODY>
+</HTML>

@@ -1,0 +1,288 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.47)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Numerical solutions</TITLE>
+<META NAME="description" CONTENT="Numerical solutions">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="thesis.css">
+
+<LINK REL="previous" HREF="node87.html">
+<LINK REL="up" HREF="node86.html">
+<LINK REL="next" HREF="node89.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1500"
+  HREF="node89.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1496"
+  HREF="node86.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1492"
+  HREF="node87.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1498"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1501"
+  HREF="node89.html">The conduction-diffusion regime</A>
+<B> Up:</B> <A NAME="tex2html1497"
+  HREF="node86.html">The floor and ceiling</A>
+<B> Previous:</B> <A NAME="tex2html1493"
+  HREF="node87.html">The fully developed solution</A>
+ &nbsp <B>  <A NAME="tex2html1499"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001142000000000000000">
+Numerical solutions</A>
+</H2>
+
+<P>
+Solutions were obtained by the means described above (&#167;<A HREF="node75.html#sec:FC_Mvtf">5.1</A>).
+The mesh was that
+of &#167;<A HREF="node80.html#sec:FC_Fem">5.1.5</A> and figure&nbsp;<A HREF="node80.html#fig:mesh">5.3</A>, except that for the narrowest
+cavity (<!-- MATH
+ $\mbox{$\mathcal A$}=10$
+ -->
+<IMG
+ WIDTH="64" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img668.png"
+ ALT="$\mbox{$\mathcal A$}=10$">; see fig.&nbsp;<A HREF="node89.html#fig:A">5.10</A> below), 
+the number of elements in the vertical direction was doubled to 32.
+The results of two sample runs are plotted in figure&nbsp;<A HREF="node88.html#fig:FC_conts">5.8</A>.
+
+<P></P>
+<DIV ALIGN="CENTER"><A NAME="fig:FC_conts"></A><A NAME="7812"></A>
+<TABLE>
+<CAPTION ALIGN="BOTTOM"><STRONG>Figure 5.8:</STRONG>
+Contours of stream-function (<I>a,d</I>), 
+<IMG
+ WIDTH="18" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img2.png"
+ ALT="$T$"> (<I>b,e</I>) and <IMG
+ WIDTH="21" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="$m$">
+(<I>c,f</I>) from two <I>Fastflo</I> runs:
+<IMG
+ WIDTH="94" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img298.png"
+ ALT="$\varPhi =N=0$"> in (<I>a-c</I>) and <!-- MATH
+ $\varPhi =0.69,\,N=0.5$
+ -->
+<IMG
+ WIDTH="153" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img669.png"
+ ALT="$\varPhi =0.69,\,N=0.5$"> in (<I>d-f</I>).  
+In both runs, <!-- MATH
+ $\mbox{$\mathcal A$}=5,\,\mbox{\textit{Gr}}(1+N)\mbox{\textit{Pr}}_r=10^{3},\,\mbox{\textit{Pr}}_I=\mbox{\textit{Sc}}=0.61$
+ -->
+<IMG
+ WIDTH="381" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img670.png"
+ ALT="$\mbox{$\mathcal A$}=5,\,\mbox{\textit{Gr}}(1+N)\mbox{\textit{Pr}}_r=10^{3},\,\mbox{\textit{Pr}}_I=\mbox{\textit{Sc}}=0.61$"> and
+<!-- MATH
+ $\mbox{\textit{Pr}}_r=0.71$
+ -->
+<IMG
+ WIDTH="93" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img488.png"
+ ALT="$\mbox{\textit{Pr}}_r=0.71$">.</CAPTION>
+<TR><TD><IMG
+ WIDTH="496" HEIGHT="382" BORDER="0"
+ SRC="img671.png"
+ ALT="\begin{figure}\begin{center}
+\epsfig{file=fig.contsi.eps, width=110mm}\end{center}\end{figure}"></TD></TR>
+</TABLE>
+</DIV><P></P>
+The first is for the zero mass transfer limit (<IMG
+ WIDTH="94" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img298.png"
+ ALT="$\varPhi =N=0$">), for which the
+interfacial velocity (<A HREF="node25.html#bc:transpiration">2.59</A>) and interdiffusion energy flux
+(<A HREF="node23.html#def:eint">2.50</A>) vanish.  The second uses a rather large value of <IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img12.png"
+ ALT="$\varPhi $">, 0.69,
+to vividly illustrate the effects of a finite mass transfer rate.
+
+<P>
+That the mesh is sufficiently fine was demonstrated by the grid independence
+tests of &#167;<A HREF="node82.html#sec:FC_Gi">5.2.1</A>.  Further confidence can be derived from
+the agreement between the finite element and analytic solutions in the
+fully developed regions (&#167;<A HREF="node89.html#sec:FC_Cdr">5.5</A>;
+figs&nbsp;<A HREF="node89.html#fig:discs">5.9</A> - <A HREF="node89.html#fig:gr">5.11</A>).
+
+<P>
+A third check on the accuracy of the solutions was obtained by 
+comparing the
+results for several cases with those of the parallel FIDAP 
+(Fluid Dynamics International 1996)
+solutions of Dr Jonathan Harris (McBain &amp; Harris 1998).
+The solutions generated by FIDAP and <I>Fastflo</I> were found to agree closely.
+For example, for <!-- MATH
+ $\mbox{$\mathcal A$}=1,\,N=0.1,\,\mbox{\textit{Pr}}_r=0.71,\,\mbox{\textit{Pr}}_I=\mbox{\textit{Sc}}=0.61,\,\varPhi =0.105$
+ -->
+<IMG
+ WIDTH="469" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img672.png"
+ ALT="$\mbox{$\mathcal A$}=1,\,N=0.1,\,\mbox{\textit{Pr}}_r=0.71,\,\mbox{\textit{Pr}}_I=\mbox{\textit{Sc}}=0.61,\,\varPhi =0.105$"> and
+<!-- MATH
+ $Gr(1+N)\mbox{\textit{Pr}}_r=10^{3}$
+ -->
+<IMG
+ WIDTH="174" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img673.png"
+ ALT="$Gr(1+N)\mbox{\textit{Pr}}_r=10^{3}$">, using similar 12<IMG
+ WIDTH="20" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img626.png"
+ ALT="$\times$">12 nonuniform
+meshes of quadratic elements, the integrated mass and energy transfer
+rates agreed to within 0.6% and 0.02%, respectively.  
+
+<P>
+That Gill's centrosymmetry properties do not apply when transpiration
+is introduced (<!-- MATH
+ $\varPhi \neq 0$
+ -->
+<IMG
+ WIDTH="52" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img413.png"
+ ALT="$\varPhi \neq 0$">) is readily apparent in 
+figure&nbsp;<A HREF="node88.html#fig:FC_conts">5.8</A>.
+Compare, for example, the stream-lines
+(figs&nbsp;<A HREF="node88.html#fig:FC_conts">5.8</A><I>a,d</I>) in the
+`departure corners' (top-right and bottom-left).  The most pronounced
+effect of the interfacial velocity in the temperature (<I>e</I>) and mass
+fraction
+(<I>f</I>) distributions is the reduction of the gradients normal to the
+hot wall (right) with a corresponding increase at the cold
+wall (left).  The combined influence of the interdiffusion effect and
+the variation of specific heat (remembering that these cannot be
+separated--see &#167;<A HREF="node17.html#sec:BE_Ee">2.1.3</A>)
+is most obvious in the dissimilarity of the
+temperature and mass fraction profiles across the fully developed
+region (temperature is more curved, since <!-- MATH
+ $\varPhi _T=1.49>\varPhi =0.69$
+ -->
+<IMG
+ WIDTH="182" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img674.png"
+ ALT="$\varPhi _T=1.49&gt;\varPhi =0.69$">)
+and the extreme stretching of the isotherms in the top-right corner of
+figure&nbsp;<A HREF="node88.html#fig:FC_conts">5.8</A>(<I>e</I>): 
+in this region, the mixture is rich in vapour (<IMG
+ WIDTH="21" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="$m$"> large),
+so that, since <!-- MATH
+ $\mbox{\textit{Pr}}_I>0$
+ -->
+<IMG
+ WIDTH="69" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img675.png"
+ ALT="$\mbox{\textit{Pr}}_I&gt;0$">, the effective Prandtl number, 
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{displaymath}
+\mbox{\textit{Pr}}_r+\mbox{\textit{Pr}}_I[1-\exp(-\varPhi )]m,
+\end{displaymath}
+ -->
+
+<IMG
+ WIDTH="216" HEIGHT="45" BORDER="0"
+ SRC="img676.png"
+ ALT="\begin{displaymath}
+\mbox{\textit{Pr}}_r+\mbox{\textit{Pr}}_I[1-\exp(-\varPhi )]m,
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+is comparatively high.
+
+<P>
+One of the most obvious features of figure&nbsp;<A HREF="node88.html#fig:FC_conts">5.8</A> is that in
+(<I>a</I>),
+the entire boundary is a stream-line, whereas in (<I>d</I>), stream-lines
+intersect the vertical walls.  Since, in general, a stream-line
+originating on the right wall does not intersect the left wall at the
+same height, <IMG
+ WIDTH="15" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img82.png"
+ ALT="$y$">, there is a net vertical mass flow through the central
+portion of the cavity.  The horizontal surfaces are impermeable, though,
+so that in the end-zones the net contribution of mass from the vertical
+walls at a particular level must be nonzero (positive in the lower
+portion, and negative above).  The contribution in the
+fully developed portion vanishes since the horizontal
+component of velocity there is uniform, by (<A HREF="node67.html#soln:narrow_Sh">4.39</A>).
+The reason for the departure in the end-zones is the shifting of the
+concentration isopleths by the convection cell.  For example, the
+gradients are clearly steeper in the `starting corners' (bottom-right
+and top-left) in figure&nbsp;<A HREF="node88.html#fig:FC_conts">5.8</A>(<I>f</I>).  
+Because the net vertical mass flow rate depends on the turning flow near the
+ends, no information about it can be gained from the
+fully developed solution; therefore, <IMG
+ WIDTH="13" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img5.png"
+ ALT="$c$"> can only be evaluated
+<I>a posteriori</I>.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1500"
+  HREF="node89.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1496"
+  HREF="node86.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1492"
+  HREF="node87.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1498"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1501"
+  HREF="node89.html">The conduction-diffusion regime</A>
+<B> Up:</B> <A NAME="tex2html1497"
+  HREF="node86.html">The floor and ceiling</A>
+<B> Previous:</B> <A NAME="tex2html1493"
+  HREF="node87.html">The fully developed solution</A>
+ &nbsp <B>  <A NAME="tex2html1499"
+  HREF="node2.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Geordie McBain
+2001-01-27
+</ADDRESS>
+</BODY>
+</HTML>

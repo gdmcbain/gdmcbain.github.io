@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="iso-8859-1"?> <!-- -*-nxml-*- -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <!-- This charset is so we can use Greek characters:
+  &#947; &gamma;
+  &#951; &eta;
+  &#952; &theta;
+  &#955; &lambda;
+  &#960; &pi;
+  &#961; &rho;
+  -->
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <title>ASSCT 2000</title>
+  <!-- <base href="http://www.aeromech.usyd.edu.au/~mcbain/papers/jet/jet.html"> -->
+  <link href="staid.css" type="text/css" rel="stylesheet" />
+  <style type="text/css"><!--
+H1 {text-align: center}
+P {text-indent: 1.5em; margin-top: 0em; margin-bottom: 0em}
+P.figure {text-align: center}
+P.leading {text-indent: 0em}
+.author, .affiliation {text-align: center}
+div.affiliation {font-style: italic}-->
+
+  </style>
+</head>
+
+<body>
+<h1>VISCOELASTIC CHARACTERIZATION OF LOW-GRADE MOLASSES BY JET-SWELL
+MEASUREMENTS</h1>
+
+<p align="center">By</p>
+
+<p align="center">G. D. McBain*, J. A. Harris*, Y. K. Leong* and S. Vigh**</p>
+
+<p align="center">*School of Engineering, James Cook University  **CSR Ltd</p>
+
+<hr />
+
+<p><strong>KEYWORDS: Molasses Flow, Rheology, Viscoelasticity, Jet-swell,
+Continuous Crystallizer, Pipe Fittings.</strong> </p>
+<hr />
+
+<h2>Abstract</h2>
+
+<p>Previous studies have established that the viscosity of low-grade
+molasses and massecuites depends on the shear rate, temperature and
+composition.  It has also been hinted that these fluids are not merely
+viscous but rather viscoelastic.  This result is not unexpected, given
+the presence of dissolved high polymers (polysaccharides).  After a
+brief general discussion of fluid rheology, the present paper
+describes an experiment performed on Queensland low-grade molasses to
+exhibit its viscoelasticity.  When forced from a pipe, viscoelastic
+fluids swell markedly.  A photograph of such an event is presented
+here and also used to estimate the fluid's viscoelastic relaxation
+time.  The result, about a tenth of a second, is consistent with the
+values determined for French beet molasses by <a
+href = "#deviP71">Devillers and Ph&eacute;lizot (1971)</a> using a
+Weissenberg rheogoniometer.  The estimated relaxation time is used to
+assess the possible impact of viscoelasticity in two factory
+processes: stirring in cooling crystallizers and flow through pipe
+fittings.  It is concluded that viscoelasticity may play a role in the
+known tendency of low-grade massecuites to short-circuit in vessels of
+complex geometry and also may explain the anomalous published
+pressure-drop data for molasses flow in pipe-fittings.</p>
+
+<h2>Introduction</h2>
+
+<p>It is well established that low-grade massecuites and molasses are
+rheologically complex fluids and that knowledge of their flow
+properties is important for the design, control and understanding of
+factory processes.  Numerous studies have quantified the effects of
+temperature, composition and the shear rate on the viscosity of
+Queensland massecuites and molasses (e.g.  <a href = "#behn64">Behne,
+1964</a>; <a href="#bhatBHT72">Bhattacharyya <em>et al.,</em>
+1972</a>; <a href="#awanW76">Awang and White, 1976</a>).  However,
+there has also been speculation that these materials are not purely
+viscous, but rather viscoelastic (<a href="#ness84">Ness,
+1984</a>). This is, indeed, to be expected, since the principal factor
+rendering these fluids non-Newtonian, and so distinguishing them from
+Newtonian pure sugar solutions, is the presence of polysaccharides (<a
+href="#geroG78">Geronimos and Greenfield, 1978</a>): components known
+to induce both pseudoplasticity and elasticity (<a
+href="#lapaP95">Lapasin and Pricl, 1995</a>).</p>
+
+<p>Since being applied to the processing of Australian cane sugar five
+years ago (<a href="#harrRV95">Harris <em>et al.,</em> 1995</a>; <a
+href="#stei95">Steindl, 1995</a>), computational fluid dynamics (CFD)
+has come to play an important role in the understanding of flow and
+heat transfer in factory processes and in the assessment of
+modifications to vessel designs (<a href="#stei97">Steindl, 1997</a>;
+<a href="#simaH99">Sima and Harris, 1999</a>). The single greatest
+strength of CFD is its ability to provide a local description of the
+flow.  While dye or lithium tracer tests may be able to indicate the
+presence of short-circuits or dead-spots, they do not indicate their
+location.</p>
+
+<p>The price which must be paid for this increase in local knowledge
+is the provision of local material properties (<a href="#simaH97">Sima
+and Harris, 1997</a>). Thus, while a simple parameter such as the
+viscosity obtained from a one-dimensional shear flow, or `viscometric'
+flow, is adequate and appropriate for use in the global modelling of a
+vessel, it cannot be assumed that the behaviour of a fluid in a two-
+or three-dimensional flow can be predicted on the basis of
+observations of one-dimensional flows (<a href="#true74">Truesdell,
+1974</a>). It is the special property of Newtonian fluids that this
+simplification is possible for them; the uncritical extension of this
+simplification to non-Newtonian fluids is at best an expedient (<a
+href="#birdSL60">Bird <em>et al.,</em> 1960</a>, p. 103; <a
+href="#fred64">Fredrickson, 1964</a>, p. 86; <a href="#tann88">Tanner,
+1988</a>, p. 131). The purpose of this paper is to determine, on the
+basis of simple and readily repeatable measurements, the extent to
+which this simplification may be acceptable for low-grade
+molasses.</p>
+
+<p>If present, viscoelasticity manifests itself in all unsteady flows
+as well as in steady flows in complex geometries (as occur in
+continuous factory vessels) but cannot be detected by the usual
+measurements of steady viscometric flows such as occur in pipeline or
+concentric-cylinder viscometers; except for the empirical fact that
+all known shear-thinning fluids are also appreciably viscoelastic (<a
+href="#fred64">Fredrickson, 1964</a>, p. 70). Elastic effects are more
+marked when the fluid is subjected to more rapid changes; this
+rapidity, and thus the importance of viscoelasticity, for a given
+fluid in a given flow can be quantified by the dimensionless
+<em>Deborah number De</em>, as defined and discussed below.</p>
+
+<p>Two phenomena peculiar to elastic fluids are stress relaxation and
+jet-swell (the dramatic and readily observable increase in diameter of
+a viscoelastic stream leaving a pipe). Using the former, and a
+Weissenberg rheogoniometer, <a href="#deviP71">Devillers and
+Ph&eacute;lizot (1971)</a> determined the viscoelastic properties of
+beet molasses. In this paper, we report new experiments on the
+jet-swell of low-grade Queensland molasses which indicate comparable
+elastic properties. From the results we estimate Deborah numbers for
+various flows occurring in sugar factories and so assess where elastic
+effects may be most significant.</p>
+
+<h2>Viscoelastic liquids</h2>
+
+<p>The Deborah number quantifies the difference between the
+deformation behaviour of (elastic) solids and (viscous) liquids. We
+give an elementary explanation, following <a href="#lapaP95">Lapasin
+and Pricl</a> (1995, p. 164). The Deborah number is defined as the
+ratio between a characteristic relaxation time, &#955;, of the
+material and a characteristic residence time of the deformation
+process under observation. The relaxation time is zero for an
+inelastic viscous fluid and infinite for a elastic solid. The
+rheological properties of a substance can be easily classified as
+liquid-like when the relaxation time is much shorter than the
+residence time and as solid-like when it is much longer. In other
+words, high Deborah numbers correspond to solid-like behaviour and low
+Deborah numbers to liquid-like behaviour. In the intermediate region,
+materials may display a combination of both properties and their
+behaviour is called <em>viscoelastic.</em> Material relaxation times
+range from picoseconds for water or atmospheric air and nanoseconds
+for mineral oils through microseconds to kiloseconds for various
+polymer solutions and melts to megaseconds for glass (<a
+href="#tann88">Tanner, 1988</a>, p. 22).</p>
+
+<p>Mathematically, the difference between Newtonian and non-Newtonian fluids
+lies in their constitutive relation: the relation between the stress
+<strong>s</strong> and the rate of deformation <strong>d</strong>. For a
+Newtonian liquid,</p>
+
+<p align="right"><img src = "Image1.gif"
+alt="$\mathbf{s}=\eta\mathbf{d}$" width="45" height="21" /> <a
+name = "eqn1">(1)</a></p>
+
+<p align="right"></p>
+
+<p>where &#951; is the viscosity. The viscosity will in general depend
+on pressure, temperature and composition. If it also depends on the
+deformation rate, but <a href="#eqn1">(1)</a> otherwise holds, then we
+have a <em>generalized Newtonian fluid</em> (<a
+href="#lapaP95">Lapasin and Pricl, 1995</a>, p. 216). The simplest
+model of a generalized Newtonian fluid is the <em>power-law</em>
+model, for which <img src="Image2.gif"
+alt="$\eta=K|\mathbf{n}|^{(1-n)}$" width = "80" height = "29" />,
+where <em>K</em> is the <em>consistency</em> and <em>n</em> is the
+<em>flow behaviour index.</em> If <img src="Image3.gif"
+alt="$0&lt;\eta&lt;1$" width = "60" height = "21"/>, the fluid is said
+to be <em>pseudoplastic</em> or <em>shear-thinning.</em></p>
+
+<p>For a viscoelastic fluid, the stress depends not only on the
+instantaneous rate of deformation, but also on the entire history of
+the deformation. Many different forms of constitutive equations for
+viscoelastic liquids are discussed by <a href="#lars88">Larson
+(1988)</a>. Their common feature is that the liquid has a fading
+memory of past configurations; the time-scale for the fading of the
+memory is the relaxation time. They all reduce to the Newtonian form
+<a href="#eqn1">(1)</a> when the Deborah number becomes vanishingly small.</p>
+
+<h3>Viscoelasticity and stress relaxation</h3>
+
+<p>A simple consequence of the fading memory of a viscoelastic fluid
+is that if it is subjected to a steady shearing and then this ceases,
+the associated stress does not immediately disappear, but rather
+decays. <a href="#deviP71">Devillers and Ph&eacute;lizot (1971)</a>
+measured the stress as a function of time in 12 beet molasses samples
+after bringing a spinning cone-and-plate viscometer to a halt, and
+calculated the relaxation time by fitting an exponential decay
+function to the results. The resulting relaxation times were in the
+range 0.05-0.2 s. This technique is capable of high accuracy.</p>
+
+<h3>Viscoelasticity and jet-swell</h3>
+
+<p>Another feature of the flow of viscoelastic liquids is the
+expansion of jets. Depending on the liquid and the flow rate, it can
+be quite strikingsee the photographs by <a href="#merr43">Merrington
+(1943)</a> or <a href="#tann88">Tanner</a> (1988, p. 306). This
+phenomenon is of great importance in the plastics industry,
+particularly in the spinning of synthetic fibres (<a
+href="#tann88">Tanner, 1988</a>, p. 282) and blow molding (<a
+href="#eggeH96">Eggen and Hinrichsen, 1996</a>).</p>
+
+<p>When a Newtonian liquid leaves a pipe, it usually contracts slightly. This
+effect, which is easily demonstrated with a kitchen tap, is due to inertia; in
+this case, the fluid which was previously slowed by contact with the pipe
+walls simply adopts the speed of the more freely flowing fluid on the
+centreline. If the fluid is very viscous (so that inertia becomes negligible)
+but still Newtonian, the jet will expand by about 13%; here the small change
+is caused by the rearrangement of the velocity field from the parabolic
+profile inside the pipe to the plug flow in the free jet.</p>
+
+<p>For pseudoplastic generalized Newtonian fluids, the swelling is
+less than for Newtonian fluids; it decreases to zero with the flow
+behaviour index <em>n</em> (<a href="#tann88">Tanner, 1988</a>,
+p. 327). This result is known only from computer simulations; there
+being no known inelastic pseudoplastic fluids. It occurs because the
+velocity profile in the pipe flow of a pseudoplastic fluid is closer
+to plug flow than the parabolic profile of a Newtonian fluid, so that
+less adjustment is required from the pipe to the jet.</p>
+
+<p>Marked swelling is a characteristic of viscoelasticity. To see why a fading
+memory causes jet-swell, consider a pair of fluid elements in a pipe flow 
+(<a href="#fig_explained">see figure 1</a>). 
+The element nearer the axis flows faster, so that at any given
+time, the pair are further apart in the axial direction than they were in the
+past. When they leave the pipe, the shear caused by the no-slip condition at
+the pipe wall ceases, and the pair are free to return to their remembered
+configuration. This causes an axial contraction and so a lateral expansion (in
+order for the jet to have the same flow rate as the pipe). The longer the
+memory of the fluid (the longer the relaxation time), the greater the axial
+and lateral recoil.</p>
+
+<p class="figure"><img name = "fig_explained"
+src="explained.gif" alt = "Animation explaining viscoelastic jet swell"
+width = "640" height = "376" /></p>
+
+<p>Figure 1: An explanation for the swelling of viscoelastic jets. The
+fluid-particle pair AB becomes elongated in the axial direction due to
+shear.  On exiting, it reverts toward its remembered shape.</p>
+
+<p>By expressing the above argument in the language of tensor
+analysis, and assuming a particular simple constitutive equation known
+as the Lodge equation (<a href="#lars88">Larson, 1988</a>, p. 23), <a
+href="#tann70">Tanner (1970)</a> developed a theory of jet-swell which
+allows the prediction of the <em>swelling ratio D</em>/<em>d</em>
+(where <em>D</em> is the jet diameter and <em>d</em> is the pipe
+diameter) from the dimensionless <em>Weissenberg number Wi</em>, the
+product of the shear rate at the pipe wall <img src="Image4.gif"
+alt="$\dot{\gamma}_w$" width="20" height="24" /> and the relaxation time
+of the fluid &#955;. The resulting relation,</p>
+
+<p align="right"><img src="Image5.gif" alt="$Wi^2 =
+(\dot{\gamma}_w\lambda)^2 = 2[(D/d)-(D/d)_i+1]^6-1$" width="242" height="53" /> <a
+name="eqn2">(2)</a></p>
+
+<p>where (D/d)<sub>i</sub> = 1.13 is the inelastic swelling ratio, is plotted
+in <a href="#fig_dieswell">see figure 2</a>.</p>
+
+
+<p class="figure"><img name = "fig_dieswell" src = "dieswell.gif" alt
+= "Tanner's (1970) formula" width="500" height = "333" /> ><br />
+Figure 2.  Jet expansion as predicted by <a href="#tann70">Tanner
+(1970)</a>.</p>
+
+<h2>Apparatus and method</h2>
+
+<p>A swelling jet of low-grade molasses can be generated by forcing it
+through the outlet pipe of a <em>pressure filter.</em> This simple
+piston device is more usually employed to separate molasses from
+massecuite. The only modification to the device for the tests was to
+fit a new copper molasses outlet pipe. For filtration, the outlet is
+of little interest, but it is known that jet-swell can be affected by
+the length-to-diameter ratio of the pipe unless it is very long: in a
+short pipe, a viscoelastic fluid can remember the conditions upstream
+of the inlet (<a href="#seriGC93">Seriai <em>et al.,</em>
+1993</a>). Guided by Seriai's results and the recommendation of <a
+href="#binnB81">Binnington and Boger (1981)</a>, a length-to-diameter
+ratio of 20 was chosen.  The pipe was straight and vertical (downward)
+for the last 145 mm before the outlet and the internal diameter of the
+pipe was 7.2 mm.</p>
+
+<p>A sample of C-massecuite was obtained from downstream of the exit pump of
+the vertical cooling crystallizer at Victoria Mill. The massecuite was passed
+through the pressure filter and the molasses collected. After cleaning the
+filter and removing the gauze, the molasses was passed through again. Once a
+steady jet was being produced, a measuring beaker was placed in the stream and
+a stopwatch started. After an easily measurable amount had been collected but
+before the jet flow rate declined significantly (the pressure filter is a
+batch device), the beaker was removed, the timer stopped, and the temperature
+of the extrudate measured with a mercury-in-glass thermometer. Digital
+photographs were taken throughout the operation, from which the diameter of
+the jet could be compared with the external diameter of the pipe (9.2 mm).</p>
+
+<h2>Results</h2>
+
+<p>A photograph taken soon after the establishment of steady-state is
+shown in <a href="#fig_photo">figure 3</a>.  It is clear from the
+photograph (<a href="#fig_photo">figure 3</a>) that gravity did have
+an effect on jet: it becomes increasingly thin as the molasses is
+drawn down by its weight. The effect is less important in the
+immediate vicinity of the outlet. The diameter considered here is the
+maximum; this will be slightly less than would occur in the absence of
+gravity and so will lead to an underestimate of the swelling and hence
+the relaxation time and the elasticity. Thus, while gravity (and
+surface tension which also acts to reduce the jet diameter-<a
+href="#tann88">Tanner, 1988</a>, p. 323) does reduce the quantitative
+accuracy of our results, it does not detract from our primary
+contention that low-grade molasses is viscoelastic.</p>
+
+<p class="figure"><img name="fig_photo" src = "photo.jpeg"
+alt="photo.jpeg" /><br />Figure 3.  Jet-swell observed in flow of
+low-grade molasses.</p>
+
+<p>In the photograph shown, the maximum jet diameter is 11 mm, which
+equates to a swelling ratio of <img src="Image6.gif" alt="$D/d=1.53$"
+width="80" height="18" />. This value may be compared with the 1.13
+expected for a Newtonian fluid.  From Tanner's formula <a
+href="#eqn2">(2)</a> or <a href="#fig_dieswell">figure 2</a>, <img
+src="Image7.gif" alt="$D/d=1.53$" width="80" height="18" /> implies <img
+src="Image8.gif" alt="$Wi=3.64$" width="66" height="18" />. In the same
+run, 180 mL of molasses were extruded in 210 s. From this flow rate
+and assuming a parabolic velocity profile in the pipe (accounting for
+shear-thinning would give a different value, but, again, neglecting it
+only leads to an underestimate of the relaxation time) the wall shear
+rate is <img src="Image9.gif"
+alt="$\dot{\gamma}_w=37.8\,\mathrm{s}^{-1}$" width="82"
+height="25" />. Hence, the relaxation time is <img src="Image10.gif" alt="$\lambda = Wi/\dot{\gamma}_w = 3.64/(37.8\,\mathrm{s}^{-1}) = 0.096\,\mathrm{s}^{-1}$"
+width="253" height="25" />.  From the other photographs in the series,
+it was apparent that the swelling reduced slightly with time; a
+consequence of a slow decay in the flow rate.  The swelling ratio fell
+to about 1.32 over the course of the 210 s, which would correspond to
+an estimated relaxation time of 0.078 s.  Thus, to an appropriate
+level of accuracy, the relaxation time may be stated as about a tenth
+of a second, a value quite consistent with those determined by <a
+href="#deviP71">Devillers and Ph&eacute;lizot (1971)</a> for beet
+molasses. The temperature of the extrudate was 50&plusmn;5&deg;C.
+Standard methods of analysis revealed the molasses to be a fairly
+normal low-grade specimen: the dry substance was 86.4% and the purity
+45.8%.  The original massecuite was 91% dry substance and about 68%
+purity.</p>
+
+<p>It is obvious that a single measurement is not sufficient to
+quantitatively determine the relaxation time, but that is not the
+purpose of the present paper. Indeed, although the ease of observation
+and measurement have tempted many investigators to try and base a
+rheometrical method on jet-swell, various difficulties including the
+effect of gravity and nonlinearities in the constitutive equation (<a
+href="#binnB81">Binnington and Boger, 1981</a>) have meant that an
+adequate jet-swell model remains elusive. More precise techniques are
+discussed by <a href="#lapaP95">Lapasin and Pricl</a> (1995,
+pp. 423-435, ch. 5). The present determination, supported to some
+extent by the results for beet molasses, should, however, be
+sufficient for order-of-magnitude analyses. Two examples are provided
+in the next section.</p>
+
+<h2>Application of the results</h2>
+
+<h3>Stirring in a vertical cooling crystallizer</h3>
+
+<p>The strongest deformation in a vertical cooling crystallizer, for
+example the one installed at Victoria Mill (described by <a
+href="#simaH97">Sima and Harris, 1997</a>), is due to the passage of
+the stirrer arms at their ends.  To assess the importance of
+viscoelasticity in this flow, we calculate the Deborah number,
+assuming the figure of 0.1 s for the massecuite relaxation time (what
+effect the crystals might have on the elasticity is unclear at this
+stage).  To obtain a characteristic time for the deformation process,
+consider the time taken for the end of one of the stirrer arms to pass
+through a given point; i.e. its diameter divided by its linear
+velocity.  According to <a href="#robi94">Robinson</a> (1994, p. 72),
+the stirrer arms are 143 mm in diameter, 1794 mm long and rotate at
+0.3 rpm, hence the linear speed of the end is 56 mm/s and the time of
+traverse is 2.5 s.  This gives a Deborah number of <img
+src="Image11.gif" alt="$0.1\,\mathrm{s}/2.5\,\mathrm{s} = 0.04$"
+width="112" height="21" />.  This is small compared to unity, but the
+question now is whether it is so small that viscoelastic effects will
+be negligible.</p>
+
+<p><a href="#cochWW81">Cochrane <em>et al.</em> (1981)</a> presented
+streak-line photographs of the flow of a Newtonian and a viscoelastic
+fluid over a cylinder set slightly off-centre in a channel.  The
+Deborah numbers were zero and 0.17, respectively.  At zero Deborah
+number the asymmetry is barely discernible whereas it is exaggerated
+at 0.17.  It is impossible to provide a definitive statement in the
+absence of results at intermediate Deborah numbers, but we conjecture
+that while elastic effects might be measurable in the vertical cooling
+crystallizer, they are probably not dominant.</p>
+
+<p>One conclusion of <a href="#cochWW81">Cochrane <em>et al.</em>
+(1981)</a> may be significant, however.  After examining a number of
+flow configurations, they found symmetry to be an elusive feature in
+the flow of highly elastic liquids.  Perhaps the viscoelasticity of
+low-grade cane sugar solutions contributes to their tendency to
+short-circuit in process vessels of complex internal geometry <a
+href="#keasS84">(Keast and Sichter, 1984)</a>.</p>
+
+<p>Similarly, if a molasses has a tendency to avoid narrow flow passages, due
+to the presence of a viscoelasticity-inducing component, it will very likely
+be more difficult to fugal.  Successful separation involves the migration of
+the molasses through the pores of the packed bed of sugar crystals adjacent
+the wire-mesh basket and the holes of the basket itself.  A more elastic
+molasses would be more inclined to travel with the bulk motion of the
+crystals.  Thus, viscoelasticity may be an important parameter in the
+separability of low-grade massecuites by centrifugation.</p>
+
+<h3>Flow around pipe bends</h3>
+
+<p>While liquid elasticity is not important for flow inside straight pipes, it
+may have an effect on flow around bends.  A characteristic deformation time to
+use in the Deborah number can be obtained from the time to traverse one radian
+of the bend at the mean flow speed <i>V</i>:</p>
+
+<p align="right"><img src="Image12.gif" alt="$De=\frac{\lambda V}{R}$"
+width="64" height="41" /> <a name = "eqn3">(3)</a></p>
+
+<p align="right">where <i>R</i> is the radius of the bend.  If, for
+simplicity, the effect of pseudoplasticity is neglected, the Reynolds
+number is given by <img src="Image13.gif" alt="$Re=2\rho Vr/\eta$" width="90"
+height="22" />, where <i>r</i> is the pipe radius and &rho; is
+the density. Both <i>Re</i> and <i>De</i> can be considered as
+dimensionless speeds; they are related by</p>
+
+<p align="right"><img src="Image14.gif" alt="$De =
+\frac{\lambda\eta}{2r^2/rho} = \frac{Re}{R/r}$" width="109"
+height="45" /> <a name="eqn4">(4)</a></p>
+
+<p>A tighter bend (smaller <i>R</i>/<i>r</i>) corresponds to a more rapid
+deformation and a higher Deborah number.</p>
+
+<p><a href="#bojcKB97">Bojcic <em>et al.</em> (1997)</a> published
+experimental friction factors for the flow of molasses in various pipe
+fittings. A remarkable feature of the results was a discontinuity in
+the friction factor at a certain critical Reynolds number. The data
+for the four fittings examined by <a href="#bojcKB97">Bojcic <em>et
+al.</em> (1997)</a> are listed in <a href="#table">table 1</a>. The
+last column contains our estimate of the corresponding critical
+Deborah number, assuming the following material properties: <img
+src="Image15.gif" alt="$\lambda = 0.1\,\mathrm{s}$" width="57"
+height="21" />, <img src="Image16.gif" alt="$\eta = 20 \mathrm{Pa.s}$"
+width="74" height="21" />, <img src="Image17.gif" alt="$\rho =
+1500\,\mathrm{kg/m}^3$" width="104" height="24" />; the pipe radius was
+10 mm.</p>
+
+<center>
+<table rules="groups" width="50%">
+<caption><a name="table">Table 1.</a> Critical
+Deborah numbers for the molasses pipe fittings data of <a
+href="#bojcKB97">Bojcic <em>et al.</em> (1997)</a>.</caption>
+<colgroup>
+<col span ="4" /><col span = "1" align = "right" />
+</colgroup>
+<thead>
+<tr><th>Fitting</th> <th>&#952;</th> <th><i>R</i>/<i>r</i></th> <th><i>Re</i>(crit)
+</th>
+<th><i>De</i>(crit)</th></tr>
+</thead>
+<tbody>
+<tr align="center">
+<td>T-90</td> <td>90&#176;</td> <td>1.64</td> <td>0.2</td>
+<td>0.122</td>
+</tr>
+<tr align = "center">
+<td>S-45</td> <td>45&#176;</td> <td>1.84</td> <td>0.2</td>
+<td>0.109</td>
+</tr>
+<tr align="center">
+<td>S-90</td> <td>90&#176;</td> <td>1.47</td> <td>0.1</td>
+<td>0.068</td>
+</tr>
+<tr align="center">
+<td>L-90</td> <td>90&#176;</td> <td>6.72 </td><td>0.5
+</td><td>0.074
+</td>
+</tr></tbody>
+</table>
+</center>
+
+<p>Thus for the two 90&deg; bends (T-90 was a tee-joint) we see that the
+critical Deborah numbers are very much closer (within 10%) than the
+corresponding critical Reynolds numbers (within 80%). The fact that all the
+estimated critical Deborah numbers are of the order of magnitude of
+10<sup>-1</sup> is consistent with the interpretation of the Deborah number as
+the ratio of elastic to viscous forces; it is at such Deborah numbers that the
+first signs of viscoelasticity might be expected. Of course, a more detailed
+investigation into the flow around pipe bends would be required to determine
+the contributions of inertia (<i>Re</i>) and viscoelasticity (<i>De</i>); this
+could involve either CFD or comparison with data from fluids known to be
+Newtonian.</p>
+
+<h2>Assessment and conclusions</h2>
+
+<p>We have clearly demonstrated that low-grade molasses is
+viscoelastic. Our preliminary estimate of the relaxation time for the
+sample studied is about one tenth of a second at 50&deg;C, a value
+which is consistent with those found for beet molasses by <a
+href="#deviP71">Devillers and Ph&eacute;lizot (1971)</a>. This value would
+suggest that viscoelastic effects are probably not dominant in such
+vessels as vertical cooling crystallizers, where the typical residence
+time for any particular segment is at least of the order of
+seconds. More detailed and quantitative rheometry is indicated,
+particularly if future factory measurements show deviations from
+computer predictions based on generalized Newtonian rheological
+models.</p>
+
+<h3>Acknowledgments</h3>
+
+<p>The authors would like to thank Ken Miller and Craig Muddle (SRI) for
+useful discussions. The assistance of the staff at Victoria Mill is
+appreciated.</p>
+
+<h2>References</h2>
+
+<p><strong><a name="awanW76">Awang, M., and White, E. T.</a></strong>
+(1976). Effect of crystal on the viscosity of massecuites. <em>Proc. Qd Soc.
+Sugar Cane Technol.</em> 43:263-270.</p>
+
+<p><strong><a name="behn64">Behne, M. F.</a></strong>
+(1964). Viscometry in massecuites. <em>Proc. Qd Soc. Sugar Cane Technol.</em>
+31:289-296.</p>
+
+<p><strong><a name="bhatBHT72">Bhattacharyya, S., Boger, D. V.,
+Halmos, A. L., and Tiu, C.</a></strong> (1972). Rheological properties of
+molasses and their use in the design of flow systems. <em>Proc. Qd
+Soc. Sugar Cane Technol.</em> 39:209-216.</p>
+
+<p><strong><a name="binnB81">Binnington, R. J., and Boger, D. V.</a></strong>
+(1981). Die swell: Empirical techniques and theoretical predictions. In
+Keentok, M. (ed.) <em>Proc. Second Nat. Conf. Rheol.</em>. 117-120. University
+of Sydney.</p>
+
+<p><strong><a name="birdSL60" id="birdSL60">Bird, R. B., Stewart, W. E., and
+Lightfoot, E. N.</a></strong> (1960). <em>Transport
+Phenomena</em>. Wiley, New York.
+<a href="notes.html#birdSL60"> &lt; Notes &gt; </a>
+</p>
+
+<p><strong><a name="bojcKB97">Bojcic, P., Khan, M. M. K., and
+Broadfoot, R.</a></strong> (1997). Estimating pressure losses in pipe
+fittings at low Reynolds numbers.  <em>Proc. Aust. Soc. Sugar Cane
+Technol.</em> 19:479-484.</p>
+
+<p><strong><a name="cochWW81" id="cochWW81">Cochrane, T., Walters, K.,
+and Webster, M. F.</a></strong> (1981). On Newtonian and non-Newtonian
+flow in complex geometries. <em>Phil.  Trans. Roy. Soc. Lond.</em>
+A301:163-181.
+<a href="notes.html#cochWW81"> &lt; Notes &gt; </a>
+</p>
+
+<p><strong><a name="deviP71">Devillers, P., and Ph&eacute;lizot,
+R.</a></strong> (1971). Pseudo-plasticit&eacute; et
+visco-elasticit&eacute; des m&eacute;lasses. <em>Sucrerie
+Francaise</em> 112:37-44.</p>
+
+<p><strong><a name="eggeH96">Eggen, S., and Hinrichsen, E. L.</a></strong>
+(1996). Swell and distortions of high-density polyethylene extruded through
+capillary dies. <em>Poly. Engg &amp; Sci.</em> 36:410-424.</p>
+
+<p><strong><a name="fred64">Fredrickson, A. G.</a></strong>
+(1964) <em>Principles and Applications of Rheology.</em> Prentice-Hall,
+Englewood Cliffs, New Jersey.
+<a href="notes.html#fred64"> &lt; Notes &gt; </a>
+</p>
+
+<p><strong><a name="geroG78">Geronimos, G. L., and Greenfield,
+P. F.</a></strong> (1978) Viscosity increases in concentrated sugar
+solutions and molasses due to dextrans. <em>Proc. Qd Soc. Sugar Cane
+Technol.</em> 45:119-126.</p>
+
+<p><strong><a name="harrRV95">Harris, J. A., Robinson, J. A. and Vigh,
+S.</a></strong> (1995) Mathematical modelling of flow and heat
+transfer in a vertical crystalliser. <em>Proc. Aust. Soc. Sugar Cane
+Technol.</em> 17:216-221.</p>
+
+<p><strong><a name="keasS84">Keast, W. J., and Sichter,
+N. J.</a></strong> (1984). Vertical continuous crystallizer - Victoria
+Mill. <em>Proc. Aust. Soc.  Sugar Cane Technol.</em> 6:293-299.</p>
+
+<p><strong><a name="lapaP95">Lapasin, R., and Pricl, S.</a></strong>
+(1995) <em>Rheology of Industrial Polysaccharides.</em> Blackie
+Academic and Professional, London.</p>
+
+<p><strong><a name="lars88">Larson, R. G.</a></strong>
+(1988). <em>Constitutive Equations for Polymer Melts and Solutions</em>.
+Butterworths, Boston.</p>
+
+<p><strong><a name="merr43">Merrington, A. C.</a></strong>
+(1943). Flow of visco-elastic materials in capillaries.  <em>Nature</em>
+152:663.</p>
+
+<p><strong><a name="ness84">Ness, J. N.</a></strong>
+(1984). In discussions of `Viscometry in cane sugar processing by J. N. Ness.
+<em>Disc. Aust. Soc. Sugar Cane Technol.</em> 6:100-101.
+<a href="notes.html#ness84">&lt; Notes &gt;</a>
+</p>
+
+<p><strong><a name="robi94">Robinson, J. A.</a></strong>
+(1994). Determinations of flow patterns in a vertical crystalliser using
+computational fluid dynamics. BE thesis, Department of Mechanical Engineering,
+James Cook University of North Queensland.</p>
+
+<p><strong><a name="seriGC93">Seriai, M., Guillet, J., and Carrot,
+C.</a></strong> (1993). A simple model to predict extrudate swell of
+polystyrene and linear polyethylenes. <em>Rheol. Acta</em>
+32:532-538.</p>
+
+<p><strong><a name="simaH97">Sima, M. A., and Harris, J. A.</a></strong>
+(1997). Modelling of a low grade vertical cooling crystallizer using
+computational fluid dynamics. <em>Proc. Aust. Soc. Sugar Cane Technol.</em>
+19:448-455.</p>
+
+<p><strong><a name="simaH99">Sima, M. A., and Harris, J. A.</a></strong>
+(1999). Numerical modeling of flow in a vertical cooling crystallizer. <em>J.
+Fluids Engg</em> 121:148-154.</p>
+
+<p><strong><a name="stei95">Steindl, R. J.</a></strong>
+(1995). Optimum performance through CFD modelling of clarifier designs.
+<em>Proc. Aust. Soc. Sugar Cane Technol.</em> 17:207-215.</p>
+
+<p><strong><a name="stei97">Steindl, R. J.</a></strong>
+(1997). Clarification improvements through the application of CFD.
+<em>Eleventh Annual Users Conference Proceedings.</em> Compumod.</p>
+
+<p><strong><a name="tann70">Tanner, R. I.</a></strong>
+(1970). A theory of die-swell. <em>J. Poly. Sci. Pt A-2 Poly. Phys.</em>
+8:2067-2078.</p>
+
+<p><strong><a name="tann88">Tanner, R. I.</a></strong>
+(1988). <em>Engineering Rheology</em>, revised ed., Clarendon, Oxford.</p>
+
+<p><strong><a name = "true74">Truesdell, C.</a></strong> (1974). The
+meaning of viscometry in fluid dynamics. <em>Ann. Rev. Fluid
+Mech.</em> <b>6</b>:111&ndash;146.</p>
+<hr />
+      <p>
+
+      <a href="http://validator.w3.org/check/referer"><img
+      src="http://www.w3.org/Icons/valid-xhtml11" alt="valid XHTML
+      1.1" style = "border:0;width:88px;height:31px" /></a>
+
+      <a href="http://jigsaw.w3.org/css-validator/check/referer">
+	<img style = "border:0;width:88px;height:31px"
+	     src = "http://jigsaw.w3.org/css-validator/images/vcss" alt="valid
+									 CSS" /> </a></p><address>Last modified Sun. 24 Aug. 2008 by <a
+    href="mailto:gdmcbain@freeshell.org">G. D.  McBain</a>.</address>
+
+</body>
+</html>

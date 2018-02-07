@@ -1,0 +1,229 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.47)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Continuum model</TITLE>
+<META NAME="description" CONTENT="Continuum model">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="thesis.css">
+
+<LINK REL="next" HREF="node77.html">
+<LINK REL="previous" HREF="node75.html">
+<LINK REL="up" HREF="node75.html">
+<LINK REL="next" HREF="node77.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1357"
+  HREF="node77.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1353"
+  HREF="node75.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1347"
+  HREF="node75.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1355"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1358"
+  HREF="node77.html">The interfacial velocity</A>
+<B> Up:</B> <A NAME="tex2html1354"
+  HREF="node75.html">Vapour transport in Fastflo</A>
+<B> Previous:</B> <A NAME="tex2html1348"
+  HREF="node75.html">Vapour transport in Fastflo</A>
+ &nbsp <B>  <A NAME="tex2html1356"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001111000000000000000"></A>
+<A NAME="sec:FC_Cm"></A>
+<BR>
+Continuum model
+</H2>
+
+<P>
+The continuum equations to be solved here are (<A HREF="node24.html#eqn:continuity">2.52</A>)-(<A HREF="node24.html#eqn:energy">2.55</A>).  At the vertical
+walls, the boundary conditions are the same as used for the narrow cavity
+limit: (<A HREF="node65.html#bc:narrow_Tm">4.18</A>)-(<A HREF="node65.html#bc:narrow_v">4.21</A>).  Assume the floor and
+ceiling to be solid surfaces, so that they are nonslip
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+u=0\mbox{\hspace{25mm}on }y=0,\mbox{$\mathcal A$};
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="bc:FC_nonslip"></A><IMG
+ WIDTH="257" HEIGHT="44" BORDER="0"
+ SRC="img621.png"
+ ALT="\begin{displaymath}
+u=0\mbox{\hspace{25mm}on }y=0,\mbox{$\mathcal A$};
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(5.1)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+and impermeable to the mixture
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+v=0\mbox{\hspace{25mm}on }y=0,\mbox{$\mathcal A$};
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="bc:FC_impvel"></A><IMG
+ WIDTH="255" HEIGHT="44" BORDER="0"
+ SRC="img622.png"
+ ALT="\begin{displaymath}
+v=0\mbox{\hspace{25mm}on }y=0,\mbox{$\mathcal A$};
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(5.2)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+and vapour
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\frac{\partial m}{\partial y}=0\mbox{\hspace{21mm}on }y=0,\mbox{$\mathcal A$}.
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="bc:FC_impsp"></A><IMG
+ WIDTH="257" HEIGHT="57" BORDER="0"
+ SRC="img623.png"
+ ALT="\begin{displaymath}
+\frac{\partial m}{\partial y}=0\mbox{\hspace{21mm}on }y=0,\mbox{$\mathcal A$}.
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(5.3)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+
+<P>
+The thermal boundary conditions on the floor and ceiling are not unimportant,
+since they are known in the analogous single fluid heat transfer
+problem to influence
+the penetration of convective effects into the core (Daniels &amp; Wang 1994).
+
+For the purposes of the present problem, however, it is adequate to consider
+the simple adiabatic condition (cf. equation <A HREF="node21.html#bc:prim_adiabatic">2.25</A>):
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\frac{\partial T}{\partial y}=0\mbox{\hspace{21mm}on }y=0,\mbox{$\mathcal A$}.
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="254" HEIGHT="57" BORDER="0"
+ SRC="img624.png"
+ ALT="\begin{displaymath}
+\frac{\partial T}{\partial y}=0\mbox{\hspace{21mm}on }y=0,\mbox{$\mathcal A$}.
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(5.4)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+
+<P>
+The boundary conditions are summarized in figure&nbsp;<A HREF="node74.html#fig:FC_geombcs">5.1</A>.
+
+<P>
+The speed scale in these equations is <!-- MATH
+ $\nu \mbox{\textit{Gr}}(1+N)/b$
+ -->
+<IMG
+ WIDTH="121" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img625.png"
+ ALT="$\nu \mbox{\textit{Gr}}(1+N)/b$"> which expresses a
+balance between buoyancy and viscosity in the momentum equation,
+if diffusion and conduction dominate the species and energy equations.
+In narrow cavities (large <IMG
+ WIDTH="20" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img13.png"
+ ALT="$\mathcal A$">) there may occur a region sufficiently
+far from the horizontal surfaces in which the fluid does not accelerate
+vertically. It was shown in chapter&nbsp;<A HREF="node62.html#ch:NCL">4</A>
+that the nondimensional velocity based on this speed
+scale is independent of the Grashof number (see especially equation
+<A HREF="node66.html#soln:narrow_v">4.27</A>).
+Thus, if a solution at one
+Grashof number is used as an initial guess for one at a different
+number, for which there is also a fully developed region,
+no change should be required from the guess to the new solution
+in the intersection of the two regions.  This scale, and the numerical
+method presented in the following section, would not be appropriate for
+highly convective flows.  When vertical velocity boundary layers occur,
+the speed varies more as the square root of the Grashof number
+(McBain 1995, fig.&nbsp;12;
+1997<I>b</I>, fig.&nbsp;2),
+reflecting the steepened density gradients near the hot and cold walls.
+The range of parameters for which a fully
+developed region may be expected is discussed later in this chapter
+(&#167;<A HREF="node89.html#sec:FC_Cdr">5.5</A>).
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1357"
+  HREF="node77.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1353"
+  HREF="node75.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1347"
+  HREF="node75.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1355"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1358"
+  HREF="node77.html">The interfacial velocity</A>
+<B> Up:</B> <A NAME="tex2html1354"
+  HREF="node75.html">Vapour transport in Fastflo</A>
+<B> Previous:</B> <A NAME="tex2html1348"
+  HREF="node75.html">Vapour transport in Fastflo</A>
+ &nbsp <B>  <A NAME="tex2html1356"
+  HREF="node2.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Geordie McBain
+2001-01-27
+</ADDRESS>
+</BODY>
+</HTML>

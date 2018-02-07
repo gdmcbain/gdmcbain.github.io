@@ -1,0 +1,736 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.47)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>The Stokes problem in the sphere</TITLE>
+<META NAME="description" CONTENT="The Stokes problem in the sphere">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="thesis.css">
+
+<LINK REL="next" HREF="node147.html">
+<LINK REL="previous" HREF="node145.html">
+<LINK REL="up" HREF="node142.html">
+<LINK REL="next" HREF="node147.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html2248"
+  HREF="node147.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html2244"
+  HREF="node142.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html2238"
+  HREF="node145.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html2246"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html2249"
+  HREF="node147.html">Axisymmetric poloidal fields</A>
+<B> Up:</B> <A NAME="tex2html2245"
+  HREF="node142.html">Vector Fields in a</A>
+<B> Previous:</B> <A NAME="tex2html2239"
+  HREF="node145.html">Boundary conditions</A>
+ &nbsp <B>  <A NAME="tex2html2247"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H1><A NAME="SECTION001840000000000000000"></A>
+<A NAME="sec:VFS_GsiSps"></A>
+<BR>
+The Stokes problem in the sphere
+</H1>
+
+<P>
+I present here a general solution of the inhomogeneous Stokes problem in
+the sphere with unit diameter.
+
+<P>
+The general solution
+for the case <IMG
+ WIDTH="49" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1308.png"
+ ALT="$\mathbf{f=0}$">, but with inhomogeneous boundary conditions
+has been discussed by Palaniappan et al. (1992) and
+Padmavathi et al. (1998). 
+
+<P>
+An identity that will be used frequently is:
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+(\mbox{\boldmath$\nabla$}\times)^3(\mathbf{r}s) = -\mbox{\boldmath$\nabla$}\times(\mathbf{r}\nabla^2s)
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><A NAME="eqn:Moffatt1978p19"></A><IMG
+ WIDTH="222" HEIGHT="45" BORDER="0"
+ SRC="img1309.png"
+ ALT="\begin{displaymath}
+(\mbox{\boldmath$\nabla$}\times)^3(\mathbf{r}s) = -\mbox{\boldmath$\nabla$}\times(\mathbf{r}\nabla^2s)
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(B.18)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+for any scalar <IMG
+ WIDTH="14" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img67.png"
+ ALT="$s$"> (Moffatt 1978, p.&nbsp;19).
+
+<P>
+<P>
+<DIV><B>Lemma  3</B> (Zero vector fields)  &nbsp; 
+If a vector field, <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img50.png"
+ ALT="$\mathbf{v}$">, is both solenoidal and irrotational in a
+simply connected domain and has zero normal component over the surface,
+then <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img50.png"
+ ALT="$\mathbf{v}$"> vanishes identically in the domain.
+<A NAME="lem:Zvf"></A></DIV><P></P>
+
+<P>
+<I>Proof:</I>
+The lemma is elementary; its proof is contained in most texts on
+vector analysis, potential theory or continuum mechanics--see, for example,
+Lamb (1932, pp.&nbsp;37-41).  
+
+<P>
+Basically, the irrotationality implies that the field
+may be expressed as the gradient of a scalar, the solenoidality implies that
+the scalar is harmonic and the boundary conditions imply that the scalar is
+uniform.<IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img124.png"
+ ALT="$\Box$">
+<P><P>
+<BR>
+
+<P>
+<P>
+<DIV><B>Theorem  4</B> (Creeping flow in a sphere)  &nbsp; 
+If <IMG
+ WIDTH="13" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img25.png"
+ ALT="$\mathbf{f}$"> is a vector field with H&#246;lder continuous
+second order partial derivatives in the
+sphere <!-- MATH
+ $\{0\leq r\leq \mbox{$\frac{1}{2}$}\}$
+ -->
+<IMG
+ WIDTH="104" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1310.png"
+ ALT="$\{0\leq r\leq \mbox{$\frac{1}{2}$}\}$">, then the solution of the inhomogeneous Stokes
+problem,
+<P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+\mbox{\boldmath$\nabla$}\cdot \mathbf{u} & = & 0 \\
+\mathbf{f} & = & -\mbox{\boldmath$\nabla$}p + \nabla^2\mathbf{u} \\
+\mathbf{u} & = & \mathbf{0},\quad(r=\mbox{$\frac{1}{2}$})
+\end{eqnarray*}
+ -->
+<IMG
+ WIDTH="191" HEIGHT="125" BORDER="0"
+ SRC="img1311.png"
+ ALT="\begin{eqnarray*}
+\mbox{\boldmath$\nabla$}\cdot \mathbf{u} &amp; = &amp; 0 \\
+\mathbf{f...
+...u} \\
+\mathbf{u} &amp; = &amp; \mathbf{0},\quad(r=\mbox{$\frac{1}{2}$})
+\end{eqnarray*}">
+<BR CLEAR="ALL"></DIV><P></P>
+<BR CLEAR="ALL"><P></P>
+<BR CLEAR="ALL"><P></P>
+is
+<P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH
+ \begin{eqnarray*}
+\mathbf{u} & = & (\mbox{\boldmath$\nabla$}\times)^2(\mbox{$\mathcal P$}[\mathbf{u}]\mathbf{r})
+	+\mbox{\boldmath$\nabla$}\times\mbox{$\mathcal T$}[\mathbf{u}]\mathbf{r}\\
+p & = & -\mbox{$\mathcal S$}[\mathbf{f}] - s + \mbox{\rm a constant}
+\end{eqnarray*}
+ -->
+<A NAME="soln:inhomogeneous_Stokes_pressure"></A><A NAME="soln:inhomogeneous_Stokes_velocity"></A><IMG
+ WIDTH="285" HEIGHT="84" BORDER="0"
+ SRC="img1312.png"
+ ALT="\begin{eqnarray*}
+\mathbf{u} &amp; = &amp; (\mbox{\boldmath$\nabla$}\times)^2(\mbox{$\ma...
+...= &amp; -\mbox{$\mathcal S$}[\mathbf{f}] - s + \mbox{\rm a constant}
+\end{eqnarray*}">
+<BR CLEAR="ALL"></DIV><P></P>
+<BR CLEAR="ALL"><P></P>
+<BR CLEAR="ALL"><P></P>
+where <!-- MATH
+ $\mbox{$\mathcal P$}[\mathbf{u}]$
+ -->
+<IMG
+ WIDTH="42" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1313.png"
+ ALT="$\mbox{$\mathcal P$}[\mathbf{u}]$">, <!-- MATH
+ $\mbox{$\mathcal T$}[\mathbf{u}]$
+ -->
+<IMG
+ WIDTH="42" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1314.png"
+ ALT="$\mbox{$\mathcal T$}[\mathbf{u}]$"> and <IMG
+ WIDTH="14" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img67.png"
+ ALT="$s$"> are scalar fields satisfying
+<BR>
+<DIV ALIGN="CENTER"><A NAME="eqn:inhomogeneous_Stokes_problem_for_Pu"></A>
+<!-- MATH
+ \begin{eqnarray}
+\nabla^4\mbox{$\mathcal P$}[\mathbf{u}] & = &
+	\nabla^2\mbox{$\mathcal P$}[\mathbf{f}-\mathbf{f}^{(S)}],\quad(0\leq r<\mbox{$\frac{1}{2}$})\\
+\mbox{$\mathcal P$}[\mathbf{u}] = \mbox{\boldmath$\hat{r}$}\cdot\mbox{\boldmath$\nabla$}\mbox{$\mathcal P$}[\mathbf{u}] & = & 0,\quad(r=\mbox{$\frac{1}{2}$}),
+\end{eqnarray}
+ -->
+<TABLE ALIGN="CENTER" CELLPADDING="0" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="65" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1315.png"
+ ALT="$\displaystyle \nabla^4\mbox{$\mathcal P$}[\mathbf{u}]$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="235" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1316.png"
+ ALT="$\displaystyle \nabla^2\mbox{$\mathcal P$}[\mathbf{f}-\mathbf{f}^{(S)}],\quad(0\leq r&lt;\mbox{$\frac{1}{2}$})$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(B.19)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="147" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1317.png"
+ ALT="$\displaystyle \mbox{$\mathcal P$}[\mathbf{u}] = \mbox{\boldmath$\hat{r}$}\cdot\mbox{\boldmath$\nabla$}\mbox{$\mathcal P$}[\mathbf{u}]$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="106" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1318.png"
+ ALT="$\displaystyle 0,\quad(r=\mbox{$\frac{1}{2}$}),$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(B.20)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+<BR>
+<DIV ALIGN="CENTER"><A NAME="bc:inhomogeneous_Stokes_Tu"></A>
+<!-- MATH
+ \begin{eqnarray}
+\nabla^2\mbox{$\mathcal T$}[\mathbf{u}] & = & \mbox{$\mathcal T$}[\mathbf{f}-\mathbf{f}^{(S)}],
+\quad(0\leq r<\mbox{$\frac{1}{2}$}) \\
+\mbox{$\mathcal T$}[\mathbf{u}] & = & 0,\quad (r=\mbox{$\frac{1}{2}$}), \\
+\end{eqnarray}
+ -->
+<TABLE ALIGN="CENTER" CELLPADDING="0" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="66" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1319.png"
+ ALT="$\displaystyle \nabla^2\mbox{$\mathcal T$}[\mathbf{u}]$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="212" HEIGHT="43" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1320.png"
+ ALT="$\displaystyle \mbox{$\mathcal T$}[\mathbf{f}-\mathbf{f}^{(S)}],
+\quad(0\leq r&lt;\mbox{$\frac{1}{2}$})$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(B.21)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="42" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1321.png"
+ ALT="$\displaystyle \mbox{$\mathcal T$}[\mathbf{u}]$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="106" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1318.png"
+ ALT="$\displaystyle 0,\quad(r=\mbox{$\frac{1}{2}$}),$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(B.22)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+<BR>
+<DIV ALIGN="CENTER"><A NAME="eqn:inhomogeneous_Stokes_problem_for_s"></A>
+<!-- MATH
+ \begin{eqnarray}
+\nabla^2 s & = & 0,\quad(0\leq r<\mbox{$\frac{1}{2}$})\\
+\mbox{\boldmath$\hat{r}$}\cdot\nabla s & = & \mbox{\boldmath$\hat{r}$}\cdot(\mbox{\boldmath$\nabla$}\times)^4(\mbox{$\mathcal P$}[\mathbf{u}]\mathbf{r}),
+\quad(r=\mbox{$\frac{1}{2}$})
+\end{eqnarray}
+ -->
+<TABLE ALIGN="CENTER" CELLPADDING="0" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="37" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1322.png"
+ ALT="$\displaystyle \nabla^2 s$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="135" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1323.png"
+ ALT="$\displaystyle 0,\quad(0\leq r&lt;\mbox{$\frac{1}{2}$})$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(B.23)</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="54" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1324.png"
+ ALT="$\displaystyle \mbox{\boldmath$\hat{r}$}\cdot\nabla s$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="231" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1325.png"
+ ALT="$\displaystyle \mbox{\boldmath$\hat{r}$}\cdot(\mbox{\boldmath$\nabla$}\times)^4(\mbox{$\mathcal P$}[\mathbf{u}]\mathbf{r}),
+\quad(r=\mbox{$\frac{1}{2}$})$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(B.24)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+and <!-- MATH
+ $\mbox{$\mathcal S$}[\mathbf{f}]$
+ -->
+<IMG
+ WIDTH="37" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1326.png"
+ ALT="$\mbox{$\mathcal S$}[\mathbf{f}]$">, <!-- MATH
+ $\mbox{$\mathcal P$}[\mathbf{f}-\mathbf{f}^{(S)}]$
+ -->
+<IMG
+ WIDTH="91" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1327.png"
+ ALT="$\mbox{$\mathcal P$}[\mathbf{f}-\mathbf{f}^{(S)}]$"> and
+<!-- MATH
+ $\mbox{$\mathcal T$}[\mathbf{f}-\mathbf{f}^{(S)}]$
+ -->
+<IMG
+ WIDTH="91" HEIGHT="41" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1328.png"
+ ALT="$\mbox{$\mathcal T$}[\mathbf{f}-\mathbf{f}^{(S)}]$"> are scalars from the
+decomposition of <IMG
+ WIDTH="13" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img25.png"
+ ALT="$\mathbf{f}$"> described by Lemma&nbsp;<A HREF="node144.html#lem:Dvf">2</A>.
+<A NAME="thm:Cfs"></A></DIV><P></P>
+
+<P>
+<I>Proof:</I>
+The theorem is proved if it can be shown that
+the velocity field, <IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img72.png"
+ ALT="$\mathbf{u}$">, is solenoidal and
+vanishes on the boundary, and that the field equation is satisfied.
+
+<P>
+The divergence of <IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img72.png"
+ ALT="$\mathbf{u}$"> vanishes automatically since <IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img72.png"
+ ALT="$\mathbf{u}$">
+is expressed as the sum of its poloidal and toroidal parts.
+
+<P>
+Both the poloidal and toroidal parts of <IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img72.png"
+ ALT="$\mathbf{u}$"> vanish on the
+surface, by the boundary conditions on <!-- MATH
+ $\mbox{$\mathcal P$}[\mathbf{u}]$
+ -->
+<IMG
+ WIDTH="42" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1313.png"
+ ALT="$\mbox{$\mathcal P$}[\mathbf{u}]$"> and <!-- MATH
+ $\mbox{$\mathcal T$}[\mathbf{u}]$
+ -->
+<IMG
+ WIDTH="42" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1314.png"
+ ALT="$\mbox{$\mathcal T$}[\mathbf{u}]$">
+(&#167;<A HREF="node145.html#sec:VFS_Bcptf">B.3</A>).  Therefore the boundary condition on <IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img72.png"
+ ALT="$\mathbf{u}$">
+is satisfied.
+
+<P>
+To show that the equation of motion is satisfied, let
+<BR>
+<DIV ALIGN="RIGHT">
+
+<!-- MATH
+ \begin{equation}
+\mathbf{v} \equiv \mathbf{f} + \mbox{\boldmath$\nabla$}p + (\mbox{\boldmath$\nabla$}\times)^2\mathbf{u}.
+\end{equation}
+ -->
+<TABLE WIDTH="100%" ALIGN="CENTER">
+<TR VALIGN="MIDDLE"><TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="191" HEIGHT="45" BORDER="0"
+ SRC="img1329.png"
+ ALT="\begin{displaymath}
+\mathbf{v} \equiv \mathbf{f} + \mbox{\boldmath$\nabla$}p + (\mbox{\boldmath$\nabla$}\times)^2\mathbf{u}.
+\end{displaymath}"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(B.25)</TD></TR>
+</TABLE>
+<BR CLEAR="ALL"></DIV><P></P>
+
+<P>
+The required result follows from Lemma&nbsp;<A HREF="node146.html#lem:Zvf">3</A>
+if <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img50.png"
+ ALT="$\mathbf{v}$"> is solenoidal and irrotational and
+has zero normal component on the surface <IMG
+ WIDTH="67" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1183.png"
+ ALT="$r=1/2$">.
+
+<P>
+The divergence of <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img50.png"
+ ALT="$\mathbf{v}$"> is:
+<BR>
+<DIV ALIGN="CENTER">
+
+<!-- MATH
+ \begin{eqnarray}
+\mbox{\boldmath$\nabla$}\cdot \mathbf{v} 
+& = & \mbox{\boldmath$\nabla$}\cdot \mathbf{f} + \nabla^2 p \nonumber\\
+& = & \nabla^2\mbox{$\mathcal S$}[\mathbf{f}] - \nabla^2\mbox{$\mathcal S$}[\mathbf{f}] - \nabla^2 s
+\nonumber \\
+& = & 0
+\end{eqnarray}
+ -->
+<TABLE ALIGN="CENTER" CELLPADDING="0" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="49" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1330.png"
+ ALT="$\displaystyle \mbox{\boldmath$\nabla$}\cdot \mathbf{v}$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="101" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1331.png"
+ ALT="$\displaystyle \mbox{\boldmath$\nabla$}\cdot \mathbf{f} + \nabla^2 p$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="194" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1332.png"
+ ALT="$\displaystyle \nabla^2\mbox{$\mathcal S$}[\mathbf{f}] - \nabla^2\mbox{$\mathcal S$}[\mathbf{f}] - \nabla^2 s$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img165.png"
+ ALT="$\displaystyle 0$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(B.26)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+by (<A HREF="node144.html#eqn:problem_for_scaloidal_scalar">B.11</A>) and
+(<A HREF="node146.html#soln:inhomogeneous_Stokes_pressure">B.19</A>).
+
+<P>
+The curl of <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img50.png"
+ ALT="$\mathbf{v}$"> is:
+<BR>
+<DIV ALIGN="CENTER">
+
+<!-- MATH
+ \begin{eqnarray}
+\mbox{\boldmath$\nabla$}\times\mathbf{v} & = &
+\mbox{\boldmath$\nabla$}\times\mathbf{f} + (\mbox{\boldmath$\nabla$}\times)^3\mathbf{u} \nonumber \\
+& = & 
+ (\mbox{\boldmath$\nabla$}\times)^3\left(\mbox{$\mathcal P$}[\mathbf{f}-\mathbf{f}^{(S)}]\mathbf{r}\right)
++ (\mbox{\boldmath$\nabla$}\times)^2\left(\mbox{$\mathcal T$}[\mathbf{f}-\mathbf{f}^{(S)}]\mathbf{r}\right)
+\nonumber \\
+& & + (\mbox{\boldmath$\nabla$}\times)^5(\mbox{$\mathcal P$}[\mathbf{u}]\mathbf{r})
++ (\mbox{\boldmath$\nabla$}\times)^4(\mbox{$\mathcal T$}[\mathbf{u}]\mathbf{r}) \nonumber \\
+& = & \mbox{\boldmath$\nabla$}\times\left[\mathbf{r}\left(
+	\nabla^4\mbox{$\mathcal P$}[\mathbf{u}]-\nabla^2\mbox{$\mathcal P$}[\mathbf{f}-\mathbf{f}^{(S)}]
+			\right)\right] \nonumber \\& &
++ (\mbox{\boldmath$\nabla$}\times)^2\left[\mathbf{r}\left(
+	\mbox{$\mathcal T$}[\mathbf{f}-\mathbf{f}^{(S)}]-\nabla^2\mbox{$\mathcal T$}[\mathbf{u}]
+			\right)\right] \nonumber \\
+& = & 0
+\end{eqnarray}
+ -->
+<TABLE ALIGN="CENTER" CELLPADDING="0" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="58" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1333.png"
+ ALT="$\displaystyle \mbox{\boldmath$\nabla$}\times\mathbf{v}$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="145" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1334.png"
+ ALT="$\displaystyle \mbox{\boldmath$\nabla$}\times\mathbf{f} + (\mbox{\boldmath$\nabla$}\times)^3\mathbf{u}$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="372" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1335.png"
+ ALT="$\displaystyle (\mbox{\boldmath$\nabla$}\times)^3\left(\mbox{$\mathcal P$}[\math...
+...times)^2\left(\mbox{$\mathcal T$}[\mathbf{f}-\mathbf{f}^{(S)}]\mathbf{r}\right)$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="274" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1336.png"
+ ALT="$\displaystyle + (\mbox{\boldmath$\nabla$}\times)^5(\mbox{$\mathcal P$}[\mathbf{...
+...+ (\mbox{\boldmath$\nabla$}\times)^4(\mbox{$\mathcal T$}[\mathbf{u}]\mathbf{r})$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="286" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1337.png"
+ ALT="$\displaystyle \mbox{\boldmath$\nabla$}\times\left[\mathbf{r}\left(
+\nabla^4\mbo...
+...hbf{u}]-\nabla^2\mbox{$\mathcal P$}[\mathbf{f}-\mathbf{f}^{(S)}]
+\right)\right]$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="294" HEIGHT="46" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1338.png"
+ ALT="$\displaystyle + (\mbox{\boldmath$\nabla$}\times)^2\left[\mathbf{r}\left(
+\mbox{...
+...hbf{f}-\mathbf{f}^{(S)}]-\nabla^2\mbox{$\mathcal T$}[\mathbf{u}]
+\right)\right]$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="14" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img165.png"
+ ALT="$\displaystyle 0$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(B.27)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+by (<A HREF="node143.html#eqn:problem_for_poloidal_scalar">B.1</A>),
+(<A HREF="node143.html#eqn:problem_for_toroidal_scalar">B.2</A>), four applications of
+(<A HREF="node146.html#eqn:Moffatt1978p19">B.18</A>), and the fact that toroidal fields have zero radial
+components (<A HREF="node143.html#eqn:toroidal_components">B.9</A>).
+
+<P>
+The normal component of <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img50.png"
+ ALT="$\mathbf{v}$"> at <!-- MATH
+ $r=\mbox{$\frac{1}{2}$}$
+ -->
+<IMG
+ WIDTH="49" HEIGHT="39" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1339.png"
+ ALT="$r=\mbox{$\frac{1}{2}$}$"> is:
+<BR>
+<DIV ALIGN="CENTER">
+
+<!-- MATH
+ \begin{eqnarray}
+\mbox{\boldmath$\hat{n}$}\cdot\mathbf{v} & = &
+\mbox{\boldmath$\hat{n}$}\cdot\mathbf{f}
++ \mbox{\boldmath$\hat{n}$}\cdot\mbox{\boldmath$\nabla$}p
++ \mbox{\boldmath$\hat{n}$}\cdot(\mbox{\boldmath$\nabla$}\times)^4(\mathbf{r}\mbox{$\mathcal P$}[\mathbf{u}])
++ \mbox{\boldmath$\hat{n}$}\cdot(\mbox{\boldmath$\nabla$}\times)^3(\mathbf{r}\mbox{$\mathcal T$}[\mathbf{u}]) \nonumber \\
+& = & \mbox{\boldmath$\hat{n}$}\cdot\mbox{\boldmath$\nabla$}\mbox{$\mathcal S$}[\mathbf{f}] - \mbox{\boldmath$\hat{n}$}\cdot\mbox{\boldmath$\nabla$}\mbox{$\mathcal S$}[\mathbf{f}]
+-\mbox{\boldmath$\hat{n}$}\cdot\mbox{\boldmath$\nabla$}s \nonumber \\& &
++ \mbox{\boldmath$\hat{n}$}\cdot(\mbox{\boldmath$\nabla$}\times)^4(\mbox{$\mathcal P$}[\mathbf{u}]\mathbf{r})
+- \mbox{\boldmath$\hat{n}$}\cdot\mbox{\boldmath$\nabla$}\times(\mathbf{r}\nabla^2\mbox{$\mathcal T$}[\mathbf{u}]) \nonumber \\
+& = & 0;
+\end{eqnarray}
+ -->
+<TABLE ALIGN="CENTER" CELLPADDING="0" WIDTH="100%">
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT"><IMG
+ WIDTH="44" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1340.png"
+ ALT="$\displaystyle \mbox{\boldmath$\hat{n}$}\cdot\mathbf{v}$"></TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="452" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1341.png"
+ ALT="$\displaystyle \mbox{\boldmath$\hat{n}$}\cdot\mathbf{f}
++ \mbox{\boldmath$\hat{n...
+...ot(\mbox{\boldmath$\nabla$}\times)^3(\mathbf{r}\mbox{$\mathcal T$}[\mathbf{u}])$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="261" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1342.png"
+ ALT="$\displaystyle \mbox{\boldmath$\hat{n}$}\cdot\mbox{\boldmath$\nabla$}\mbox{$\mat...
+...athcal S$}[\mathbf{f}]
+-\mbox{\boldmath$\hat{n}$}\cdot\mbox{\boldmath$\nabla$}s$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD>&nbsp;</TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="339" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img1343.png"
+ ALT="$\displaystyle + \mbox{\boldmath$\hat{n}$}\cdot(\mbox{\boldmath$\nabla$}\times)^...
+...box{\boldmath$\nabla$}\times(\mathbf{r}\nabla^2\mbox{$\mathcal T$}[\mathbf{u}])$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+&nbsp;</TD></TR>
+<TR VALIGN="MIDDLE"><TD NOWRAP ALIGN="RIGHT">&nbsp;</TD>
+<TD ALIGN="CENTER" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img164.png"
+ ALT="$\textstyle =$"></TD>
+<TD ALIGN="LEFT" NOWRAP><IMG
+ WIDTH="19" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img365.png"
+ ALT="$\displaystyle 0;$"></TD>
+<TD WIDTH=10 ALIGN="RIGHT">
+(B.28)</TD></TR>
+</TABLE></DIV>
+<BR CLEAR="ALL"><P></P>
+thus, <!-- MATH
+ $\mathbf{v}\equiv0$
+ -->
+<IMG
+ WIDTH="51" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1344.png"
+ ALT="$\mathbf{v}\equiv0$"> and the equation of motion is satisfied identically.
+<IMG
+ WIDTH="19" HEIGHT="16" ALIGN="BOTTOM" BORDER="0"
+ SRC="img124.png"
+ ALT="$\Box$">
+<P><P>
+<BR>
+
+<P>
+Examples of the use of the method will be found in &#167;<A HREF="node127.html#sec:BC_Se">8.2</A>.
+
+<P>
+No insurmountable difficulty would be added by the imposition of inhomogeneous
+boundary conditions on the velocity.  The velocity field could be
+decomposed, due to the linearity of the Stokes problem, into parts induced
+by the body force and the boundary conditions.  These would then be obtained
+by the methods of Theorem&nbsp;<A HREF="node146.html#thm:Cfs">4</A> and
+Palaniappan et al. (1992), respectively.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html2248"
+  HREF="node147.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html2244"
+  HREF="node142.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html2238"
+  HREF="node145.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html2246"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html2249"
+  HREF="node147.html">Axisymmetric poloidal fields</A>
+<B> Up:</B> <A NAME="tex2html2245"
+  HREF="node142.html">Vector Fields in a</A>
+<B> Previous:</B> <A NAME="tex2html2239"
+  HREF="node145.html">Boundary conditions</A>
+ &nbsp <B>  <A NAME="tex2html2247"
+  HREF="node2.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Geordie McBain
+2001-01-27
+</ADDRESS>
+</BODY>
+</HTML>

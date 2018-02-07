@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.47)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>Implementation of unusual terms</TITLE>
+<META NAME="description" CONTENT="Implementation of unusual terms">
+<META NAME="keywords" CONTENT="thesis">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="LaTeX2HTML v2K.1beta">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="STYLESHEET" HREF="thesis.css">
+
+<LINK REL="next" HREF="node80.html">
+<LINK REL="previous" HREF="node78.html">
+<LINK REL="up" HREF="node75.html">
+<LINK REL="next" HREF="node80.html">
+</HEAD>
+
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1393"
+  HREF="node80.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1389"
+  HREF="node75.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1383"
+  HREF="node78.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1391"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1394"
+  HREF="node80.html">The finite element mesh</A>
+<B> Up:</B> <A NAME="tex2html1390"
+  HREF="node75.html">Vapour transport in Fastflo</A>
+<B> Previous:</B> <A NAME="tex2html1384"
+  HREF="node78.html">Augmented Lagrangian algorithm</A>
+ &nbsp <B>  <A NAME="tex2html1392"
+  HREF="node2.html">Contents</A></B> 
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<H2><A NAME="SECTION001114000000000000000">
+Implementation of unusual terms</A>
+</H2>
+
+<P>
+The mathematical description of vapour transport through a confined gas
+developed in chapter&nbsp;<A HREF="node12.html#ch:BE">2</A> involves two terms not usually
+encountered in computational fluid dynamics: the interdiffusion term in
+the energy equation (<A HREF="node24.html#eqn:energy">2.55</A>); and the interfacial velocity
+boundary condition (<A HREF="node25.html#bc:transpiration">2.59</A>).  
+Implementing these with a `black-box' 
+package, though possible (Suehrcke &amp; Harris 1995; McBain &amp; Harris 1998),
+ is not nearly so straightforward as with <I>Fastflo</I>. 
+
+<P>
+Since the gradient of the mass fraction, <!-- MATH
+ $\mbox{\boldmath$\nabla$}m$
+ -->
+<IMG
+ WIDTH="39" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img629.png"
+ ALT="$\mbox{\boldmath$\nabla$}m$">, is required
+both in the interior of the domain, for the interdiffusion term of the
+energy equation, and on the boundary, for the interfacial velocity
+boundary condition, it is conveniently calculated at each node and
+placed on the `local vector stack' by a command of the form
+<BLOCKQUOTE>
+<code>e v300 = [grad] {v104}</code>
+
+</BLOCKQUOTE>
+inside the problem for the inner (mass fraction, temperature and momentum)
+loop, where it is understood that <code>v104</code> holds
+the values of the mass fraction from the last inner iteration.  
+The intermediate solution vector <code>v300</code>
+is then available for use in statements defining both the field
+equations and boundary conditions.
+
+<P>
+The old values are used in the interdiffusion term, as this is analogous to the
+treatment of the other advective terms, where the advecting velocity is
+that from the last iteration.  The interdiffusion term is a type of
+advection term, as it represents the incremental energy advected by the
+diffusive flux of vapour.  Thus, a Picard linearization is used for all
+the nonlinear terms in the inner loop.
+
+<P>
+Though the interfacial velocity boundary condition
+(<A HREF="node25.html#bc:transpiration">2.59</A>) is linear in the unknowns <IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img72.png"
+ ALT="$\mathbf{u}$"> and
+<IMG
+ WIDTH="21" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.png"
+ ALT="$m$">, convergence was only obtainable by using old values for <!-- MATH
+ $\mbox{\boldmath$\nabla$}m$
+ -->
+<IMG
+ WIDTH="39" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img629.png"
+ ALT="$\mbox{\boldmath$\nabla$}m$">,
+perhaps because the condition must be a condition on <!-- MATH
+ $\mbox{\boldmath$\nabla$}m$
+ -->
+<IMG
+ WIDTH="39" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img629.png"
+ ALT="$\mbox{\boldmath$\nabla$}m$"> and not
+on <IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img72.png"
+ ALT="$\mathbf{u}$"> (&#167;3.2.1).  Since these were already required for the
+interdiffusion term, no extra computational cost was incurred
+evaluating it.
+
+<P>
+A sample <I>Fasttalk</I> file can be found in appendix&nbsp;<A HREF="node141.html#app:SFC">A</A>.
+
+<P>
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1393"
+  HREF="node80.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="file:/usr/local/lib/latex2html/icons/next.png"></A> 
+<A NAME="tex2html1389"
+  HREF="node75.html">
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="file:/usr/local/lib/latex2html/icons/up.png"></A> 
+<A NAME="tex2html1383"
+  HREF="node78.html">
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="file:/usr/local/lib/latex2html/icons/prev.png"></A> 
+<A NAME="tex2html1391"
+  HREF="node2.html">
+<IMG WIDTH="65" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="contents"
+ SRC="file:/usr/local/lib/latex2html/icons/contents.png"></A>  
+<BR>
+<B> Next:</B> <A NAME="tex2html1394"
+  HREF="node80.html">The finite element mesh</A>
+<B> Up:</B> <A NAME="tex2html1390"
+  HREF="node75.html">Vapour transport in Fastflo</A>
+<B> Previous:</B> <A NAME="tex2html1384"
+  HREF="node78.html">Augmented Lagrangian algorithm</A>
+ &nbsp <B>  <A NAME="tex2html1392"
+  HREF="node2.html">Contents</A></B> 
+<!--End of Navigation Panel-->
+<ADDRESS>
+Geordie McBain
+2001-01-27
+</ADDRESS>
+</BODY>
+</HTML>
