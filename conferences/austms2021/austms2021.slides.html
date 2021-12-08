@@ -14105,6 +14105,9 @@ div.jp-OutputPrompt {
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Supercritical-Hopf-bifurcation">Supercritical Hopf bifurcation<a class="anchor-link" href="#Supercritical-Hopf-bifurcation">&#182;</a></h1><p><img src="./animate-50-100.gif" alt="animate-50-100.gif"></p>
+<ul>
+<li>Unsteady Navier–Stokes solutions by <a href="https://github.com/kinnala/scikit-fem"><code>scikit-fem</code></a> (Gustafsson &amp; GDMcB <a href="https://joss.theoj.org/papers/10.21105/joss.02369">2020</a>)</li>
+</ul>
 
 </div>
 </div></section></section><section><section>
@@ -14158,7 +14161,10 @@ $$\mathrm e^{st} = \mathrm e^{\sigma t} \mathrm e^{\mathrm i\omega t},\qquad |\s
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Periodic-point-probes:-AR-v.-FFT">Periodic point-probes: AR v. FFT<a class="anchor-link" href="#Periodic-point-probes:-AR-v.-FFT">&#182;</a></h1><ul>
 <li>FFT<ul>
-<li>frequency is discretized ± 0.05!</li>
+<li>frequency is discretized ± 0.05!<ul>
+<li>0.05 = 1/20 = 1/duration</li>
+</ul>
+</li>
 <li>frequency&ndash;time uncertainty: energy is smeared out</li>
 <li><em>f</em> = 2.75, 5.50, … </li>
 </ul>
@@ -14434,12 +14440,24 @@ $$\mathbf y_k = \mathbf b_0 + \mathsf B_1 \mathbf y_{k-1} + \mathsf B_2 \mathbf 
 </li>
 <li>Python, assuming <strong>M</strong> diagonal:</li>
 </ul>
-<div class="highlight"><pre><span></span><span class="n">R</span> <span class="o">=</span> <span class="n">M</span><span class="o">.</span><span class="n">sqrt</span><span class="p">()</span>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">R</span> <span class="o">=</span> <span class="n">M</span><span class="o">.</span><span class="n">sqrt</span><span class="p">()</span>
 <span class="n">RY</span><span class="p">,</span> <span class="n">Sigma</span><span class="p">,</span> <span class="n">W</span> <span class="o">=</span> <span class="n">svds</span><span class="p">(</span><span class="n">R</span> <span class="o">@</span> <span class="n">vorticity</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span>
 <span class="n">Y</span> <span class="o">=</span> <span class="n">R</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">@</span> <span class="n">RY</span>
 </pre></div>
 
+     </div>
 </div>
+</div>
+</div>
+
 </div></section></section><section><section>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
@@ -14527,12 +14545,17 @@ $$\mathbf y_k = \mathbf b_0 + \mathsf B_1 \mathbf y_{k-1} + \mathsf B_2 \mathbf 
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h1 id="Conclusions">Conclusions<a class="anchor-link" href="#Conclusions">&#182;</a></h1><p>In supercritical Hopf bifurcations:</p>
 <ul>
+<li>point-probes:<ul>
 <li>Prony is better than FFT for identifying frequencies in periodic signals</li>
 <li>Prony can also extract frequency from exponentially modulated oscillations<ul>
 <li>And the growth or decay rate</li>
 </ul>
 </li>
+</ul>
+</li>
+<li>full flow-field structural analysis<ul>
 <li>POD can be cheaply approximated using Cholesky factor of lumped mass matrix</li>
+<li>vector Prony is much like HODMD</li>
 <li>(HO)DMD should use established VAR(<em>p</em>)<ul>
 <li>including including the constant term</li>
 </ul>
@@ -14540,7 +14563,9 @@ $$\mathbf y_k = \mathbf b_0 + \mathsf B_1 \mathbf y_{k-1} + \mathsf B_2 \mathbf 
 <li>vector Prony gives modes with growth rate &amp; frequency<ul>
 <li>whereas POD modes have arbitrary chronoi</li>
 <li>oscillatory Prony modes are exact conjugate pairs</li>
-<li>Prony spatially very similar to POD in cases considered</li>
+<li>Prony spatially do roughly resemble POD in cases considered</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
